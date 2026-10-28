@@ -453,6 +453,7 @@ const reraApproved = sequelize.define(
   },
 );
 
+
 // *********ASSOSIATE TABLE**************
 // poperty_details+typeofpoperty
 const popertydetails_typeofpoperty=sequelize.define(
@@ -483,7 +484,7 @@ const popertydetails_typeofpoperty=sequelize.define(
     updatedAt: "updated_at",
   },
     
-)
+);
 // poperty_details+noof_Bedrooms
 const popertydetails_noof_Bedrooms=sequelize.define(
     "popertydetails_noofbedrooms",{   
@@ -513,10 +514,181 @@ const popertydetails_noof_Bedrooms=sequelize.define(
     updatedAt: "updated_at",
   },
     
-)
-
-
-
+);
+// poperty_details+construction status
+const popertydetails_construction_status=sequelize.define(
+    "popertydetails_construction_status",{   
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+    },
+    popertydetails_id:{
+        type:DataTypes.INTEGER
+    },
+    construction_status_id:{
+        type:DataTypes.INTEGER
+    },
+    created_at: {
+      type: DataTypes.DATE,
+    },
+    updated_at: {
+      type: DataTypes.DATE,
+    },
+  },
+  {
+    tableName:"popertydetails_construction_status",
+    timestamps: true,
+    createdAt: "created_at",
+    updatedAt: "updated_at",
+  },
+    
+);
+// property_details + possession_status
+const popertydetails_possessionstatus = sequelize.define(
+  "popertydetails_possessionstatus",
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+    },
+    popertydetails_id: {
+      type: DataTypes.INTEGER,
+    },
+    possessionstatus_id: {
+      type: DataTypes.INTEGER,
+    },
+    created_at: {
+      type: DataTypes.DATE,
+    },
+    updated_at: {
+      type: DataTypes.DATE,
+    },
+  },
+  {
+    tableName: "popertydetails_possessionstatus",
+    timestamps: true,
+    createdAt: "created_at",
+    updatedAt: "updated_at",
+  }
+);
+// property_details + purchase_type
+const popertydetails_purchasetype = sequelize.define(
+  "popertydetails_purchasetype",
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+    },
+    popertydetails_id: {
+      type: DataTypes.INTEGER,
+    },
+    purchasetype_id: {
+      type: DataTypes.INTEGER,
+    },
+    created_at: {
+      type: DataTypes.DATE,
+    },
+    updated_at: {
+      type: DataTypes.DATE,
+    },
+  },
+  {
+    tableName: "popertydetails_purchasetype",
+    timestamps: true,
+    createdAt: "created_at",
+    updatedAt: "updated_at",
+  }
+);
+// property_details + amenities
+const popertydetails_amenities = sequelize.define(
+  "popertydetails_amenities",
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+    },
+    popertydetails_id: {
+      type: DataTypes.INTEGER,
+    },
+    amenities_id: {
+      type: DataTypes.INTEGER,
+    },
+    created_at: {
+      type: DataTypes.DATE,
+    },
+    updated_at: {
+      type: DataTypes.DATE,
+    },
+  },
+  {
+    tableName: "popertydetails_amenities",
+    timestamps: true,
+    createdAt: "created_at",
+    updatedAt: "updated_at",
+  }
+);
+// property_details + furnishing_status
+const popertydetails_furnishingstatus = sequelize.define(
+  "popertydetails_furnishingstatus",
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+    },
+    popertydetails_id: {
+      type: DataTypes.INTEGER,
+    },
+    furnishingstatus_id: {
+      type: DataTypes.INTEGER,
+    },
+    created_at: {
+      type: DataTypes.DATE,
+    },
+    updated_at: {
+      type: DataTypes.DATE,
+    },
+  },
+  {
+    tableName: "popertydetails_furnishingstatus",
+    timestamps: true,
+    createdAt: "created_at",
+    updatedAt: "updated_at",
+  }
+);
+// property_details + RERA approved
+const popertydetails_reraapproved = sequelize.define(
+  "popertydetails_reraapproved",
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+    },
+    popertydetails_id: {
+      type: DataTypes.INTEGER,
+    },
+    reraapproved_id: {
+      type: DataTypes.INTEGER,
+    },
+    created_at: {
+      type: DataTypes.DATE,
+    },
+    updated_at: {
+      type: DataTypes.DATE,
+    },
+  },
+  {
+    tableName: "popertydetails_reraapproved",
+    timestamps: true,
+    createdAt: "created_at",
+    updatedAt: "updated_at",
+  }
+);
 
 
 module.exports={
@@ -541,4 +713,10 @@ reraApproved,
 // *********ASSOSIATE TABLE**************
 popertydetails_typeofpoperty,
 popertydetails_noof_Bedrooms,
+popertydetails_construction_status,
+popertydetails_possessionstatus,
+popertydetails_purchasetype,
+popertydetails_amenities,
+popertydetails_furnishingstatus,
+popertydetails_reraapproved,
 }

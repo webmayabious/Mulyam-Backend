@@ -1140,7 +1140,7 @@ module.exports={
     updatePurchaseType,
     deletePurchaseType,
 
-    // amenities
+    // Amenities
     createAmenities,
     getAllAmenities,
     getSingleAmenities,
