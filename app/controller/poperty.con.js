@@ -1,4 +1,5 @@
 
+const sequelize = require("../config/db");
 const Sequelize = require("../config/db")
 const {
 // *************POPERTY-MODELS*************
@@ -22,7 +23,297 @@ reraApproved,
 // *********ASSOSIATE TABLE**************
 popertydetails_typeofpoperty,
 popertydetails_noof_Bedrooms,
+popertydetails_construction_status,
+popertydetails_possessionstatus,
+popertydetails_purchasetype,
+popertydetails_amenities,
+popertydetails_furnishingstatus,
+popertydetails_reraapproved,
 }=require("../model/poperty.model")
+
+// POPERTY-----------------
+
+const createPopertyDetails =async(req,res)=>{
+ const t = await sequelize.transaction();
+    try{
+    const {
+        // property
+        title,
+        author,
+        location,
+        address,
+        price,
+        general_info_date,
+        seleable_area,
+        bhk,
+        land_area,
+        total_flats,
+        towers,
+        description,
+        verified,
+        status,
+        // poperty-Images
+        poperty_image,
+        poperty_position,
+        // poperty-BHKS-details
+        bhk_title,
+        bhk_price,
+        bhk_size,
+        bhk_position,
+        // floor-plan
+        floor_image,
+        floor_position,
+        // master-plan
+        master_image,
+        master_position,
+        // brochure
+        brochure_file,
+        // typeofpoperty
+        typeofpoperty_id,
+        // noof_Bedrooms
+        noofbedrooms_id,
+        // construction status
+        construction_status_id,
+        // possession_status
+        possessionstatus_id,
+        // purchase_type
+        purchasetype_id,
+        // amenities
+        amenities_id,
+        // furnishing_status
+        furnishingstatus_id,
+        // RERA approved
+        reraapproved_id,
+
+
+    }=req.body;
+
+    // Targeted files
+const propertyImages = req.files?.poperty_image || [];
+const floorImages = req.files?.floor_image || [];
+const masterImages = req.files?.master_image || [];
+const brochureFile = req.files?.brochure_file?.[0] || null;
+  if(!title){
+    return res.status(404).json({
+        status:false,
+        message:"Provide Title"
+    })
+  };
+//   create-poperty
+  const newPopertyData = await popertyDetails.create({
+        title:title,
+        author:author ??null,
+        location:location ??null,
+        address:address ?? null,
+        price:price ??null,
+        general_info_date:general_info_date ??null,
+        seleable_area:seleable_area ??null,
+        bhk:bhk ??null,
+        land_area:land_area ??null,
+        total_flats:total_flats ??null,
+        towers:towers ??null,
+        description:description ??null,
+        verified:verified ||"1",
+        status:status ||"1",
+  },{ transaction: t })
+console.log("newPopertyData")
+//   popertyImage
+const popertyImageData = await popertyImage.bulkCreate(
+    propertyImages.map((file, index) => ({
+        popertydetails_id: newPopertyData.id,
+        poperty_image: file.filename,
+        poperty_position:poperty_position[index]?? index + 1
+    }),{ transaction: t })
+);
+console.log("popertyImageData")
+// BHKS-details
+// Convert single values into arrays
+if (!Array.isArray(bhk_title)) {
+    bhk_title = bhk_title ? [bhk_title] : [];
+}
+if (!Array.isArray(bhk_price)) {
+    bhk_price = bhk_price ? [bhk_price] : [];
+}
+if (!Array.isArray(bhk_size)) {
+    bhk_size = bhk_size ? [bhk_size] : [];
+}
+if (!Array.isArray(bhk_position)) {
+    bhk_position = bhk_position ? [bhk_position] : [];
+}
+// Save multiple BHK details
+const newBHKdetails = await popertyBhks.bulkCreate(
+    bhk_title.map((title, index) => ({
+        popertydetails_id:newPopertyData.id,
+        bhk_title: title,
+        bhk_price: bhk_price[index] ?? null,
+        bhk_size: bhk_size[index] ?? null,
+        bhk_position: bhk_position[index] ?? index + 1
+    }),{ transaction: t })
+);
+console.log("newBHKdetails")
+  // floor-plan
+  const floorPlanData = await floorPlan.bulkCreate(
+    floorImages.map((file, index) => ({
+        popertydetails_id: newPopertyData.id,
+        floor_image: file.filename,
+        floor_position: floor_position[index] ??  index +1
+    }),{ transaction: t })
+);
+console.log("floorPlanData")
+// master-plan
+const masterPlandata = await masterPlan.bulkCreate(
+    masterImages.map((file,index)=>({
+         popertydetails_id: newPopertyData.id,
+         master_image:file.filename,
+         master_position:master_position[index]?? index+1
+    }),{ transaction: t })
+)
+console.log("masterPlandata")
+// brochure
+const brochureData = await brochure.bulkCreate(
+    brochureFile.map((file,index)=>({
+        popertydetails_id: newPopertyData.id,
+         brochure_file:file.filename
+    }),{ transaction: t })
+)
+console.log("brochure")
+
+// poperty_details+typeofpoperty
+if(!Array.isArray(typeofpoperty_id)){
+    typeofpoperty_id =typeofpoperty_id ?[typeofpoperty_id] :[]
+}
+const popertyntypeofpoperty = await popertydetails_typeofpoperty.bulkCreate(
+    typeofpoperty_id.map((typeId) => ({
+        popertydetails_id:newPopertyData.id,
+        typeofpoperty_id: typeId
+    }),{ transaction: t })
+);
+console.log("popertyntypeofpoperty")
+
+// poperty_details+noof_Bedrooms
+if(!Array.isArray(noofbedrooms_id)){
+    noofbedrooms_id =noofbedrooms_id ?[noofbedrooms_id] :[]
+}
+const popertynBedrooms = await popertydetails_noof_Bedrooms.bulkCreate(
+    noofbedrooms_id.map((typeId) => ({
+        popertydetails_id:newPopertyData.id,
+        noofbedrooms_id: typeId
+    }),{ transaction: t })
+);
+console.log("popertynBedrooms ")
+
+// poperty_details+construction status
+if(!Array.isArray(construction_status_id)){
+    construction_status_id =construction_status_id ?[construction_status_id]:[]
+}
+
+const popertynconstruction = await popertydetails_construction_status.bulkCreate(
+     construction_status_id.map((typeId) => ({
+        popertydetails_id:newPopertyData.id,
+        construction_status_id: typeId
+    }),{ transaction: t })
+) 
+console.log("popertynconstruction ")
+
+// property_details + possession_status
+if(!Array.isArray(possessionstatus_id)){
+    possessionstatus_id =possessionstatus_id ?[possessionstatus_id]:[]
+}
+const popertynconpossessionstatus = await popertydetails_possessionstatus.bulkCreate(
+     possessionstatus_id.map((typeId) => ({
+        popertydetails_id:newPopertyData.id,
+        possessionstatus_id: typeId
+    }),{ transaction: t })
+) 
+console.log("popertynconpossessionstatus")
+
+// property_details + purchase_type
+if(!Array.isArray(purchasetype_id)){
+    purchasetype_id =purchasetype_id ?[purchasetype_id]:[]
+}
+const popertynconpurchase_type = await popertydetails_purchasetype.bulkCreate(
+     purchasetype_id.map((typeId) => ({
+        popertydetails_id:newPopertyData.id,
+        purchasetype_id: typeId
+    }),{ transaction: t })
+) 
+console.log("popertynconpurchase_type")
+
+// property_details + amenities
+if(!Array.isArray(amenities_id)){
+    amenities_id =amenities_id ?[amenities_id]:[]
+}
+const popertynamenities = await popertydetails_amenities.bulkCreate(
+     amenities_id.map((typeId) => ({
+        popertydetails_id:newPopertyData.id,
+        amenities_id: typeId
+    }),{ transaction: t })
+) 
+console.log("popertynamenities")
+
+// property_details + furnishing_status
+if(!Array.isArray(furnishingstatus_id)){
+    furnishingstatus_id =furnishingstatus_id ?[furnishingstatus_id]:[]
+}
+const popertynfurnishing_status = await popertydetails_furnishingstatus.bulkCreate(
+     furnishingstatus_id.map((typeId) => ({
+        popertydetails_id:newPopertyData.id,
+        furnishingstatus_id: typeId
+    }),{ transaction: t })
+) 
+console.log("popertynfurnishing_status")
+
+// property_details + RERA approved
+if(!Array.isArray(reraapproved_id)){
+    reraapproved_id =reraapproved_id?[reraapproved_id]:[]
+}
+const popertynRERAapproved = await popertydetails_reraapproved.bulkCreate(
+     reraapproved_id.map((typeId) => ({
+        popertydetails_id:newPopertyData.id,
+        reraapproved_id: typeId
+    }),{ transaction: t })
+) 
+console.log("popertynRERAapproved")
+     await t.commit();
+
+    res.status(201).json({
+        status:true,
+        message:"Poperty Created Successfully",
+        data: {
+        newPopertyData: newPopertyData,
+        popertyImageData: popertyImageData,
+        newBHKdetails:newBHKdetails,
+        floorPlanData:floorPlanData,
+        masterPlandata:masterPlandata,
+        brochureData:brochureData,
+        popertyntypeofpoperty:popertyntypeofpoperty,
+        popertynBedrooms:popertynBedrooms,
+        popertynconstruction:popertynconstruction,
+        popertynconpossessionstatus:popertynconpossessionstatus,
+        popertynconpurchase_type:popertynconpurchase_type,
+        popertynamenities:popertynamenities,
+        popertynfurnishing_status:popertynfurnishing_status,
+        popertynRERAapproved:popertynRERAapproved,
+    }
+    })
+    }catch (error) {
+        console.log("createPopertyDetails Error:", error.message);
+         await t.rollback();
+        return res.status(500).json({
+            status: false,
+            message: "Something went wrong",
+            error: error.message
+        });
+    }
+}
+
+
+
+
+
+
+
+
 
 
 // typeofpoperty(1BHK || 2BHK ||3BHK)
@@ -1106,6 +1397,11 @@ const deleteReraApproved = async (req, res) => {
 
 
 module.exports={
+
+
+    // poperty
+    createPopertyDetails,
+
 // typeofpoperty(1BHK || 2BHK ||3BHK)
    createTypeOfPoperty,
    getAllTypeOfPoperty,

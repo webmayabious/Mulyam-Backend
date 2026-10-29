@@ -2,6 +2,8 @@ const express = require("express")
 const router = express.Router()
 
 const {
+     // poperty
+    createPopertyDetails,
     // typeofpoperty(1BHK || 2BHK ||3BHK)
    createTypeOfPoperty,
    getAllTypeOfPoperty,
@@ -52,6 +54,15 @@ const {
     deleteReraApproved,
 }=require("../controller/poperty.con")
 
+const upload =require("../miiddleware/image_upload");
+
+const propertyUpload = upload.fields([
+    { name: "poperty_image", maxCount: 10 },
+    { name: "floor_image", maxCount: 10 },
+    { name: "master_image", maxCount: 10 },
+    { name: "brochure_file", maxCount: 10 }
+]);
+
 // health_check
 router.get("/",(req,res)=>{
     res.status(200).json({
@@ -59,6 +70,10 @@ router.get("/",(req,res)=>{
         message:"Mulyam Server Running Fine"
     })
 })
+
+
+// Poperty
+router.post("/add-property", propertyUpload,createPopertyDetails);
 
 
 // typeofpoperty(1BHK || 2BHK ||3BHK)

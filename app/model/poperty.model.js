@@ -48,7 +48,7 @@ const popertyDetails = sequelize.define(
       type: DataTypes.STRING,
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
     },
 
     verified:{
@@ -87,10 +87,10 @@ const popertyImage = sequelize.define(
     popertydetails_id: {
       type: DataTypes.INTEGER,
     },
-    image:{
+    poperty_image:{
        type:DataTypes.STRING
     },
-    position:{
+    poperty_position:{
        type:DataTypes.INTEGER
     },
     created_at: {
@@ -119,16 +119,16 @@ const popertyBhks = sequelize.define(
     popertydetails_id: {
       type: DataTypes.INTEGER,
     },
-    title:{
+    bhk_title:{
        type:DataTypes.STRING
     },
-    price:{
+    bhk_price:{
        type:DataTypes.STRING
     },
-    size:{
+    bhk_size:{
        type:DataTypes.STRING
     },
-    position:{
+    bhk_position:{
        type:DataTypes.INTEGER,
        allowNull:true,
     },
@@ -158,10 +158,10 @@ const floorPlan = sequelize.define(
     popertydetails_id: {
       type: DataTypes.INTEGER,
     },
-    image:{
+    floor_image:{
        type:DataTypes.STRING
     },
-    position:{
+    floor_position:{
        type:DataTypes.INTEGER
     },
     created_at: {
@@ -190,10 +190,10 @@ const masterPlan = sequelize.define(
     popertydetails_id: {
       type: DataTypes.INTEGER,
     },
-    image:{
+    master_image:{
        type:DataTypes.STRING
     },
-    position:{
+    master_position:{
        type:DataTypes.INTEGER
     },
     created_at: {
@@ -222,7 +222,7 @@ const brochure = sequelize.define(
     popertydetails_id: {
       type: DataTypes.INTEGER,
     },
-    file:{
+    brochure_file:{
        type:DataTypes.STRING
     },
     created_at: {
