@@ -35,20 +35,46 @@ const fileFilter = (req, file, cb) => {
         return cb(new Error("Only JPG, PNG, GIF, and WEBP images are allowed"), false);
     }
 
-    // Allow PDF for brochure
-    if (file.fieldname === "brochure_file") {
-        const allowedBrochureTypes = [
-            "application/pdf"
-        ];
+    // Allow PDF for brochure*********************************
+    // if (file.fieldname === "brochure_file") {
+    //     const allowedBrochureTypes = [
+    //         "application/pdf"
+    //     ];
 
-        if (allowedBrochureTypes.includes(file.mimetype)) {
-            return cb(null, true);
-        }
+    //     if (allowedBrochureTypes.includes(file.mimetype)) {
+    //         return cb(null, true);
+    //     }
 
-        return cb(new Error("Only PDF files are allowed for brochures"), false);
+    //     return cb(new Error("Only PDF files are allowed for brochures"), false);
+    // }
+
+    // cb(new Error("Unexpected file field"), false);
+    // Allow PDF, PowerPoint, Word, and common document formats
+    // *******************************************************
+if (file.fieldname === "brochure_file") {
+    const allowedBrochureTypes = [
+        // Adobe PDF
+        "application/pdf",
+        
+        // Microsoft PowerPoint & OpenOffice Templates
+        "application/vnd.ms-powerpoint", 
+        "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        
+        // Microsoft Word (highly common for fallback document formats)
+        "application/msword",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        
+        // Web / Plain Text formats
+        "text/plain",
+        "text/html"
+    ];
+
+    if (allowedBrochureTypes.includes(file.mimetype)) {
+        return cb(null, true);
     }
 
-    cb(new Error("Unexpected file field"), false);
+    return cb(new Error("Invalid file format. Only PDF, PowerPoint, Word, and text documents are allowed for brochures."), false);
+}
 };
 
 const upload = multer({

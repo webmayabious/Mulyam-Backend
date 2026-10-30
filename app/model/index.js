@@ -31,123 +31,205 @@ popertydetails_reraapproved,
 
 }= require("../model/poperty.model")
 
-// popertyDetails+popertyImage
-popertyDetails.hasMany(popertyImage,{
-    foreignKey:"popertydetails_id"
+// Property + Property Images
+popertyDetails.hasMany(popertyImage, {
+    foreignKey: "popertydetails_id"
 });
-popertyImage.belongsTo(popertyDetails)
 
-// popertyDetails+popertyBhks
-popertyDetails.hasMany(popertyBhks,{
-    foreignKey:"popertydetails_id"
+popertyImage.belongsTo(popertyDetails, {
+    foreignKey: "popertydetails_id"
 });
-popertyBhks.belongsTo(popertyDetails)
 
-// popertyDetails+floorPlan
-popertyDetails.hasMany(floorPlan,{
-    foreignKey:"popertydetails_id"
+
+// Property + BHK Details
+popertyDetails.hasMany(popertyBhks, {
+    foreignKey: "popertydetails_id"
 });
-floorPlan.belongsTo(popertyDetails)
 
-// popertyDetails+masterPlan
-popertyDetails.hasMany(masterPlan,{
-    foreignKey:"popertydetails_id"
+popertyBhks.belongsTo(popertyDetails, {
+    foreignKey: "popertydetails_id"
 });
-masterPlan.belongsTo(popertyDetails)
 
-// popertyDetails+brochure
-popertyDetails.hasMany(brochure,{
-    foreignKey:"popertydetails_id"
+
+// Property + Floor Plan
+popertyDetails.hasMany(floorPlan, {
+    foreignKey: "popertydetails_id"
 });
-brochure.belongsTo(popertyDetails)
 
-// popertydetails_typeofpoperty
+floorPlan.belongsTo(popertyDetails, {
+    foreignKey: "popertydetails_id"
+});
+
+
+// Property + Master Plan
+popertyDetails.hasMany(masterPlan, {
+    foreignKey: "popertydetails_id"
+});
+
+masterPlan.belongsTo(popertyDetails, {
+    foreignKey: "popertydetails_id"
+});
+
+
+// Property + Brochure
+popertyDetails.hasMany(brochure, {
+    foreignKey: "popertydetails_id"
+});
+
+brochure.belongsTo(popertyDetails, {
+    foreignKey: "popertydetails_id"
+});
+
+
+// ==========================================
+// PROPERTY DETAILS + PROPERTY TYPE
+// ==========================================
+
 popertyDetails.belongsToMany(typeofpoperty, {
     through: popertydetails_typeofpoperty,
     foreignKey: "popertydetails_id",
-    otherKey: "typeofpoperty_id"
+    otherKey: "typeofpoperty_id",
+    uniqueKey: "uq_property_type"
 });
+
 typeofpoperty.belongsToMany(popertyDetails, {
     through: popertydetails_typeofpoperty,
     foreignKey: "typeofpoperty_id",
-    otherKey: "popertydetails_id"
+    otherKey: "popertydetails_id",
+    uniqueKey: "uq_property_type"
 });
-// popertydetails_no_of_Bedrooms
+
+
+// ==========================================
+// PROPERTY DETAILS + BEDROOMS
+// ==========================================
+
 popertyDetails.belongsToMany(no_of_Bedrooms, {
     through: popertydetails_noof_Bedrooms,
     foreignKey: "popertydetails_id",
-    otherKey: "noofbedrooms_id"
+    otherKey: "noofbedrooms_id",
+    uniqueKey: "uq_property_bedroom"
 });
+
 no_of_Bedrooms.belongsToMany(popertyDetails, {
     through: popertydetails_noof_Bedrooms,
     foreignKey: "noofbedrooms_id",
-    otherKey: "popertydetails_id"
+    otherKey: "popertydetails_id",
+    uniqueKey: "uq_property_bedroom"
 });
-// popertydetails_construction_status
+
+
+// ==========================================
+// PROPERTY DETAILS + CONSTRUCTION STATUS
+// ==========================================
+
 popertyDetails.belongsToMany(constructionStatus, {
     through: popertydetails_construction_status,
     foreignKey: "popertydetails_id",
-    otherKey: "construction_status_id"
+    otherKey: "construction_status_id",
+    uniqueKey: "uq_property_construction"
 });
+
 constructionStatus.belongsToMany(popertyDetails, {
     through: popertydetails_construction_status,
     foreignKey: "construction_status_id",
-    otherKey: "popertydetails_id"
+    otherKey: "popertydetails_id",
+    uniqueKey: "uq_property_construction"
 });
-// popertydetails_possessionstatus
+
+
+// ==========================================
+// PROPERTY DETAILS + POSSESSION STATUS
+// ==========================================
+
 popertyDetails.belongsToMany(possessionStatus, {
     through: popertydetails_possessionstatus,
     foreignKey: "popertydetails_id",
-    otherKey: "possessionstatus_id"
+    otherKey: "possessionstatus_id",
+    uniqueKey: "uq_property_possession"
 });
+
 possessionStatus.belongsToMany(popertyDetails, {
     through: popertydetails_possessionstatus,
     foreignKey: "possessionstatus_id",
-    otherKey: "popertydetails_id"
+    otherKey: "popertydetails_id",
+    uniqueKey: "uq_property_possession"
 });
-// popertydetails_purchasetype
+
+
+// ==========================================
+// PROPERTY DETAILS + PURCHASE TYPE
+// ==========================================
+
 popertyDetails.belongsToMany(purchaseType, {
     through: popertydetails_purchasetype,
     foreignKey: "popertydetails_id",
-    otherKey: "purchasetype_id"
+    otherKey: "purchasetype_id",
+    uniqueKey: "uq_property_purchase"
 });
+
 purchaseType.belongsToMany(popertyDetails, {
-    through:popertydetails_purchasetype,
+    through: popertydetails_purchasetype,
     foreignKey: "purchasetype_id",
-    otherKey: "popertydetails_id"
+    otherKey: "popertydetails_id",
+    uniqueKey: "uq_property_purchase"
 });
-// popertydetails_amenities
+
+
+// ==========================================
+// PROPERTY DETAILS + AMENITIES
+// ==========================================
+
 popertyDetails.belongsToMany(amenities, {
     through: popertydetails_amenities,
     foreignKey: "popertydetails_id",
-    otherKey: "amenities_id"
+    otherKey: "amenities_id",
+    uniqueKey: "uq_property_amenities"
 });
+
 amenities.belongsToMany(popertyDetails, {
-    through:popertydetails_amenities,
+    through: popertydetails_amenities,
     foreignKey: "amenities_id",
-    otherKey: "popertydetails_id"
+    otherKey: "popertydetails_id",
+    uniqueKey: "uq_property_amenities"
 });
-// popertydetails_furnishingstatus
+
+
+// ==========================================
+// PROPERTY DETAILS + FURNISHING STATUS
+// ==========================================
+
 popertyDetails.belongsToMany(furnishingStatus, {
     through: popertydetails_furnishingstatus,
     foreignKey: "popertydetails_id",
-    otherKey: "furnishingstatus_id"
+    otherKey: "furnishingstatus_id",
+    uniqueKey: "uq_property_furnishing"
 });
+
 furnishingStatus.belongsToMany(popertyDetails, {
-    through:popertydetails_furnishingstatus,
+    through: popertydetails_furnishingstatus,
     foreignKey: "furnishingstatus_id",
-    otherKey: "popertydetails_id"
+    otherKey: "popertydetails_id",
+    uniqueKey: "uq_property_furnishing"
 });
-// popertydetails_reraapproved
+
+
+// ==========================================
+// PROPERTY DETAILS + RERA APPROVED
+// ==========================================
+
 popertyDetails.belongsToMany(reraApproved, {
     through: popertydetails_reraapproved,
     foreignKey: "popertydetails_id",
-    otherKey: "reraapproved_id"
+    otherKey: "reraapproved_id",
+    uniqueKey: "uq_property_rera"
 });
+
 reraApproved.belongsToMany(popertyDetails, {
-    through:popertydetails_reraapproved,
+    through: popertydetails_reraapproved,
     foreignKey: "reraapproved_id",
-    otherKey: "popertydetails_id"
+    otherKey: "popertydetails_id",
+    uniqueKey: "uq_property_rera"
 });
 
 
@@ -156,6 +238,9 @@ reraApproved.belongsToMany(popertyDetails, {
 
 
 sequelize.sync()
-.then(()=>{console.log(chalk.cyan("🔄 Db Synced Successfully"));})
-.catch((error)=>{console.log(chalk.red("❌ Database Connection Failed"), err)})
-
+    .then(() => {
+        console.log(chalk.cyan("🔄Database Synced Successfully"));
+    })
+    .catch((error) => {
+        console.log(chalk.red("❌Database Connection Failed"), error);
+    });

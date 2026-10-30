@@ -4,6 +4,10 @@ const router = express.Router()
 const {
      // poperty
     createPopertyDetails,
+    getAllPopertyDetails,
+    getSinglePopertyDetails,
+    updatePopertyDetails,
+    deletePopertyDetails,
     // typeofpoperty(1BHK || 2BHK ||3BHK)
    createTypeOfPoperty,
    getAllTypeOfPoperty,
@@ -74,6 +78,22 @@ router.get("/",(req,res)=>{
 
 // Poperty
 router.post("/add-property", propertyUpload,createPopertyDetails);
+router.get("/getAllPopertyDetails",getAllPopertyDetails);
+router.get("/getSinglePopertyDetails/:id",getSinglePopertyDetails);
+router.put(
+    "/updatePopertyDetails/:id",
+    upload.fields([
+        { name: "poperty_image", maxCount: 20 },
+        { name: "floor_image", maxCount: 20 },
+        { name: "master_image", maxCount: 20 },
+        { name: "brochure_file", maxCount: 5 }
+    ]),
+    updatePopertyDetails
+);
+router.delete(
+    "/deletePopertyDetails/:id",
+    deletePopertyDetails
+);
 
 
 // typeofpoperty(1BHK || 2BHK ||3BHK)

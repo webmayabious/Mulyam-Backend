@@ -32,7 +32,7 @@ const popertyDetails = sequelize.define(
     general_info_date:{
         type: DataTypes.STRING,
     },
-    saleable_area: {
+    seleable_area: {
       type: DataTypes.STRING,
     },
     bhk: {
@@ -49,6 +49,9 @@ const popertyDetails = sequelize.define(
     },
     description: {
       type: DataTypes.TEXT,
+    },
+    project_rera: {
+      type: DataTypes.STRING,
     },
 
     verified:{
