@@ -1,0 +1,72 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/admin/blogs
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: image
+      src: []
+      description: ""
+      disabled: false
+    - type: text
+      key: title
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: postDate
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: author
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: readingTime
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: heading
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: subHeading
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: blogType
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: description
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: isActive
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: isPopularPost
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: displayOnHomePage
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: category
+      value: ""
+      description: ""
+      disabled: false
+order: 1000

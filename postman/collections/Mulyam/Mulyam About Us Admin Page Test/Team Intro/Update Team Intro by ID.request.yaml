@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/admin/about/team-intro/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"heading\": \"TEAM MULYAM\",\r
+
+    \  \"description\": \"<p>At Mulyam, our team brings together knowledgeable professionals with a deep understanding of real estate, local markets, and evolving investment trends. We combine market intelligence with expertise in property evaluation, pricing, documentation, and transaction processes to help clients make informed decisions.</p><p>From identifying the right opportunities to understanding market potential and investment considerations, we offer guidance at every step. With a client-first approach and strong industry knowledge, our team makes the real estate journey more informed, transparent, and seamless.</p>\"\r
+
+    }"
+order: 3000

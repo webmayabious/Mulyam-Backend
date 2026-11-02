@@ -1,0 +1,45 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/admin/services/secondary
+method: POST
+body:
+  type: json
+  content: "[\r
+
+    \  {\r
+
+    \    \"heading\": \"Open Market Sales\",\r
+
+    \    \"subHeading\": \"Connecting Buyers with Premium Properties\",\r
+
+    \    \"description\": \"<ul><li>Facilitating residential sales for leading Grade A+ developers across the city</li><li>Generating qualified leads through targeted digital marketing initiatives</li><li>Conducting client presentations, property walkthroughs, and guided site visits</li><li>Providing complete advisory and assistance throughout the purchase journey</li><li>Keeping clients informed about new launches and market opportunities</li><li>Managing resale opportunities and market insights while building long-term client relationships</li></ul>\",\r
+
+    \    \"isActive\": true\r
+
+    \  },\r
+
+    \  {\r
+
+    \    \"heading\": \"Mandate Sales\",\r
+
+    \    \"subHeading\": \"End-to-End Project Sales Management\",\r
+
+    \    \"description\": \"<ul><li>Market research, pricing strategy, and project planning advisory</li><li>Development and execution of integrated marketing and digital campaigns</li><li>Vendor identification, marketing collateral development, and event coordination</li><li>Deployment of dedicated pre-sales and sales teams to manage enquiries and conversions</li><li>Keeping clients informed about new launches and market opportunities</li><li>Channel partner management and sales tracking systems for transparency and efficiency</li><li>Post-sales CRM, documentation, bank tie-ups, collections, registrations, and handover coordination</li></ul>\",\r
+
+    \    \"isActive\": true\r
+
+    \  },\r
+
+    \  {\r
+
+    \    \"heading\": \"Strategic Partnership\",\r
+
+    \    \"subHeading\": \"Driving Long-Term Project Growth\",\r
+
+    \    \"description\": \"<ul><li>Market intelligence, pricing strategy, and project design advisory</li><li>Implementation of integrated marketing strategies and digital demand generation</li><li>Vendor management, branding, and project collateral development of pre-sales teams and experienced sales professionals</li><li>Channel partner engagement and sales ecosystem management</li><li>Sales tracking systems and event activations to sustain market visibility and momentum</li></ul>\",\r
+
+    \    \"isActive\": true\r
+
+    \  }\r
+
+    ]"
+order: 1000

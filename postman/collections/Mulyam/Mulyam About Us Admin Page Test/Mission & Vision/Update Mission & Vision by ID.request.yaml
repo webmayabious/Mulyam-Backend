@@ -1,0 +1,22 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/admin/about/mission-vision/1
+method: PUT
+body:
+  type: formdata
+  content:
+    - type: text
+      key: heading
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: description
+      value: ""
+      description: ""
+      disabled: false
+    - type: file
+      key: image
+      src: []
+      description: ""
+      disabled: false
+order: 3000

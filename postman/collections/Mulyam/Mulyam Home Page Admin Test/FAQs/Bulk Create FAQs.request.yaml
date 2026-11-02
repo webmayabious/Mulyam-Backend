@@ -1,0 +1,33 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/admin/home/faqs
+method: POST
+body:
+  type: json
+  content: "[\r
+
+    \  {\r
+
+    \    \"question\": \"What is zero brokerage on Mulyam?\",\r
+
+    \    \"answer\": \"Mulyam charges 0% commission to prospective property buyers across all partner listings.\"\r
+
+    \  },\r
+
+    \  {\r
+
+    \    \"question\": \"How do I schedule a site visit?\",\r
+
+    \    \"answer\": \"Click on 'Schedule Visit' on any property page to select your preferred date and time.\"\r
+
+    \  },\r
+
+    \  {\r
+
+    \    \"question\": \"Are all listed projects RERA registered?\",\r
+
+    \    \"answer\": \"Yes, every residential and commercial project featured on Mulyam is 100% RERA compliant.\"\r
+
+    \  }\r
+
+    ]"
+order: 3000

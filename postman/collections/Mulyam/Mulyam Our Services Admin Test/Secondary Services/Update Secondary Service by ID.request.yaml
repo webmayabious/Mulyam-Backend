@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/admin/services/secondary/1
+method: PUT
+order: 4000

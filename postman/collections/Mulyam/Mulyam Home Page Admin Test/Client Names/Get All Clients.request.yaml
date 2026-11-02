@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/admin/home/clients
+method: GET
+order: 2000

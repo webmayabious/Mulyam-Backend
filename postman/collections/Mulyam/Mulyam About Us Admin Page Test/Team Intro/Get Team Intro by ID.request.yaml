@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/admin/about/team-intro/1
+method: GET
+order: 2000

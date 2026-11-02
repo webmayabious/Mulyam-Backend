@@ -1,0 +1,28 @@
+$kind: http-request
+name: Update Team Member by ID
+url: http://localhost:5000/api/v1/admin/about/team/1
+method: PUT
+body:
+  type: formdata
+  content:
+    - type: text
+      key: name
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: designation
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: isActive
+      value: ""
+      description: ""
+      disabled: false
+    - type: file
+      key: image
+      src: []
+      description: ""
+      disabled: false
+order: 4097

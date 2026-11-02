@@ -1,0 +1,54 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/admin/home/clients
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: clientsData
+      value: |-
+        [
+          {
+            "heading": "Ajay Begraj Group",
+            "description": "A leading real estate developer in Siliguri, known for crafting distinguished residences & commercial landmarks across Eastern India.",
+            "isActive": true
+          },
+          {
+            "heading": "Ambuja Neotia Group",
+            "description": "A diversified business group with a strong presence across real estate, hospitality, healthcare, and education.",
+            "isActive": true
+          },
+          {
+            "heading": "Bhawani Group",
+            "description": "From blueprint to reality, Bhawani Group creates spaces that go beyond structures to shape experiences that endure.",
+            "isActive": true
+          },
+          {
+            "heading": "DTC Group",
+            "description": "From its roots in mining four decades ago, DTC Group has evolved into a diversified enterprise with a growing presence across real estate and infrastructure.",
+            "isActive": true
+          },
+          {
+            "heading": "Emami Realty",
+            "description": "Built on quality, transparency, customer focus, and a commitment to delivery, Emami Realty strives to create lasting value and trusted relationships.",
+            "isActive": true
+          }
+        ]
+      description: ""
+      disabled: false
+    - type: file
+      key: images
+      src:
+        - /C:/Users/Game-03/Downloads/AjayBegraj.png
+        - /C:/Users/Game-03/Downloads/AmbujaNeotia.png
+        - /C:/Users/Game-03/Downloads/BhawaniGroup.png
+        - /C:/Users/Game-03/Downloads/DTCGroup.png
+        - /C:/Users/Game-03/Downloads/EmamiRealty.png
+      description: ""
+      disabled: false
+    - type: file
+      key: ""
+      src: []
+      description: ""
+      disabled: true
+order: 1000

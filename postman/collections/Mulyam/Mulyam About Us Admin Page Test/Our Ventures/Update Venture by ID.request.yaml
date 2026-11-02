@@ -1,0 +1,27 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/admin/about/ventures/1
+method: PUT
+body:
+  type: formdata
+  content:
+    - type: text
+      key: heading
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: description
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: isActive
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: image
+      value: ""
+      description: ""
+      disabled: false
+order: 4000

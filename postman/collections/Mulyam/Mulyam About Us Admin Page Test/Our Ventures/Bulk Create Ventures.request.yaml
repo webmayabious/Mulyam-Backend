@@ -1,0 +1,43 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/admin/about/ventures
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: venturesData
+      value: |-
+        [
+          {
+            "heading": "Mayabious Group",
+            "description": "A multidisciplinary MarTech and AdTech design studio bringing ideas to life across diverse mediums. We blend strategy, design, technology and storytelling to create impactful brand experiences. From the first stroke of an identity to the final frame of a visualisation, every detail carries our signature. Different mediums, one unwavering standard of craftsmanship.",
+            "isActive": true
+          },
+          {
+            "heading": "Matratech",
+            "description": "A future-focused MarTech company creating immersive experiences through emerging technologies. From AR, VR, MR and holography to IoT and advanced simulations, we make technology more experiential. Driven by R&D and innovation, we build intelligent solutions that connect brands with their audiences. We transform emerging technology into meaningful experiences.",
+            "isActive": true
+          },
+          {
+            "heading": "Madhya Design",
+            "description": "An architectural design studio exploring a harmonious relationship between built spaces and nature. Our approach seeks to balance human needs with the ecological context around them. Through thoughtful architecture and landscape-led design, we bridge modernity with greenery to design spaces where people and nature coexist.",
+            "isActive": true
+          },
+          {
+            "heading": "Mokhsh",
+            "description": "A smart CRM and business management platform built to bring teams, workflows and customer relationships together. From lead management and project coordination to HR, operations and team communication, Mokhsh connects it all in one place. Designed to reduce repetitive work and information overload, it helps businesses stay organised, responsive and efficient.",
+            "isActive": true
+          }
+        ]
+      description: ""
+      disabled: false
+    - type: file
+      key: images
+      src:
+        - /C:/Users/Game-03/Downloads/1.png
+        - /C:/Users/Game-03/Downloads/2.png
+        - /C:/Users/Game-03/Downloads/3.png
+        - /C:/Users/Game-03/Downloads/4.png
+      description: ""
+      disabled: false
+order: 1000

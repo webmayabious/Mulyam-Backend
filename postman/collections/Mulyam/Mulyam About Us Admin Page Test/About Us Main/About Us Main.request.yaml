@@ -1,0 +1,37 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/admin/about/main
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: aboutData
+      value: |-
+        [
+          {
+            "heading": "ABOUT US",
+            "description": "<p>We at Mulyam, combine deep real estate expertise with advanced PropTech solutions to help developers sell smarter and faster. Backed by over 20 years of industry knowledge, our leadership brings strong market intelligence and strategic insight to every project. We offer end-to-end services spanning market research, branding, marketing strategy, sales, and CRM management under one integrated platform.</p><p>We go beyond traditional marketing, offering a complete ecosystem that includes targeted lead generation, CRM-driven sales management, and immersive 3D experiences. From positioning a project to closing sales, we create seamless pathways that connect the right buyers to the right properties.</p>",
+            "isActive": true
+          },
+          {
+            "heading": "A UNIFIED REAL ESTATE ECOSYSTEM",
+            "description": "<p>From market research and branding to sales, conversion, and CRM, we bring every real estate function under one roof, ensuring alignment, transparency, and faster execution at every stage.</p>",
+            "isActive": true
+          },
+          {
+            "heading": "DELIVERING OUTCOMES DRIVEN BY INSIGHTS",
+            "description": "<p>By integrating data, digital tools, and deep insight, we eliminate complexity, reduce delays, and enable smarter decisions, transforming real estate from a transaction into a seamless, meaningful experience.</p><p>Finding the right property shouldn't mean navigating the entire real estate market alone. Mulyam helps homebuyers and investors discover, compare and evaluate property opportunities based on what matters to them, from budget, location and configuration to amenities, connectivity, possession timelines and long-term objectives.</p><p>Instead of exploring projects one by one, Mulyam brings relevant properties together, helping customers:</p><ul><li>Shortlist suitable options</li><li>Compare projects</li><li>Understand the overall cost</li></ul><p>Its technology-enabled approach records preferences, tracks interactions and helps deliver more personalized property recommendations.</p><p>From new launches and emerging locations to established projects, Mulyam helps customers stay informed about opportunities that match their requirements. It can also support the journey through site-visit coordination, project information, commercial discussions and purchase-stage coordination.</p>",
+            "isActive": true
+          }
+        ]
+      description: ""
+      disabled: false
+    - type: file
+      key: images
+      src:
+        - /C:/Users/Game-03/Downloads/AboutUs1.png
+        - /C:/Users/Game-03/Downloads/Unified Real Estate Ecosystem 2.png
+        - /C:/Users/Game-03/Downloads/Delivering Outcome 3.png
+      description: ""
+      disabled: false
+order: 1000

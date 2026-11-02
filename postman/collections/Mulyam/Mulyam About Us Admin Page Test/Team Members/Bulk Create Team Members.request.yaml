@@ -1,0 +1,61 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/admin/about/team
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: teamData
+      value: |-
+        [
+          {
+            "name": "Rahul Dey",
+            "designation": "Vivamus Efficitur",
+            "description": "Maecenas et erat ac tellus malesuada convallis. Praesent tincidunt et enim ac fringilla. Suspendisse potenti. Integer volutpat tempor mauris vel tristique. Aenean non sagittis tellus. Integer sit amet eros...",
+            "isActive": true
+          },
+          {
+            "name": "Sudipta Roy",
+            "designation": "Vivamus Efficitur",
+            "description": "In rutrum dui libero, ac tempor massa ornare non. In nec iaculis augue. Donec volutpat dui ipsum, sed faucibus arcu aliquam consequat. Duis et molestie lorem, eu cursus tellus. Curabitur mollis...",
+            "isActive": true
+          },
+          {
+            "name": "Gargi Bose",
+            "designation": "Vivamus Efficitur",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis mauris vitae consectetur laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam non...",
+            "isActive": true
+          },
+          {
+            "name": "Koyel Deyashi",
+            "designation": "Vivamus Efficitur",
+            "description": "Quisque hendrerit placerat molestie. Duis et tortor molestie, pulvinar nisl dapibus, tincidunt arcu. Nullam bibendum pulvinar orci at volutpat. Suspendisse porttitor imperdiet eros, in sollicitudin erat faucibus in...",
+            "isActive": true
+          },
+          {
+            "name": "Sounak Paul",
+            "designation": "Vivamus Efficitur",
+            "description": "Nullam sodales purus eu consectetur porttitor. Nam arcu ligula, consectetur a molestie at, placerat eu erat. Curabitur rhoncus libero ut sapien lobortis finibus sed eu sed ex. Donec accumsan elit vitae...",
+            "isActive": true
+          },
+          {
+            "name": "Anindita Hazra",
+            "designation": "Vivamus Efficitur",
+            "description": "Sed maximus ligula at ante pharetra, a finibus felis eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac consequat lacus, quis fringilla ipsum. Phasellus pharetra alique...",
+            "isActive": true
+          }
+        ]
+      description: ""
+      disabled: false
+    - type: file
+      key: images
+      src:
+        - /C:/Users/Game-03/Downloads/1.png
+        - /C:/Users/Game-03/Downloads/2.png
+        - /C:/Users/Game-03/Downloads/3.png
+        - /C:/Users/Game-03/Downloads/4.png
+        - /C:/Users/Game-03/Downloads/5.png
+        - /C:/Users/Game-03/Downloads/6.png
+      description: ""
+      disabled: false
+order: 1000

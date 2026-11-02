@@ -1,0 +1,43 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/admin/services/main
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: servicesData
+      value: |-
+        [
+          {
+            "heading": "OUR SERVICES",
+            "description": "<p>From identifying the right opportunities to understanding market potential and investment considerations, we offer guidance at every step. With a client-first approach and strong industry knowledge, our team makes the real estate journey more informed, transparent, and seamless.</p>",
+            "isActive": true
+          },
+          {
+            "heading": "FOR BUYERS",
+            "description": "<p>At Mulyam, our focus is to make every step seamless, transparent, and rewarding for our buyers by doing the following:</p><ul><li>Free, end-to-end assistance for a seamless home-buying journey</li><li>Curated property search based on budget, location, and preferences</li><li>Site visit coordination with guided project walkthroughs</li><li>Expert advice backed by market insights and pricing trends</li><li>Negotiation support to secure the best deals and offers</li><li>Assistance with documentation, legal processes, and home loans</li><li>Post-sales support including coordination and possession assistance</li><li>Access to exclusive deals through strong developer relationships</li></ul><p>We act as trusted advisors, ensuring a transparent, efficient, and rewarding home-buying experience from search to possession.</p>",
+            "isActive": true
+          },
+          {
+            "heading": "FOR INVESTORS",
+            "description": "<p>Our approach is focused on simplifying acquisition while maximizing long-term value and returns. We help investors by providing:</p><ul><li>Market insights and advisory to identify high-growth, investment-worthy opportunities</li><li>Property selection with curated options and site visit coordination</li><li>Expert evaluation of layouts, amenities, and return potential</li><li>Negotiation support to secure optimal pricing and flexible terms</li><li>Due diligence including legal checks, RERA compliance, and risk assessment</li><li>Financial guidance covering loan processes, payment structures, and ROI planning</li><li>End-to-end support through documentation, closing, and post-purchase coordination</li></ul><p>We act as trusted investment advisors, ensuring a transparent, efficient, and value-driven investment experience.</p>",
+            "isActive": true
+          },
+          {
+            "heading": "FOR DEVELOPERS",
+            "description": "<p>At Mulyam, we act as an extended sales and marketing partner, enabling developers to accelerate sales and expand market reach. We help developers in the following ways:</p><ul><li>Strategic marketing and promotion through targeted campaigns and qualified lead generation</li><li>Sales acceleration with end-to-end management, from inquiries to site visits and deal closure</li><li>Market intelligence and feedback on buyer preferences and emerging trends</li><li>CRM-driven management of the entire buyer journey, from lead to booking and documentation</li><li>Expanded reach across wider audiences, including NRIs and institutional investors</li><li>Inventory support and underwriting to enhance liquidity when required</li></ul><p>We operate as specialized sales teams, driving faster closures and improving overall sales efficiency.</p>",
+            "isActive": true
+          }
+        ]
+      description: ""
+      disabled: false
+    - type: file
+      key: images
+      src:
+        - /C:/Users/Game-03/Downloads/OurServices.png
+        - /C:/Users/Game-03/Downloads/ForBuyers1.png
+        - /C:/Users/Game-03/Downloads/ForInvestors2.png
+        - /C:/Users/Game-03/Downloads/ForDevelopers3.png
+      description: ""
+      disabled: false
+order: 1000
