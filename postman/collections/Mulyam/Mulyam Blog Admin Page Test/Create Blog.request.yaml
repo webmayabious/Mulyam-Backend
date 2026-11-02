@@ -6,62 +6,63 @@ body:
   content:
     - type: file
       key: image
-      src: []
+      src:
+        - /C:/Users/Game-03/Downloads/blog.png
       description: ""
       disabled: false
     - type: text
       key: title
-      value: ""
+      value: Best Locations for NRIs Investing in Siliguri
       description: ""
       disabled: false
     - type: text
       key: postDate
-      value: ""
+      value: 2026-08-29
       description: ""
       disabled: false
     - type: text
       key: author
-      value: ""
+      value: Sunita Das
       description: ""
       disabled: false
     - type: text
       key: readingTime
-      value: ""
+      value: 5 min
       description: ""
       disabled: false
     - type: text
       key: heading
-      value: ""
+      value: BEST LOCATIONS FOR NRIS INVESTING IN SILIGURI
       description: ""
       disabled: false
     - type: text
       key: subHeading
-      value: ""
+      value: "Siliguri Property Prices: A Location-Wise Snapshot"
       description: ""
       disabled: false
     - type: text
       key: blogType
-      value: ""
+      value: Article
       description: ""
       disabled: false
     - type: text
       key: description
-      value: ""
+      value: "<p>Siliguri is opening a new chapter in real estate investment. Positioned as the gateway to North Bengal, the Northeast and the Himalayan region, the city combines strong connectivity, expanding infrastructure, premium residential developments and diverse investment opportunities.</p><p>For NRIs, Siliguri offers something particularly valuable: the ability to invest in a growing city while staying connected to major transport hubs, commercial centres and lifestyle destinations.</p>"
       description: ""
       disabled: false
     - type: text
       key: isActive
-      value: ""
+      value: "true"
       description: ""
       disabled: false
     - type: text
       key: isPopularPost
-      value: ""
+      value: "true"
       description: ""
       disabled: false
     - type: text
       key: displayOnHomePage
-      value: ""
+      value: "true"
       description: ""
       disabled: false
     - type: text
