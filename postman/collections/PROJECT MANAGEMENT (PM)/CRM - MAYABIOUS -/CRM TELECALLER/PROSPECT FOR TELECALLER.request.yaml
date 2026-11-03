@@ -1,0 +1,29 @@
+$kind: http-request
+url: localhost:3000/api/pm/getCrmForTelecaller?loan_type=Business Loan
+method: GET
+queryParams:
+  - key: loan_type
+    value: Business Loan
+  - key: telecaller_id
+    value: "1051"
+    disabled: true
+  - key: search
+    value: Unknown
+    disabled: true
+  - key: download
+    value: "true"
+    disabled: true
+  - key: pincode
+    value: "546879"
+    disabled: true
+  - key: limit
+    value: "5"
+    disabled: true
+  - key: mobile
+    value: "9038023538"
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_18fk}}"
+order: 2000

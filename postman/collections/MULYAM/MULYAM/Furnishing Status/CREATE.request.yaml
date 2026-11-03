@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:5005/api/admin/furnishing-status
+method: POST
+body:
+  type: json
+  content: "{\r\n    \"title\": \"test-1\"\r\n}"
+order: 1000

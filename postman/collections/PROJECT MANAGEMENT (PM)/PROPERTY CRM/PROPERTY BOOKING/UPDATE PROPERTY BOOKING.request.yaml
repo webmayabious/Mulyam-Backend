@@ -1,0 +1,125 @@
+$kind: http-request
+url: localhost:3000/api/pm/updatePropertyBooking/17
+method: PUT
+headers:
+  Authorization: "{{json_web_token_057d}}"
+body:
+  type: formdata
+  content:
+    - type: text
+      key: date_of_booking
+      value: 2025-01-15
+    - type: text
+      key: project_id
+      value: "3"
+    - type: text
+      key: location
+      value: "5"
+    - type: text
+      key: name
+      value: Manoj Sharma Update
+    - type: text
+      key: address
+      value: Sealdah
+      disabled: true
+    - type: text
+      key: mobile
+      value: "9876543210"
+      disabled: true
+    - type: text
+      key: email
+      value: rahul.sharma@example.com
+    - type: text
+      key: date_of_birth
+      value: 1990-06-12
+    - type: text
+      key: gender
+      value: "1"
+    - type: text
+      key: marital_status
+      value: UnMarried
+    - type: text
+      key: office_location
+      value: SaltLake Mumbai
+    - type: text
+      key: industry
+      value: IT Services
+    - type: text
+      key: occupation
+      value: Software Engineer
+    - type: text
+      key: loan_requirement
+      value: Yes
+    - type: text
+      key: flat_type
+      value: 2 BHK
+    - type: text
+      key: flat_number
+      value: A-1203
+    - type: text
+      key: tower_no
+      value: Tower A
+    - type: text
+      key: floor
+      value: "12"
+    - type: text
+      key: carpet_area
+      value: "750"
+    - type: text
+      key: saleable_area
+      value: "950"
+    - type: text
+      key: agreement_value
+      value: "12500000"
+    - type: text
+      key: source
+      value: "42"
+    - type: text
+      key: base_brokerage
+      value: 1.5%
+      disabled: true
+    - type: text
+      key: ladder_brokerage
+      value: 0.5%
+      disabled: true
+    - type: text
+      key: sales_manager
+      value: "1063"
+      disabled: true
+    - type: text
+      key: team_leader
+      value: "945"
+      disabled: true
+    - type: file
+      key: agreement
+      src: []
+      disabled: true
+    - type: file
+      key: booking_form
+      src:
+        - /C:/Users/WEB-07/Downloads/78325_pexels-kindelmedia-7578883.jpg
+    - type: file
+      key: cost_sheet
+      src:
+        - /C:/Users/WEB-07/Downloads/2c7d99fe281ecd3bcd65ab915bac6dd5.jpeg
+      disabled: true
+    - type: file
+      key: pan_card
+      src:
+        - /C:/Users/WEB-07/Downloads/img.avif
+      disabled: true
+    - type: file
+      key: aadhar_card
+      src:
+        - /C:/Users/WEB-07/Downloads/maya_image.png
+      disabled: true
+    - type: file
+      key: others
+      src:
+        - /C:/Users/WEB-07/Downloads/mail.png
+      disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_07pn}}"
+order: 2000

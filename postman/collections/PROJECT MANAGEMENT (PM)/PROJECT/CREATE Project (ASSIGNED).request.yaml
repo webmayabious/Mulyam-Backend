@@ -1,0 +1,52 @@
+$kind: http-request
+url: localhost:3000/api/pm/createProject
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: pro_name
+      value: Department Estimated Hour Check 4
+    - type: text
+      key: lead_id
+      value: "2"
+    - type: text
+      key: pro_code
+      value: DEC 002
+    - type: text
+      key: act_name
+      value: DEC003
+    - type: text
+      key: com_id
+      value: "1"
+    - type: text
+      key: year
+      value: "2026"
+    - type: text
+      key: projectinfo
+      value: '[{"dep_id":1,"pro_sdate":"2026-07-15","pro_eedate":"2026-08-15","pro_aedate":"2026-08-20","pro_spec":"Department Estimated hours Check","pro_desc":"Department Estimated hours and Total days Check.","pro_note":"It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.","pro_wono":"WO22365","pro_qtno":"QT556987","pro_fileloc":"4568.pdf","pro_que":"Puyy1236","pro_que_desc":"It has survived not only five centuries","pro_rank":"1","pro_remark":"It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.","sts_id":"1","payment_term":"Test Test","active":"1","special_note":"It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.","pro_imp":"2","architect":"Kolkata"},{"dep_id":5,"pro_sdate":"2026-07-01 00:00:00","pro_eedate":"2026-07-31 00:00:00","pro_aedate":"2026-08-05 00:00:00","pro_spec":"Department Estimated hours Check","pro_desc":"Department Estimated hours and Total days Check","pro_note":"It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.","pro_wono":"WO22365","pro_qtno":"QT556987","pro_fileloc":"4568.pdf","pro_que":"Puyy1236","pro_que_desc":"It has survived not only five centuries","pro_rank":"1","pro_remark":"It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.","sts_id":"1","payment_term":"Test Test","active":"1","special_note":"It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.","pro_imp":"2","architect":"Kolkata"},{"dep_id":3,"pro_sdate":"2026-08-01 00:00:00","pro_eedate":"2026-08-20 00:00:00","pro_aedate":"2026-08-25 00:00:00","pro_spec":"Department Estimated hours Check","pro_desc":"Department Estimated hours and Total days Check.","pro_note":"It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.","pro_wono":"WO22365","pro_qtno":"QT556987","pro_fileloc":"4568.pdf","pro_que":"Puyy1236","pro_que_desc":"It has survived not only five centuries","pro_rank":"1","pro_remark":"It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.","sts_id":"1","payment_term":"Test Test","active":"1","special_note":"It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.","pro_imp":"2","architect":"Kolkata"}]'
+    - type: file
+      key: file1_1
+      src:
+        - /C:/Users/game-01/Pictures/0180f1ebbffba03e42da6dadb3bba43b.jpg
+      disabled: true
+    - type: file
+      key: file1_2
+      src:
+        - /C:/Users/game-01/Pictures/9b5ad6cdacfdf1678e1f9ec5444ad236.jpg
+      disabled: true
+    - type: file
+      key: file2_1
+      src:
+        - /C:/Users/game-01/Pictures/images.jfif
+      disabled: true
+    - type: file
+      key: file2_2
+      src:
+        - /C:/Users/game-01/Pictures/sample.jpeg
+      disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0h2i}}"
+order: 5000

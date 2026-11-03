@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateProjectDelivery/2
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"pro_details_id\":\"5\",\r
+
+    \    \"remark\":\"Project Delivery Update\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1cmo}}"
+order: 4000

@@ -1,0 +1,11 @@
+$kind: http-request
+url: localhost:3000/api/pm/reopen-mom-Internal/25
+method: PUT
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_151h}}"
+order: 9000

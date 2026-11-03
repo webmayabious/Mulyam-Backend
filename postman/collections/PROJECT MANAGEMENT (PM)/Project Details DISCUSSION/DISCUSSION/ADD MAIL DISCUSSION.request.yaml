@@ -1,0 +1,31 @@
+$kind: http-request
+url: localhost:3000/api/pm/add-mail-discussion
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"pro_id\" : 1,\r
+
+    \    \"dep_id\" : 5,\r
+
+    \    \"description\": \"Test Description MAIL 1\",\r
+
+    \    \"lbluser1\": 673, \r
+
+    \    \"lbluser2\": 902,\r
+
+    \    \"lbluser3\": 834, \r
+
+    \    \"lbluser4\": 1063,\r
+
+    \    \"apprqd\": 0\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_12uy}}"
+order: 1000

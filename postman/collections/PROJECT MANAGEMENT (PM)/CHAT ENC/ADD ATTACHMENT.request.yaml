@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:3000/api/chat/addChatAttachment
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: formdata
+  content:
+    - type: text
+      key: message_id
+      value: "2"
+    - type: file
+      key: file_name
+      src: []
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_031v}}"
+order: 18000

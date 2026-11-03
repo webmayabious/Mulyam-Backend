@@ -1,0 +1,24 @@
+$kind: http-request
+url: localhost:3000/api/pm/uploadPropertyLeadFromExcel
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: com_id
+      value: "585"
+    - type: file
+      key: excelUpload
+      src:
+        - /C:/Users/WEB-07/Downloads/mulyam_new_1.xlsx
+    - type: text
+      key: reference
+      value: "41"
+    - type: text
+      key: location
+      value: "1"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0h58}}"
+order: 10000

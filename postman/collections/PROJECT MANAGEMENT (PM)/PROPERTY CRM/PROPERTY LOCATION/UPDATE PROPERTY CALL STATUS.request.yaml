@@ -1,0 +1,13 @@
+$kind: http-request
+url: localhost:3000/api/pm/updatePropertyLocation/2
+method: PUT
+headers:
+  Authorization: "{{json_web_token_057d}}"
+body:
+  type: json
+  content: "{\r\n    \"name\":\"Update\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_151h}}"
+order: 5000

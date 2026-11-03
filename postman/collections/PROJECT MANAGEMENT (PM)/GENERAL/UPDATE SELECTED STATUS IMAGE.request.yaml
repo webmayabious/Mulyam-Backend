@@ -1,0 +1,13 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateSelectedStatus
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r\n    \"id\":2\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_08il}}"
+order: 8000

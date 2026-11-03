@@ -1,0 +1,27 @@
+$kind: http-request
+url: https://api.mokhsh.info/api/pm/createProspectListForWebsite
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"rf_id\":42,\r
+
+    \    \"first_name\":\"test79878\",\r
+
+    \    \"last_name\":\"Three\",\r
+
+    \    \"phone\":\"78948443738\",\r
+
+    \    \"email\":\"prospect1@gmail.com\",\r
+
+    \    \"company_id\":1,\r
+
+    \    \"created_by\": 2    \r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0mdc}}"
+order: 6000

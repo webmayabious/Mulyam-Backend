@@ -1,0 +1,21 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/calendar/holiday
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"occasion\":\"Holiday Group test 4 \",\r
+
+    \    \"start_date\" :\"2026-05-01\",\r
+
+    \    \"end_date\":\"2026-05-04\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_10qh}}"
+order: 1000

@@ -1,0 +1,12 @@
+$kind: http-request
+url: localhost:3000/api/pm/getUpcomingProject/74
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0g7v}}"
+settings: {}
+order: 3000

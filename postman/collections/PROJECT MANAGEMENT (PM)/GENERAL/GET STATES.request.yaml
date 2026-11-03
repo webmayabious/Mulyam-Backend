@@ -1,0 +1,10 @@
+$kind: http-request
+url: localhost:3000/api/pm/getStates
+method: GET
+headers:
+  Content-Type: application/json
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1c7q}}"
+order: 4000

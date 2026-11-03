@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/addDeptSkills
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"dept_id\":11,\r
+
+    \    \"skill_name\":\"MS Excel\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_081f}}"
+order: 2000

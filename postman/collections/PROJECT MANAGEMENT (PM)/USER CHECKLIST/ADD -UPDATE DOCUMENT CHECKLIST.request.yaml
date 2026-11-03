@@ -1,0 +1,27 @@
+$kind: http-request
+url: localhost:3000/api/pm/addupdateDocumentChecklist/5
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \      \"offer_letter\":1,\r
+
+    \      \"agreement\":1,\r
+
+    \      \"employee_id\":1,\r
+
+    \      \"mail_id\":1,\r
+
+    \      \"phone_number\":1,\r
+
+    \      \"salary_account\":1,\r
+
+    \      \"food_option\":1\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0s6i}}"
+order: 2000

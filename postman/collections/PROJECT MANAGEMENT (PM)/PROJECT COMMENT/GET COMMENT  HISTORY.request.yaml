@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/getCommentHistory
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"pro_id\":\"747\",\r
+
+    \    \"dis_id\":\"439644\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0poo}}"
+order: 2000

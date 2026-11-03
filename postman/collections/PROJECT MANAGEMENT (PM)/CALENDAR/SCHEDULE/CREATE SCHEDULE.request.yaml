@@ -1,0 +1,27 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/calendar/schedule
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\":\"Schedule test 1 \",\r
+
+    \    \"description\":\"Schedule  test 1 \",\r
+
+    \    \"start_date\" :\"2026-05-01\",\r
+
+    \    \"end_date\":\"2026-05-04\",\r
+
+    \    \"months\" : [11],\r
+
+    \    \"year\":[2027,2028]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_10qh}}"
+order: 1000

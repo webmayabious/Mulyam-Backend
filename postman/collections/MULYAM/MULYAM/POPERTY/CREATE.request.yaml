@@ -1,0 +1,177 @@
+$kind: http-request
+url: http://localhost:5005/api/admin/add-property
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: TEST
+      description: ""
+      disabled: false
+    - type: text
+      key: author
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: location
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: address
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: price
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: general_info_date
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: seleable_area
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: bhk
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: land_area
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: total_flats
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: towers
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: description
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: project_rera
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: verified
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: status
+      value: ""
+      description: ""
+      disabled: false
+    - type: file
+      key: poperty_image
+      src: []
+      description: ""
+      disabled: false
+    - type: text
+      key: poperty_position
+      value: ""
+      description: ""
+      disabled: false
+    - type: file
+      key: floor_image
+      src: []
+      description: ""
+      disabled: false
+    - type: file
+      key: master_image
+      src: []
+      description: ""
+      disabled: false
+    - type: file
+      key: brochure_file
+      src: []
+      description: ""
+      disabled: false
+    - type: text
+      key: bhk_title
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: bhk_price
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: bhk_size
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: bhk_position
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: floor_position
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: master_position
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: typeofpoperty_id
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: noofbedrooms_id
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: construction_status_id
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: possessionstatus_id
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: purchasetype_id
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: amenities_id
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: furnishingstatus_id
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: reraapproved_id
+      value: ""
+      description: ""
+      disabled: false
+order: 1000

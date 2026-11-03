@@ -1,0 +1,13 @@
+$kind: http-request
+url: localhost:3000/api/pm/addCompanyTypes
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r\n    \"name\":\"software\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1c7q}}"
+order: 1000

@@ -1,0 +1,83 @@
+$kind: http-request
+url: localhost:3000/api/pm/addCompany
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: formdata
+  content:
+    - type: text
+      key: com_name
+      value: souravk ltd 2
+    - type: text
+      key: com_desc
+      value: Tech company 22
+    - type: text
+      key: com_address
+      value: kolkata howrah
+    - type: text
+      key: com_address1
+      value: ""
+    - type: text
+      key: city_id
+      value: howrah
+    - type: text
+      key: state_id
+      value: "1"
+    - type: text
+      key: country_id
+      value: "1"
+    - type: text
+      key: com_pin
+      value: "700091"
+    - type: text
+      key: com_website
+      value: ""
+    - type: text
+      key: com_phno
+      value: "123456789"
+    - type: text
+      key: com_cperson
+      value: sk
+    - type: text
+      key: com_cemail
+      value: sk@gmail.com
+    - type: text
+      key: com_cno
+      value: "9876543210"
+    - type: text
+      key: com_cperson1
+      value: ""
+    - type: text
+      key: com_cemail1
+      value: ""
+    - type: text
+      key: com_cno1
+      value: ""
+    - type: text
+      key: com_cperson2
+      value: ""
+    - type: text
+      key: com_cemail2
+      value: ""
+    - type: text
+      key: com_cno2
+      value: ""
+    - type: text
+      key: com_type
+      value: "1"
+    - type: text
+      key: type_id
+      value: "3"
+    - type: file
+      key: com_logo
+      src:
+        - /C:/Users/game-01/Pictures/2d12c0da978d4c5c8a3db90ed7113add_t.jpeg
+    - type: text
+      key: active
+      value: "1"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1c7q}}"
+order: 2000

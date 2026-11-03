@@ -1,0 +1,12 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllLatestProjectStatus/1/4
+method: GET
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0qte}}"
+settings: {}
+order: 1000

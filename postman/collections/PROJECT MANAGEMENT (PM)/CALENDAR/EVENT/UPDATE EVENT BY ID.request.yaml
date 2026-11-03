@@ -1,0 +1,23 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/calendar/event/2
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"occasion\":\"Test 22\",\r
+
+    \    \"date\" :\"2026-04-28\",\r
+
+    \    \"time\": \"11:58:22\",\r
+
+    \    \"notification_time\": \"12:30:02\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_031v}}"
+order: 4000

@@ -1,0 +1,15 @@
+$kind: http-request
+url: localhost:3000/api/pm/createBrochureInfo/1/4
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"status_content\":\"this is brochure 2\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0qte}}"
+order: 1000

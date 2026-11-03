@@ -1,0 +1,10 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllLeaveApplication?limit=50
+method: GET
+queryParams:
+  limit: "50"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0lwf}}"
+order: 3000

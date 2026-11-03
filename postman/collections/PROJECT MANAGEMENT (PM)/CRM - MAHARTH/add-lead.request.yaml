@@ -1,0 +1,85 @@
+$kind: http-request
+url: localhost:3000/api/crm/addlead
+method: POST
+headers:
+  access-token: "{{json_web_token_0ovt}}"
+body:
+  type: formdata
+  content:
+    - type: text
+      key: calling_date_time
+      value: 2025-09-18 11:30:00
+    - type: text
+      key: fname
+      value: Rahul
+    - type: text
+      key: lname
+      value: Sharma
+    - type: text
+      key: mobile
+      value: "9876543210"
+    - type: text
+      key: alt_mobile1
+      value: "9876543210"
+    - type: text
+      key: alt_mobile2
+      value: "9876543210"
+    - type: text
+      key: email
+      value: rahul@gmail.com
+    - type: text
+      key: customer_type
+      value: new
+    - type: text
+      key: customer_status
+      value: "1"
+    - type: text
+      key: loan_type
+      value: Unknown
+    - type: text
+      key: loan_category
+      value: "1"
+    - type: text
+      key: business_name
+      value: Sharma Traders
+    - type: text
+      key: designation
+      value: Owner
+    - type: text
+      key: location
+      value: Delhi
+    - type: text
+      key: pincode
+      value: "110001"
+    - type: text
+      key: keyword
+      value: housing
+    - type: text
+      key: legal_status
+      value: Proprietor
+    - type: text
+      key: contact_person
+      value: Rahul Sharma
+    - type: text
+      key: annual_turnover
+      value: "5000000"
+    - type: text
+      key: follow_up
+      value: 2025-12-19
+    - type: text
+      key: follow_up_time
+      value: 15:30
+    - type: text
+      key: remarks
+      value: Customer asked to call after 2 days
+    - type: text
+      key: duration
+      value: "180"
+    - type: file
+      key: recording_file
+      src: []
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ork}}"
+order: 18000

@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/updateRoleMenuAccess/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"role_id\":2,\r
+
+    \    \"menu_id\":4\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0onx}}"
+order: 4000

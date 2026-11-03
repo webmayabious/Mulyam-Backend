@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllTaskFromProjects/2207
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_07dq}}"
+order: 16000

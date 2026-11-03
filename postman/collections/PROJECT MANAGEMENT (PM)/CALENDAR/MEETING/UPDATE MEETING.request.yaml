@@ -1,0 +1,57 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateMeeting/2
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"conference\": 2,\r
+
+    \  \"date\": \"2026-04-06\",\r
+
+    \  \"start_time\": \"10:30:00\",\r
+
+    \  \"end_time\": \"11:30:00\",\r
+
+    \  \"subject\": \"Project Sync Meeting Update\",\r
+
+    \  \"meeting_organiser\":902,\r
+
+    \  \"notification_time\": null,\r
+
+    \  \"guests\": [\r
+
+    \    {\r
+
+    \      \"id\":22,\r
+
+    \      \"guest_id\": 1063\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"guest_name\": \"Guest14\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"guest_name\": \"Guest15\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"guest_id\": 914\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_06ql}}"
+order: 2000

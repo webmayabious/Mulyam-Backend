@@ -1,0 +1,10 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllFeedbackType
+method: GET
+headers:
+  access-token: "{{json_web_token_0zyr}}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_05z6}}"
+order: 1000

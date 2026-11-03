@@ -1,0 +1,18 @@
+$kind: http-request
+url: localhost:3000/api/pm/get-venue-by-id/28
+method: GET
+headers:
+  Authorization: "{{json_web_token_057d}}"
+body:
+  type: text
+  content: "{\r
+
+    \    \"venue_name\":\"venue create test update 2\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_09np}}"
+settings: {}
+order: 3000

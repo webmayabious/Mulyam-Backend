@@ -1,0 +1,26 @@
+$kind: http-request
+url: localhost:3000/api/pm/add-client-discussion
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: formdata
+  content:
+    - type: text
+      key: pro_id
+      value: "1"
+    - type: text
+      key: dep_id
+      value: "9"
+    - type: text
+      key: description
+      value: Test Description Team 2
+    - type: file
+      key: fileUpload
+      src:
+        - /C:/Users/game-01/Pictures/0696cc1063bc7dee6b84f0f631a0195b.jpg
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0cq7}}"
+order: 3000

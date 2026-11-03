@@ -1,0 +1,23 @@
+$kind: http-request
+url: http://localhost:3000/api/crm/uploadLeadFromExcel
+method: POST
+headers:
+  access-token: "{{json_web_token_035p}}"
+body:
+  type: formdata
+  content:
+    - type: text
+      key: telecaller_id
+      value: "8"
+    - type: text
+      key: loan_type
+      value: Salaried
+    - type: file
+      key: excelUpload
+      src:
+        - /C:/Users/WEB-07/Downloads/Sorted_Data.xlsx
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ojs}}"
+order: 11000

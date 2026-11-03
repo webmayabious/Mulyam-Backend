@@ -1,0 +1,21 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateMainProjectCorordinator
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \      \"assign_coordinator\":\"1063\",\r
+
+    \      \"change_main_coordinator\":\"812\",\r
+
+    \      \"pro_id\":\"776\",\r
+
+    \      \"prodetail_id\":\"772\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0p9c}}"
+order: 2000

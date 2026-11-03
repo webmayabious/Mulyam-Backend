@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/assignBDM
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"bdm_user_id\":3,\r
+
+    \    \"prospect_ids\":[2,3]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_10kb}}"
+order: 2000

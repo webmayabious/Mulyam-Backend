@@ -1,0 +1,130 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateUser/13
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: formdata
+  content:
+    - type: text
+      key: utype
+      value: "1"
+    - type: text
+      key: com_id
+      value: "1"
+    - type: text
+      key: usr_empid
+      value: ""
+    - type: text
+      key: password
+      value: "12345678"
+    - type: text
+      key: usr_fname
+      value: s
+    - type: text
+      key: usr_lname
+      value: k
+    - type: text
+      key: usr_mob
+      value: "9876543210"
+    - type: text
+      key: usr_emailid
+      value: sk@gmail.com
+    - type: text
+      key: usr_internal_emailid
+      value: ""
+    - type: text
+      key: usr_phno
+      value: "9876540"
+    - type: text
+      key: usr_dob
+      value: 2025-12-25
+    - type: text
+      key: usr_gender
+      value: "1"
+    - type: text
+      key: dept_id
+      value: "3"
+    - type: text
+      key: user_type
+      value: "36"
+    - type: text
+      key: key_skill
+      value: ""
+    - type: text
+      key: usr_address
+      value: ""
+    - type: text
+      key: usr_address1
+      value: ""
+    - type: text
+      key: usr_state
+      value: ""
+    - type: text
+      key: city_id
+      value: ""
+    - type: text
+      key: usr_pin
+      value: ""
+    - type: text
+      key: usr_pan
+      value: ""
+    - type: text
+      key: usr_pf
+      value: ""
+    - type: text
+      key: usr_esi
+      value: ""
+    - type: text
+      key: usr_accno
+      value: ""
+    - type: text
+      key: usr_bank
+      value: ""
+    - type: text
+      key: usr_ifsc
+      value: ""
+    - type: text
+      key: usr_aadhar
+      value: ""
+    - type: text
+      key: usr_joindate
+      value: 2025-01-12
+    - type: text
+      key: user_slot
+      value: ""
+    - type: text
+      key: usr_inactivedate
+      value: ""
+    - type: text
+      key: usr_job_des
+      value: ""
+    - type: text
+      key: active
+      value: ""
+    - type: text
+      key: randd
+      value: ""
+    - type: text
+      key: macid
+      value: ""
+    - type: text
+      key: uclass
+      value: ""
+    - type: text
+      key: remember_token
+      value: ""
+    - type: text
+      key: warehouse_lead
+      value: ""
+    - type: text
+      key: user_role
+      value: "[1]"
+    - type: text
+      key: reviwer
+      value: "13"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0hiz}}"
+order: 5000

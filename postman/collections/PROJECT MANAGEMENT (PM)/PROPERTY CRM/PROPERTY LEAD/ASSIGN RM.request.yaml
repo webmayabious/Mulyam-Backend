@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/assignRM
+method: PUT
+headers:
+  Authorization: "{{json_web_token_057d}}"
+body:
+  type: json
+  content: "{\r
+
+    \    \"property_lead_id\":[2],\r
+
+    \    \"rm_id\":1118\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_151h}}"
+order: 7000

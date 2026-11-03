@@ -1,0 +1,29 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/interview/3
+method: DELETE
+body:
+  type: json
+  content: "{\r
+
+    \   \"candidate_name\":\"SK 00\",\r
+
+    \    \"date\" : \"2026-03-04\",\r
+
+    \    \"time\" : \"15:30:00\",\r
+
+    \    \"post_id\":1,\r
+
+    \    \"location_id\":1,\r
+
+    \    \"interviewer_id\":2,\r
+
+    \    \"status_id\":1,\r
+
+    \    \"active\":true\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_031v}}"
+order: 5000

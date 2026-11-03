@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/changeTLApprovalStatus/144
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"tl_approval_status\":\"2\", //0= not required 1= approved 2= rejected 3= pending\r
+
+    \    \"tl_comment\":\"Rejected\",\r
+
+    \    \"work_quality\":10\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0h2i}}"
+order: 11000

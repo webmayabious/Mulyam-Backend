@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:3000/api/crm/getAllNotification
+method: GET
+headers:
+  access-token: "{{json_web_token_1aps}}"
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ojs}}"
+settings: {}
+order: 14000

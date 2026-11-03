@@ -1,0 +1,63 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateProspectList/2
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \      \"rf_id\":1,\r
+
+    \      \"first_name\":\"Prospect2\",\r
+
+    \      \"last_name\":\"One\",\r
+
+    \      \"phone\":\"7894561238\",\r
+
+    \      \"alt_phone_2\":\"1235468789\",\r
+
+    \      \"alt_phone_3\":\"7895462468\",\r
+
+    \      \"email\":\"prospect1@gmail.com\",\r
+
+    \      \"business_type\":\"Business Type 1\",\r
+
+    \      \"business_name\":\"Business 1\",\r
+
+    \      \"designation\":\"manaager\",\r
+
+    \      \"location\":\"Kolkata\",\r
+
+    \      \"pincode\":\"578945\",\r
+
+    \      \"customer_status\":\"Active 2\",\r
+
+    \      \"keyword\":\"test,demo 2\",\r
+
+    \      \"legal_status\":\"NA\",\r
+
+    \      \"contact_person\":\"Person 1\",\r
+
+    \      \"annual_turnover\":\"1.2cr\",\r
+
+    \      \"project_type\":\"Project 1\",\r
+
+    \      \"loan_type\":\"Type 1\",\r
+
+    \      \"telecaller\":2,\r
+
+    \      \"calling_date\":\"2025-12-27\",\r
+
+    \      \"calling_time\":\"03:45:00\",\r
+
+    \      \"remark\":\"Test\",\r
+
+    \      \"ft_id\":1,\r
+
+    \      \"follow_up\":\"yes\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_04h4}}"
+order: 9000

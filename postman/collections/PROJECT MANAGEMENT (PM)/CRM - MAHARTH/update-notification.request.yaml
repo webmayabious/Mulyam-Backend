@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://localhost:3000/api/crm/updateNotification/1
+method: PUT
+headers:
+  access-token: "{{json_web_token_0ovt}}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ojs}}"
+order: 16000

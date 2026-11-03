@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/JrBDMDashboardData
+method: GET
+queryParams:
+  - key: "if admin "
+    value: localhost:3000/api/pm/JrBDMDashboardData/945
+    disabled: true
+    description: admin gets bdm id from params
+  - key: if bdm
+    value: localhost:3000/api/pm/JrBDMDashboardData
+    disabled: true
+    description: bdm gets id from req.user.id
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_058t}}"
+order: 1000

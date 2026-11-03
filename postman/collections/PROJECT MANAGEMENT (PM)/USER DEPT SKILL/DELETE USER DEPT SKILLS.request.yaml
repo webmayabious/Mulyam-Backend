@@ -1,0 +1,11 @@
+$kind: http-request
+url: localhost:3000/api/pm/deleteUserDeptSkills/1
+method: DELETE
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0deb}}"
+order: 4000

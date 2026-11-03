@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:5005/api/admin/search?verified=1&propertyType=1&bedrooms=2&constructionStatus=1&possessionStatus=1&purchaseType=1&amenities=1&furnishingStatus=1&reraApproved=1
+method: GET
+queryParams:
+  verified: "1"
+  propertyType: "1"
+  bedrooms: "2"
+  constructionStatus: "1"
+  possessionStatus: "1"
+  purchaseType: "1"
+  amenities: "1"
+  furnishingStatus: "1"
+  reraApproved: "1"
+order: 2000

@@ -1,0 +1,23 @@
+$kind: http-request
+url: localhost:3000/api/pm/inboxChangeReadStatus
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \    \"id\":[619,272],\r
+
+    \    \"read_status\":\"2\"\r
+
+    \r
+
+    \    //1=unread 2 =read\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0p9c}}"
+order: 8000

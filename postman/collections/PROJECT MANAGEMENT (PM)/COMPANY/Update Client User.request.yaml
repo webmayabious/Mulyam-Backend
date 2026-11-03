@@ -1,0 +1,27 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateClientUser
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\":1125,\r
+
+    \    \"fname\":\"SOURRRAAVV\",\r
+
+    \    \"lname\":\"KKKKKKKK\",\r
+
+    \    \"mobile\":\"9999999999\",\r
+
+    \    \"email\":\"test@gmail.com\",\r
+
+    \    \"alt_mob\":\"8989542147\",\r
+
+    \    \"gender\":\"1\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_15tl}}"
+order: 8000

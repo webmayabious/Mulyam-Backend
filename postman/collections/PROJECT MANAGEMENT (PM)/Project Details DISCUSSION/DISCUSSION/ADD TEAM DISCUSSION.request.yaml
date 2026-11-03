@@ -1,0 +1,21 @@
+$kind: http-request
+url: localhost:3000/api/pm/add-team-discussion
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"pro_id\" : 1,\r
+
+    \    \"dep_id\" : 9,\r
+
+    \    \"description\": \"Test Description Team \"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0cq7}}"
+order: 2000

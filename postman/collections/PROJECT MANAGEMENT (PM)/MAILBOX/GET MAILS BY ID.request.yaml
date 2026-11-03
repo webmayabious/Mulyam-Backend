@@ -1,0 +1,38 @@
+$kind: http-request
+url: localhost:3000/api/pm/getMailsById/623
+method: GET
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \    \"ml_sub\":\"Test 5\",\r
+
+    \    \"ml_body\":\"This is test 5\",\r
+
+    \    \"mtype\":3, //\"1=Selected,2=Leads,3=Department\"\r
+
+    \    \"gtype\":2, //\"1= all,2=individual/leads\"\r
+
+    \    \"dept_id\":3,\r
+
+    \    \"user\":[1063,812]\r
+
+    }\r
+
+    \r
+
+    // 1 = mail read \r
+
+    //0 =unread\r
+
+    //1= is not in trash\r
+
+    //0 = is in trash"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0p9c}}"
+settings: {}
+order: 3000

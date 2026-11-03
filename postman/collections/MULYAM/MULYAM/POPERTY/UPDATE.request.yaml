@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:5005/api/admin/updatePopertyDetails/8
+method: PUT
+order: 4000

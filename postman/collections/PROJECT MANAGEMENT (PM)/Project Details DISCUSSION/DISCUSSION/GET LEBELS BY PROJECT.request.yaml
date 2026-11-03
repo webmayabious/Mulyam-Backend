@@ -1,0 +1,10 @@
+$kind: http-request
+url: localhost:3000/api/pm/labelsByProjectId/6
+method: GET
+headers:
+  Content-Type: application/json
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0h9i}}"
+order: 12000

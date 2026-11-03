@@ -1,0 +1,25 @@
+$kind: http-request
+url: localhost:3000/api/pm/addIncrement
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"date\":\"2024-09-22\",\r
+
+    \    \"salary\": 5000,\r
+
+    \    \"percentage\" : 15,\r
+
+    \    \"nextdate\" : \"2026-09-22\",\r
+
+    \    \"user_id\" : \"2\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0c95}}"
+order: 1000

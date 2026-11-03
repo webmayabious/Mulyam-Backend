@@ -1,0 +1,97 @@
+$kind: http-request
+url: localhost:3000/api/pm/create-mom-client
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"com_ids\": [1, 343],\r
+
+    \  \"date\": \"2026-03-19\",\r
+
+    \  \"start_time\":\"09:30:00\",\r
+
+    \  \"venue_name\": \"Client Meeting Room 7\",\r
+
+    \  \"agenda\":\"This is start_time test.\",\r
+
+    \r
+
+    \  \"clients\": [\r
+
+    \    { \"client_id\": 22 },\r
+
+    \    { \"others_client_name\": \"New External Client 1\" },\r
+
+    \    { \"client_id\": 23 }\r
+
+    \  ],\r
+
+    \r
+
+    \  \"members\": [\r
+
+    \    { \"members_id\": 1063, \"representing\": \"MAYABIOUS\" },\r
+
+    \    { \"members_name\": \"External Consultant 1\", \"representing\": \"Client\" },\r
+
+    \    { \"members_name\": \"External Consultant 2\", \"representing\": \"Client\" },\r
+
+    \    { \"members_name\": \"External Consultant 3\", \"representing\": \"Client\" },\r
+
+    \    { \"members_name\": \"external consultant 4\", \"representing\": \"Client\" }\r
+
+    \  ],\r
+
+    \r
+
+    \  \"discussions\": [\r
+
+    \    {\r
+
+    \      \"points_discussed\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\r
+
+    \      \"action_to_be_taken_by\": \"Team E\",\r
+
+    \      \"by_date\": \"2026-03-27\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"points_discussed\": \"Requirement Gathering 1\",\r
+
+    \      \"action_to_be_taken_by_id\": 1063,\r
+
+    \      \"by_date\": \"2026-03-28\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"points_discussed\": \"Requirement Gathering 1\",\r
+
+    \      \"action_to_be_taken_by_id\": 1063,\r
+
+    \      \"by_date\": \"2026-03-28\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"points_discussed\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\r
+
+    \      \"action_to_be_taken_by_id\": 1063,\r
+
+    \      \"by_date\": \"2026-03-28\"\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_151h}}"
+order: 1000

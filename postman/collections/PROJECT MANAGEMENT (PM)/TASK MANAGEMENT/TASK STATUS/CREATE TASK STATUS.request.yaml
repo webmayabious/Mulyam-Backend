@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/createTaskStatus
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"module_id\":\"43\",\r
+
+    \    \"name\":\"Completed\" \r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_08g5}}"
+order: 1000

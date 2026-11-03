@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://localhost:3000/api/crm/search-by-loan-type/Salaried?search=dnd
+method: GET
+headers:
+  access-token: "{{json_web_token_178p}}"
+queryParams:
+  search: dnd
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ojs}}"
+order: 8000

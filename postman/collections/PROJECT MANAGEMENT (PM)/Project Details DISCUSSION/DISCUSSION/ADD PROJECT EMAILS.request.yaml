@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/addClientEmail
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \    \"client_email\":\"sourav@gmail.com,sk@a.com\",\r
+
+    \    \"project_id\":3\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0e2c}}"
+order: 9000

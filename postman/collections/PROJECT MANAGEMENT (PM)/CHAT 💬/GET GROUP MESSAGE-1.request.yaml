@@ -1,0 +1,23 @@
+$kind: http-request
+name: GET GROUP MESSAGE
+url: http://localhost:3000/api/chat/group-recent/2?page=all
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  page: all
+body:
+  type: json
+  content: "{\r
+
+    \    \"receiver_id\":902,\r
+
+    \    \"message\":\"HELLO\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_031v}}"
+settings: {}
+order: 18000

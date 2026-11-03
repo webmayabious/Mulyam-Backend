@@ -1,0 +1,14 @@
+$kind: http-request
+url: localhost:3000/api/pm/getUserBgImages
+method: GET
+headers:
+  Content-Type: application/json
+body:
+  type: formdata
+  content: []
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_08il}}"
+settings: {}
+order: 7000

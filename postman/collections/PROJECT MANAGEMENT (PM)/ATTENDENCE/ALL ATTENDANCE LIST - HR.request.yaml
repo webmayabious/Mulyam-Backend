@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:3000/api/pm/allattendanceHR
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0lwf}}"
+order: 4000

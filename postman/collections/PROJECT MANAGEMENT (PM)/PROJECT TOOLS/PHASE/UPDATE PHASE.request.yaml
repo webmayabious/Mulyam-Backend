@@ -1,0 +1,15 @@
+$kind: http-request
+url: localhost:3000/api/pm/updatePhase/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\":\"Phase 1 update\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1cmo}}"
+order: 4000

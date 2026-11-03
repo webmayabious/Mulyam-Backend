@@ -1,0 +1,11 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateConferenceStatus/3298
+method: PUT
+body:
+  type: json
+  content: "{\r\n    \"status\":3\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0am6}}"
+order: 7000

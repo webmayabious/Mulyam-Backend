@@ -1,0 +1,33 @@
+$kind: http-request
+url: localhost:3000/api/pm/createPropertyLeadFeedback/6
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"call_status_id\": 2,\r
+
+    \    \"lead_qualification_id\":2,\r
+
+    \    \"lead_status_id\": 4,\r
+
+    \    \"lead_sub_status_id\": 1,\r
+
+    \    \"rating_id\": 1,\r
+
+    \    \"site_visit_date\":\"2026-06-17\",\r
+
+    \    \"call_back_date\": \"2026-06-17\",\r
+
+    \    \"call_back_time\": \"10:12:00\",\r
+
+    \    \"expected_closure_date\": \"2026-06-17\",\r
+
+    \    \"remarks\":\"Good\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_061x}}"
+order: 12000

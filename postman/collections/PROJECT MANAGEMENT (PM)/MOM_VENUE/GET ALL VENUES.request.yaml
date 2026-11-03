@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:3000/api/pm/get-all-venues
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_151h}}"
+order: 5000

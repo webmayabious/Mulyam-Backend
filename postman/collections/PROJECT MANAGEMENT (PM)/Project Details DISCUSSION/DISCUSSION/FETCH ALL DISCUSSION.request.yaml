@@ -1,0 +1,21 @@
+$kind: http-request
+url: localhost:3000/api/pm/fetchAllDiscussion
+method: GET
+queryParams:
+  - key: fromDate
+    value: 2025-10-20
+    disabled: true
+  - key: toDate
+    value: 2025-10-30
+    disabled: true
+  - key: status
+    value: "1"
+    disabled: true
+  - key: project
+    value: "3"
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_15mm}}"
+order: 5000

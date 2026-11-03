@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:5005/api/admin/bedrooms/5
+method: GET
+order: 3000

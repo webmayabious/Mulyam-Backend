@@ -1,0 +1,665 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Mulyam",
+    "version": "1.0.0",
+    "description": ""
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5005"
+    },
+    {
+      "url": ""
+    }
+  ],
+  "paths": {
+    "/api/admin/add-property": {
+      "post": {
+        "summary": "CREATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "POPERTY"
+        ]
+      }
+    },
+    "/api/admin/getAllPopertyDetails": {
+      "get": {
+        "summary": "GET ALL",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "POPERTY"
+        ]
+      }
+    },
+    "/api/admin/getSinglePopertyDetails/3": {
+      "get": {
+        "summary": "GET SINGLE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "POPERTY"
+        ]
+      }
+    },
+    "/api/admin/updatePopertyDetails/8": {
+      "put": {
+        "summary": "UPDATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "POPERTY"
+        ]
+      }
+    },
+    "/api/admin/deletePopertyDetails/9": {
+      "delete": {
+        "summary": "DELETE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "POPERTY"
+        ]
+      }
+    },
+    "/api/admin/create_type_of_poperty": {
+      "post": {
+        "summary": "CREATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "TYPE OF POPERTY"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "title": "test-1"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/admin/property-type": {
+      "get": {
+        "summary": "GET ALL",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "TYPE OF POPERTY"
+        ]
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "GET SINGLE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "TYPE OF POPERTY"
+        ]
+      }
+    },
+    "/api/admin/property-type/9": {
+      "put": {
+        "summary": "UPDATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "TYPE OF POPERTY"
+        ]
+      }
+    },
+    "/api/admin/property-type/7": {
+      "delete": {
+        "summary": "DELETE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "TYPE OF POPERTY"
+        ]
+      }
+    },
+    "/api/admin/bedrooms": {
+      "post": {
+        "summary": "CREATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "NO OF BEDROOMS"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "title": "test-1"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "GET ALL",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "NO OF BEDROOMS"
+        ]
+      }
+    },
+    "/api/admin/bedrooms/5": {
+      "get": {
+        "summary": "GET SINGLE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "NO OF BEDROOMS"
+        ]
+      }
+    },
+    "/api/admin/bedrooms/9": {
+      "put": {
+        "summary": "UPDATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "NO OF BEDROOMS"
+        ]
+      }
+    },
+    "/api/admin/bedrooms/7": {
+      "delete": {
+        "summary": "DELETE\\",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "NO OF BEDROOMS"
+        ]
+      }
+    },
+    "/api/admin/construction-status": {
+      "post": {
+        "summary": "CREATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "construction status"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "title": "test-1"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "GET ALL",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "construction status"
+        ]
+      }
+    },
+    "/api/admin/construction-status/9": {
+      "get": {
+        "summary": "GET SINGLE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "construction status"
+        ]
+      },
+      "put": {
+        "summary": "UPDATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "construction status"
+        ]
+      }
+    },
+    "/api/admin/construction-status/7": {
+      "delete": {
+        "summary": "DELETE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "construction status"
+        ]
+      }
+    },
+    "/api/admin/possession-status": {
+      "post": {
+        "summary": "CREATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Possession Status"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "title": "test-1"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "GET ALL",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Possession Status"
+        ]
+      }
+    },
+    "/api/admin/possession-status/1": {
+      "get": {
+        "summary": "GET SINGLE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Possession Status"
+        ]
+      }
+    },
+    "/api/admin/possession-status/9": {
+      "put": {
+        "summary": "UPDATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Possession Status"
+        ]
+      }
+    },
+    "/api/admin/possession-status/7": {
+      "delete": {
+        "summary": "DELETE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Possession Status"
+        ]
+      }
+    },
+    "/api/admin/purchase-type": {
+      "post": {
+        "summary": "CREATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Purchase Types"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "title": "test-1"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "GET ALL",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Purchase Types"
+        ]
+      }
+    },
+    "/api/admin/purchase-type/9": {
+      "get": {
+        "summary": "GET SINGLE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Purchase Types"
+        ]
+      },
+      "put": {
+        "summary": "UPDATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Purchase Types"
+        ]
+      },
+      "delete": {
+        "summary": "DELETE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Purchase Types"
+        ]
+      }
+    },
+    "/api/admin/amenities": {
+      "post": {
+        "summary": "CARETE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "amenities"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "title": "test-1"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "GET ALL",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "amenities"
+        ]
+      }
+    },
+    "/api/admin/amenities/1": {
+      "get": {
+        "summary": "GET SINGLE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "amenities"
+        ]
+      },
+      "put": {
+        "summary": "UPDATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "amenities"
+        ]
+      },
+      "delete": {
+        "summary": "DELETE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "amenities"
+        ]
+      }
+    },
+    "/api/admin/furnishing-status": {
+      "post": {
+        "summary": "CREATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Furnishing Status"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "title": "test-1"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "GET ALL",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Furnishing Status"
+        ]
+      }
+    },
+    "/api/admin/furnishing-status/9": {
+      "get": {
+        "summary": "GET SINGLE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Furnishing Status"
+        ]
+      },
+      "put": {
+        "summary": "UPDATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Furnishing Status"
+        ]
+      },
+      "delete": {
+        "summary": "DELETE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "Furnishing Status"
+        ]
+      }
+    },
+    "/api/admin/rera-approved": {
+      "post": {
+        "summary": "CREATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "RERA Approved"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "title": "test-1"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "GET ALL",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "RERA Approved"
+        ]
+      }
+    },
+    "/api/admin/rera-approved/9": {
+      "get": {
+        "summary": "GET SINGLE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "RERA Approved"
+        ]
+      },
+      "put": {
+        "summary": "UPDATE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "RERA Approved"
+        ]
+      },
+      "delete": {
+        "summary": "DELETE",
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "RERA Approved"
+        ]
+      }
+    },
+    "/api/admin/search": {
+      "get": {
+        "summary": "SEARCH",
+        "parameters": [
+          {
+            "name": "verified",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          },
+          {
+            "name": "propertyType",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          },
+          {
+            "name": "bedrooms",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "example": 2
+          },
+          {
+            "name": "constructionStatus",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          },
+          {
+            "name": "possessionStatus",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          },
+          {
+            "name": "purchaseType",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          },
+          {
+            "name": "amenities",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          },
+          {
+            "name": "furnishingStatus",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          },
+          {
+            "name": "reraApproved",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "example": 1
+          }
+        ],
+        "responses": {},
+        "tags": [
+          "MULYAM",
+          "FRONTEND"
+        ]
+      }
+    },
+    "/api/admin": {
+      "get": {
+        "summary": "HEALTH CHECK",
+        "responses": {},
+        "tags": [
+          "MULYAM"
+        ]
+      }
+    }
+  }
+}

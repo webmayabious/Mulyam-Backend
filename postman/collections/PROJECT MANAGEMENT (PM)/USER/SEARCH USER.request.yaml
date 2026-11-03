@@ -1,0 +1,12 @@
+$kind: http-request
+url: localhost:3000/api/pm/searchUser?search=sourav
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  search: sourav
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0819}}"
+order: 10000

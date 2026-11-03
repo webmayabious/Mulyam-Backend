@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/PropertyCustomReport?fromDate=2026-04-01&toDate=2026-04-07
+method: GET
+headers:
+  Authorization: "{{json_web_token_057d}}"
+queryParams:
+  fromDate: 2026-04-01
+  toDate: 2026-04-07
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_12db}}"
+settings: {}
+order: 4000

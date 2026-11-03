@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/changePropertyLeadStatus
+method: PUT
+headers:
+  Authorization: "{{json_web_token_057d}}"
+body:
+  type: json
+  content: "{\r
+
+    \    \"property_lead_id\": \"7\",\r
+
+    \    \"active\": \"1\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0t5z}}"
+order: 8000

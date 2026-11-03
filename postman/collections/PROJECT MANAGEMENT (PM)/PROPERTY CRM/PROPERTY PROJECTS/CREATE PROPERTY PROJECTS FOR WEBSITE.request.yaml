@@ -1,0 +1,19 @@
+$kind: http-request
+url: https://api.mokhsh.info/api/pm/createPropertyProjectsForWebsite
+method: POST
+headers:
+  Authorization: "{{json_web_token_057d}}"
+body:
+  type: json
+  content: "{\r
+
+    \    \"project_name\":\"UTPALAA BYPASS\",\r
+
+    \    \"com_id\":\"585\",\r
+
+    \    \"location\":\"Kolkata\"\r
+
+    }"
+auth:
+  type: noauth
+order: 2000

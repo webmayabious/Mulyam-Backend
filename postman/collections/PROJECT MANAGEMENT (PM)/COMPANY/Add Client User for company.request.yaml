@@ -1,0 +1,33 @@
+$kind: http-request
+url: localhost:3000/api/pm/addClientUser
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \     \"fname\":\"Dummy\",\r
+
+    \      \"lname\":\"User\",\r
+
+    \      \"mobile\":\"9999999999\",\r
+
+    \      \"email\":\"test@gmail.com\",\r
+
+    \      \"alt_mob\":\"8989542147\",\r
+
+    \      \"gender\":\"1\",\r
+
+    \      \"cname\":\"5\",    //company ID\r
+
+    \      \"user_id\":\"sk2026\",\r
+
+    \      \"password\":\"123456\"\r
+
+    \     \r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_15tl}}"
+order: 7000

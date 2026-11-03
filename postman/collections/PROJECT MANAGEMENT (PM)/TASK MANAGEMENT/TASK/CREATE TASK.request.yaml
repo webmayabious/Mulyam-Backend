@@ -1,0 +1,83 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/createTask
+method: POST
+body:
+  type: json
+  content: "[{\r
+
+    \      \"project_id\":2207,\r
+
+    \      \"module_id\":116,\r
+
+    \      \"title\":\"Dependency Check Final\",\r
+
+    \      \"description\":\"Dependency Check Final\",\r
+
+    \      \"priority\":\"2\",\r
+
+    \      \"start_date\":\"2026-07-15\",\r
+
+    \      \"target_date\":\"2026-07-20\",\r
+
+    \      \"estimated_hours\":40,\r
+
+    \      \"tl_review_status\":\"1\",  //0= TL APPROVE NOT REQUIRED 1= REQUIRED\r
+
+    \      \"skillset_required\":\"Skill4,Skill9,Skill 11\",\r
+
+    \      \"assigned_users\": [812,914],\r
+
+    \      \"primary_owner_id\":1063,\r
+
+    \      \"preceder_task_id\":150,\r
+
+    \      \"successor_task_id\":172\r
+
+    \    //   \"preceder\":59,\r
+
+    \    //   \"successor\":[45,44]\r
+
+    },\r
+
+    {\r
+
+    \      \"project_id\":2207,\r
+
+    \      \"module_id\":116,\r
+
+    \      \"title\":\"Dependency Check 2\",\r
+
+    \      \"description\":\"Dependency Check 3\",\r
+
+    \      \"priority\":\"2\",\r
+
+    \      \"start_date\":\"2026-07-11\",\r
+
+    \      \"target_date\":\"2026-07-16\",\r
+
+    \      \"estimated_hours\":40,\r
+
+    \      \"tl_review_status\":\"1\",  //0= TL APPROVE NOT REQUIRED 1= REQUIRED\r
+
+    \      \"skillset_required\":\"Skill4,Skill9,Skill 11\",\r
+
+    \      \"assigned_users\": [812,914],\r
+
+    \      \"primary_owner_id\":1063,\r
+
+    \      \"preceder_task_id\":150\r
+
+    \    //   \"successor_task_id\":172\r
+
+    \    //   \"preceder\":59,\r
+
+    \    //   \"successor\":[45,44]\r
+
+    }\r
+
+    ]"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_01t5}}"
+order: 2000

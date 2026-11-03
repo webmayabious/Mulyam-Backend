@@ -1,0 +1,15 @@
+$kind: http-request
+url: https://api.mokhsh.info/api/pm/uploadProspect
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src:
+        - /C:/Users/WEB-07/Downloads/prospect_renew.xlsx
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_125o}}"
+order: 7000

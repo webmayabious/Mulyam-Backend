@@ -1,0 +1,14 @@
+$kind: http-request
+url: localhost:3000/api/pm/getUserSalary
+method: GET
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r\n    \"userid\" : \"2\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0c95}}"
+settings: {}
+order: 2000

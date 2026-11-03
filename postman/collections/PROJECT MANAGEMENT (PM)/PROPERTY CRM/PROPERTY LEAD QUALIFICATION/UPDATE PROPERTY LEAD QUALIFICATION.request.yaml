@@ -1,0 +1,13 @@
+$kind: http-request
+url: localhost:3000/api/pm/updatePropertyLeadQualification/4
+method: PUT
+headers:
+  Authorization: "{{json_web_token_057d}}"
+body:
+  type: json
+  content: "{\r\n    \"name\":\"Update 1\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_14ut}}"
+order: 5000

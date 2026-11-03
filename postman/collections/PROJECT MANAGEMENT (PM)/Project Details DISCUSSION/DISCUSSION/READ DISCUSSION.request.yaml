@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/readdiscussion
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \    \"dis_id\":26,\r
+
+    \    \"usr_id\":3\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_15mm}}"
+order: 6000

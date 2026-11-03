@@ -1,0 +1,8 @@
+$kind: http-request
+url: https://api.mokhsh.com/api/pm/getAppVersions
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ugx}}"
+order: 12000

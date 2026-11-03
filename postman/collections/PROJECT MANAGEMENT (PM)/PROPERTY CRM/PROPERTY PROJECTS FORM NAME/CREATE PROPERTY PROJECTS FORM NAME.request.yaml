@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/createPropertyProjectFormName
+method: POST
+headers:
+  Authorization: "{{json_web_token_057d}}"
+body:
+  type: json
+  content: "{\r
+
+    \    \"project_id\": \"3\",\r
+
+    \    \"project_form_name\": \"Test Project Form 2\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_02ud}}"
+order: 1000

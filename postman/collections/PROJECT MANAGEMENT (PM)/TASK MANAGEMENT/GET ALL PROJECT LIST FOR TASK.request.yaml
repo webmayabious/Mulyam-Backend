@@ -1,0 +1,12 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllProjectListForTask?sts_ids=Completed
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  sts_ids: Completed
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_154p}}"
+order: 9000

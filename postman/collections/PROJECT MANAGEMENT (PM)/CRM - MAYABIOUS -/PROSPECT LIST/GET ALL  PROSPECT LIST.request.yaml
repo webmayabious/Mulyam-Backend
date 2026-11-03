@@ -1,0 +1,14 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllProspectList
+method: GET
+headers:
+  access-token: "{{json_web_token_0zyr}}"
+queryParams:
+  - key: limit
+    value: all
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0onx}}"
+order: 1000

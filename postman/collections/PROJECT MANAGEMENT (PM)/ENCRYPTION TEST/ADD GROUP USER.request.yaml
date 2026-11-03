@@ -1,0 +1,11 @@
+$kind: http-request
+url: localhost:3000/api/chat/addGroupUser/2
+method: POST
+body:
+  type: json
+  content: "{\r\n    \"userIds\":[914, 916]\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1c3u}}"
+order: 13000

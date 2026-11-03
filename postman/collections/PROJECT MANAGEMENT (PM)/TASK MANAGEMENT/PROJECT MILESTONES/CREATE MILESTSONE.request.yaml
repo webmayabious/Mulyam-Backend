@@ -1,0 +1,25 @@
+$kind: http-request
+url: localhost:3000/api/pm/createMilestones
+method: POST
+body:
+  type: json
+  content: "//localhost:3000/api/pm/createMilestones/pro_id\r
+
+    {\r
+
+    \    \"pro_id\":2179,\r
+
+    \    \"pro_details_id\":2148,\r
+
+    \    \"name\": \"New MileStone 1\",\r
+
+    \    \"description\": \"This is New MileStone 1\"\r
+
+    }\r
+
+    \r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_154p}}"
+order: 1000

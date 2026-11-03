@@ -1,0 +1,9 @@
+$kind: http-request
+name: Dsa-Dashboard By Admin *maharth
+url: localhost:3000/api/pm/dsaDashboardByAdmin/1077
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_00ty}}"
+order: 6000

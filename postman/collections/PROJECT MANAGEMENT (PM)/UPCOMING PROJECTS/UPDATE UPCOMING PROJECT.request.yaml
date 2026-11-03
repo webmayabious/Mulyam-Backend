@@ -1,0 +1,27 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateUpComingProject/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"abc\",\r
+
+    \  \"dep_id\": \"1,2\",\r
+
+    \  \"date\": \"2025-10-09\",\r
+
+    \  \"company\": \"abc Pvt Ltd\",\r
+
+    \  \"cperson\": \"Riya Sharma\",\r
+
+    \  \"email\": \"abc@tech.com\",\r
+
+    \  \"phno\": \"9876543210\"\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0k2h}}"
+order: 2000

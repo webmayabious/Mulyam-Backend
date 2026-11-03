@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/sentMailChangeTrashStatus
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\":[616,617],\r
+
+    \    \"trash_status\":\"0\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0p9c}}"
+order: 4000

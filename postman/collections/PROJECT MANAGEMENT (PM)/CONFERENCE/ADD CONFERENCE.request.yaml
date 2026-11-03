@@ -1,0 +1,79 @@
+$kind: http-request
+url: localhost:3000/api/pm/addConference
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \    \"date\": \"2026-07-15\",\r
+
+    \    \"in_time\": \"14:10:00\",\r
+
+    \    \"out_time\": \"15:00:00\",\r
+
+    \    \"subject\": \"IT Assign Test\",\r
+
+    \    \"conference\": 4,\r
+
+    \    \"meeting_organiser\": 355,\r
+
+    \    \"meeting_mode\": 2,\r
+
+    \    \"guests\": [\r
+
+    \        {\r
+
+    \            \"guest_id\": 841\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"guest_id\": 914\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"guest_name\": \"g1\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"guest_name\": \"g2\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"guest_name\": \"g3\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"clients\": [\r
+
+    \        {\r
+
+    \            \"guest_id\": 1026\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"guest_id\": 1037\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_18qi}}"
+order: 4000

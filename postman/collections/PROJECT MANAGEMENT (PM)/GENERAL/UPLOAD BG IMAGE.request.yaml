@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/uploadBackgroundImage
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: formdata
+  content:
+    - type: file
+      key: image
+      src:
+        - /C:/Users/WEB-07/Downloads/img.avif
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_08il}}"
+order: 6000

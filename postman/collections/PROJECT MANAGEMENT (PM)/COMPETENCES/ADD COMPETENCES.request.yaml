@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/addCompetences
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"typ_id\":2,\r
+
+    \    \"name\":\"Competence 4\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ijk}}"
+order: 2000

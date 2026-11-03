@@ -1,0 +1,20 @@
+$kind: http-request
+name: UPDATE Leave Application  STATUS - HR / ADMIN
+url: localhost:3000/api/pm/updateLeaveApplicationStatus/3
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"status\" : \"3\",\r
+
+    \    \"approved_remarks\" : \"ok\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0cun}}"
+order: 7000

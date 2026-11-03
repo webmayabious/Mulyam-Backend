@@ -1,0 +1,11 @@
+$kind: http-request
+name: DELTE Leave Application - HR / ADMIN
+url: localhost:3000/api/pm/deleteLeaveApplication/4
+method: DELETE
+headers:
+  Content-Type: application/json
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0khh}}"
+order: 8000

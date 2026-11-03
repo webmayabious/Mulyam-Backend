@@ -1,0 +1,11 @@
+$kind: http-request
+url: localhost:3000/api/pm/addUserToAllProject
+method: POST
+body:
+  type: json
+  content: "{\r\n    \"usr_id\":902\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ng1}}"
+order: 11000

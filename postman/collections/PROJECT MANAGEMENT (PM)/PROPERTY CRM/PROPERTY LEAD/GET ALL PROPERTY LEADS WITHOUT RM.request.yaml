@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllPropertyLeadWithoutRM?limit=20
+method: GET
+queryParams:
+  - key: search
+    value: ""
+    disabled: true
+  - key: project
+    value: ""
+    disabled: true
+  - key: limit
+    value: "20"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0t7f}}"
+order: 5000

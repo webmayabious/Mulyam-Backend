@@ -1,0 +1,11 @@
+$kind: http-request
+url: localhost:3000/api/pm/changeBDM/1
+method: POST
+body:
+  type: json
+  content: "{\r\n    \"bdm_id\" : 2\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_10kb}}"
+order: 4000

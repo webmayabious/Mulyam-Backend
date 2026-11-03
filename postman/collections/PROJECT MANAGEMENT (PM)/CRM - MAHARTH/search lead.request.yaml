@@ -1,0 +1,12 @@
+$kind: http-request
+url: localhost:3000/api/crm/search-lead?search=nitin
+method: GET
+headers:
+  access-token: "{{json_web_token_0rxd}}"
+queryParams:
+  search: nitin
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0hwp}}"
+order: 3000

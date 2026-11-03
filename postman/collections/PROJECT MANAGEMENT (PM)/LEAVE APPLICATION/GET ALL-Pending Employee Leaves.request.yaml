@@ -1,0 +1,9 @@
+$kind: http-request
+name: GET ALL--Pending Employee Leaves
+url: localhost:3000/api/pm/pendingEmpLeaves
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0hbk}}"
+order: 13000

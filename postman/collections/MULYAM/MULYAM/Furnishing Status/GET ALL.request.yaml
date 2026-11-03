@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:5005/api/admin/furnishing-status
+method: GET
+order: 2000

@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:5005/api/admin/rera-approved/9
+method: GET
+order: 3000

@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/upcomingConferences
+method: GET
+queryParams:
+  - key: fromDate
+    value: 2026-05-30
+    disabled: true
+  - key: toDate
+    value: 2026-06-30
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0682}}"
+order: 11000

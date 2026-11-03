@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:5005/api/admin/amenities
+method: GET
+order: 2000

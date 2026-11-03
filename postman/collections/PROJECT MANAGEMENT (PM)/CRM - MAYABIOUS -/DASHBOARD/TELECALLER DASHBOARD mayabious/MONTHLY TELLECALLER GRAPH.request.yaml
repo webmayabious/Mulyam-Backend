@@ -1,0 +1,18 @@
+$kind: http-request
+url: https://api.prolificdesigns.mokhsh.com/api/pm/monthlyProspectGraph
+method: GET
+queryParams:
+  - key: limit
+    value: "1"
+    disabled: true
+  - key: page
+    value: "2"
+    disabled: true
+  - key: toDate
+    value: 2026-02-01
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_083y}}"
+order: 2000

@@ -1,0 +1,21 @@
+$kind: http-request
+url: localhost:3000/api/pm/addUpdateProLavels
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \    \"pro_id\":1,\r
+
+    \    \"pro_details_id\":1,\r
+
+    \    \"lvl_id\":7\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0cp2}}"
+order: 2000

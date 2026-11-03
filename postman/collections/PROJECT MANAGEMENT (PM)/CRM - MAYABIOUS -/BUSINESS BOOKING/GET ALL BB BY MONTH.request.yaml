@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:3000/api/pm/getBmBusinessSummaryByMonth/2025/12
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0fwo}}"
+order: 3000

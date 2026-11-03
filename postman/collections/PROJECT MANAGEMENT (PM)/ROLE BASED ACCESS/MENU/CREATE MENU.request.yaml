@@ -1,0 +1,11 @@
+$kind: http-request
+url: localhost:3000/api/pm/createMenus
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"menu_name\":\"PROJECTS\"\r
+
+    }"
+order: 1000

@@ -1,0 +1,21 @@
+$kind: http-request
+url: localhost:3000/api/pm/deleteProjectModule/13
+method: PUT
+body:
+  type: json
+  content: "// /api/pm/deleteProjectModule/:pro_id/:mod_id\r
+
+    \r
+
+    {\r
+
+    \    \"active\":0\r
+
+    }\r
+
+    \r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_154p}}"
+order: 7000

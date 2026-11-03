@@ -1,0 +1,41 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/interview
+method: GET
+queryParams:
+  - key: start_date
+    value: 2026-04-01
+    disabled: true
+    description: range
+  - key: end_date
+    value: 2026-04-10
+    disabled: true
+    description: range
+  - key: date
+    value: 2026-04-01
+    disabled: true
+  - key: interviewer_id
+    value: "5"
+    disabled: true
+  - key: status_id
+    value: "2"
+    disabled: true
+  - key: post_id
+    value: "3"
+    disabled: true
+  - key: location_id
+    value: "1"
+    disabled: true
+  - key: search
+    value: sourav
+    disabled: true
+  - key: active
+    value: "true"
+    disabled: true
+  - key: page
+    value: "2"
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_031v}}"
+order: 2000

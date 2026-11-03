@@ -1,0 +1,23 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateProjectModuleDependency/10
+method: PUT
+body:
+  type: json
+  content: "\r
+
+    {\r
+
+    \ \"from_module_id\":50,\r
+
+    \  \"to_module_ids\":[52,53,54],\r
+
+    \ \"dependency_type\":\"this is Dependency 1\"\r
+
+    }\r
+
+    \r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_154p}}"
+order: 4000

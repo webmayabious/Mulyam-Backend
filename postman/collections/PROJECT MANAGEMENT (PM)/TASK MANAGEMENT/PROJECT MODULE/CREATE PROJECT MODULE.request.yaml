@@ -1,0 +1,35 @@
+$kind: http-request
+url: localhost:3000/api/pm/createProjectModule
+method: POST
+body:
+  type: json
+  content: "//localhost:3000/api/pm/createProjectModule\r
+
+    {\r
+
+    \      \"project_id\":2179, \r
+
+    \      \"pro_details_id\":2148,\r
+
+    \      \"milestone_id\":156,\r
+
+    \      \"name\":\"Team Lead Field Check\",\r
+
+    \      \"module_type\":\"Team Lead Field Check \",\r
+
+    \      \"est_start_date\":\"2026-07-02\",\r
+
+    \      \"est_end_date\":\"2026-07-08\",\r
+
+    \      \"priority\":\"3\",\r
+
+    \      \"team_leader_id\":411\r
+
+    }\r
+
+    \r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_154p}}"
+order: 1000

@@ -1,0 +1,27 @@
+$kind: http-request
+url: http://localhost:3000/api/chat/send-private-with-file
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: formdata
+  content:
+    - type: text
+      key: receiver_id
+      value: "2"
+    - type: text
+      key: message
+      value: 15 HELLO ARNAB efe qwd jwoidjwd widjiwdwd w dwdjdjsjx sapjsd j sdjsadjsajcijc ia s dd jspdjspdjaspj
+    - type: file
+      key: attachments
+      src: []
+      disabled: true
+    - type: text
+      key: previous_msg_id
+      value: "[]"
+      disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0edt}}"
+order: 2000

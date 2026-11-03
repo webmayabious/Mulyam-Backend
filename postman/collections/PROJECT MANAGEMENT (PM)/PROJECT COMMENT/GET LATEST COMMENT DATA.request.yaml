@@ -1,0 +1,25 @@
+$kind: http-request
+url: localhost:3000/api/pm/getLastestCommentData?page=3
+method: POST
+queryParams:
+  page: "3"
+body:
+  type: json
+  content: "{\r
+
+    \    // \"dep_id\":8,\r
+
+    \    // \"com_id\":343,\r
+
+    \    // \"status\":4,\r
+
+    \    // \"coordinator_id\":\"984\",\r
+
+    \    // \"search\":\"Facility\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0poo}}"
+order: 3000

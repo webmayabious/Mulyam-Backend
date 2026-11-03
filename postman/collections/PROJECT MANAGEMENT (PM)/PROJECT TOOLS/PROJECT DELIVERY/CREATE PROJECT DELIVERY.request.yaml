@@ -1,0 +1,15 @@
+$kind: http-request
+url: localhost:3000/api/pm/createProjectDelivery/2/5
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"remark\":\"Project Details 2\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1cmo}}"
+order: 2000

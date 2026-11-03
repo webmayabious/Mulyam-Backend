@@ -1,0 +1,13 @@
+$kind: http-request
+url: localhost:3000/api/pm/createRoleMenuAccess
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"role_id\":2,\r
+
+    \    \"menu_id\":3\r
+
+    }"
+order: 1000

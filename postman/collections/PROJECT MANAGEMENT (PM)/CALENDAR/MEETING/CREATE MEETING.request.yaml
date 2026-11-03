@@ -1,0 +1,61 @@
+$kind: http-request
+url: localhost:3000/api/pm/createMeeting
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"conference\": 1,\r
+
+    \  \"date\": \"2026-06-16\",\r
+
+    \  \"start_time\": \"14:56:00\",\r
+
+    \  \"end_time\": \"15:30:00\",\r
+
+    \  \"meeting_organiser\":355,\r
+
+    \  \"subject\": \"Project Sync Meeting\",\r
+
+    \  \"notification_time\": \"9:30:00\",\r
+
+    \  \"guests\": [\r
+
+    \    {\r
+
+    \      \"guest_id\": 1063\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"guest_id\": 902\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"guest_name\": \"Guest 1\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"guest_name\": \"Guest 2\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"guest_id\": 914\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_06ql}}"
+order: 1000

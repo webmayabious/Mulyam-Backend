@@ -1,0 +1,23 @@
+$kind: http-request
+url: localhost:3000/api/pm/createProjectModuleDependency
+method: POST
+body:
+  type: json
+  content: "\r
+
+    {\r
+
+    \ \"from_module_id\":50,\r
+
+    \ \"to_module_ids\":[51,52,53],\r
+
+    \ \"dependency_type\":\"this is Dependency 1\"\r
+
+    }\r
+
+    \r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_154p}}"
+order: 1000

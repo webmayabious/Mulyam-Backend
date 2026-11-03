@@ -1,0 +1,13 @@
+$kind: http-request
+url: localhost:3000/api/pm/deleteSentMail/618
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0p9c}}"
+order: 5000

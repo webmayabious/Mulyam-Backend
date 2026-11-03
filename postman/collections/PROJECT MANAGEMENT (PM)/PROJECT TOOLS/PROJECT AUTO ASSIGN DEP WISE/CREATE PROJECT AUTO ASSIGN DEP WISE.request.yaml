@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/createProjectAutoAssignDepWiseUsers
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"dep_id\":3,\r
+
+    \    \"user_id\":[1063,914,902]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_17hd}}"
+order: 1000

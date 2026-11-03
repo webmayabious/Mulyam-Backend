@@ -1,0 +1,21 @@
+$kind: http-request
+url: localhost:3000/api/pm/addUserDeptSkills
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"user_id\":5,\r
+
+    \    \"dept_id\":6,\r
+
+    \    \"skill_id\":2,\r
+
+    \    \"skill_value\": 90\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0deb}}"
+order: 2000

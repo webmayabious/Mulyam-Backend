@@ -1,0 +1,23 @@
+$kind: http-request
+url: localhost:3000/api/pm/fetchClientNotificationAndUnreadCount?NOTE******SOCKET=refetch-client-discussion-notify-count
+method: GET
+queryParams:
+  - key: fromDate
+    value: 2025-10-20
+    disabled: true
+  - key: toDate
+    value: 2025-10-30
+    disabled: true
+  - key: status
+    value: "1"
+    disabled: true
+  - key: project
+    value: "3"
+    disabled: true
+  - key: NOTE******SOCKET
+    value: refetch-client-discussion-notify-count
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_03r6}}"
+order: 7000

@@ -1,0 +1,23 @@
+$kind: http-request
+url: localhost:3000/api/pm/createLabels
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \  \"name\": \"Testingg\",\r
+
+    \  \"pro_id\": 15,\r
+
+    \  \"lbl_id\": [4,5],\r
+
+    \  \"dis_id\": 6\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0h9i}}"
+order: 11000

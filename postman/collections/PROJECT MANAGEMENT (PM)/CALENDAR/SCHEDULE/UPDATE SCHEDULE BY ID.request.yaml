@@ -1,0 +1,27 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/calendar/schedule/259
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\":\"Schedule Update test 1 \",\r
+
+    \    \"description\":\"Schedule  test 1 \",\r
+
+    \    \"start_date\" :\"2026-05-17\",\r
+
+    \    \"end_date\":\"2026-05-19\",\r
+
+    \    \"months\" : [7,8],\r
+
+    \    \"year\":[2026,2027]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_031v}}"
+order: 4000

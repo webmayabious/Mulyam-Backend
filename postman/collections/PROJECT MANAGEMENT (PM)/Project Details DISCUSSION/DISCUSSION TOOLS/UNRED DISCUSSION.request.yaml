@@ -1,0 +1,13 @@
+$kind: http-request
+url: localhost:3000/api/pm/unreadDiscussion
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r\n    \"dis_id\": 5\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0yvy}}"
+order: 6000

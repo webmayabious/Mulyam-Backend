@@ -1,0 +1,9 @@
+$kind: http-request
+url: localhost:3000/api/pm/mom-team/34/download
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_09np}}"
+examples: ./.resources/DOWNLOAD MOM TEAM.resources/examples
+order: 11000

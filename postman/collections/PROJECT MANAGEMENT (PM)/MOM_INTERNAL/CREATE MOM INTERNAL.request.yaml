@@ -1,0 +1,143 @@
+$kind: http-request
+url: localhost:3000/api/pm/create-mom-internal
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"date\": \"2026-03-20\",\r
+
+    \  \"start_time\":\"14:30:00\",\r
+
+    \  \"com_ids\": [1, 343],\r
+
+    \  \"venue_name\": \"Conference Room A\",\r
+
+    \  \"purpose_of_meeting\": \"Meeting time test\",\r
+
+    \r
+
+    \  \"projects\": [\r
+
+    \    { \"project_id\": 23 },\r
+
+    \    { \"project_id\": 24 },\r
+
+    \    { \"project_id\": 25 },\r
+
+    \    { \"project_id\": 29 },\r
+
+    \    { \"others_project_name\": \"Custom Project 1\" }\r
+
+    \  ],\r
+
+    \r
+
+    \  \"members\": [\r
+
+    \    { \"members_id\": 902, \"representing\": \"MAVIE\" },\r
+
+    \    { \"members_id\": 916, \"representing\": \"MAVIE\" },\r
+
+    \    { \"members_name\": \"External Consultant v1\", \"representing\": \"MAVIE\" },\r
+
+    \    { \"members_name\": \"External Consultant 23\", \"representing\": \"MAVIE\" },\r
+
+    \    { \"members_name\": \"External Consultant 73\", \"representing\": \"MAVIE\" },\r
+
+    \    { \"members_name\": \"External Consultant 823\", \"representing\": \"MAVIE\" }\r
+
+    \  ],\r
+
+    \r
+
+    \  \"discussions\": [\r
+
+    \    {\r
+
+    \      \"project_id\": 29,\r
+
+    \      \"points_discussed\": \"Discussed API integration\",\r
+
+    \      \"by_date\": \"2026-03-25\",\r
+
+    \      \"note\": \"High priority\",\r
+
+    \      \"responsibitlity_from\": null,\r
+
+    \      \"responsibitlity_to\": null\r
+
+    \    }\r
+
+    \    // {\r
+
+    \    //   \"others_project_name\": \"Custom Project 1\",\r
+
+    \    //   \"points_discussed\": \"Initial requirement discussion\",\r
+
+    \    //   \"by_date\": \"2026-03-28\",\r
+
+    \    //   \"note\": \"Need client approval\",\r
+
+    \    //   \"responsibitlity_from\": 916,\r
+
+    \    //   \"responsibitlity_to\": 902\r
+
+    \    // },\r
+
+    \    // {\r
+
+    \    //   \"project_id\": 23,\r
+
+    \    //   \"points_discussed\": \"Discussed API integration\",\r
+
+    \    //   \"by_date\": \"2026-03-25\",\r
+
+    \    //   \"note\": \"High priority\",\r
+
+    \    //   \"responsibitlity_from\": 902,\r
+
+    \    //   \"responsibitlity_to\": 916\r
+
+    \    // },\r
+
+    \    // {\r
+
+    \    //   \"project_id\": 24,\r
+
+    \    //   \"points_discussed\": \"Discussed API integration\",\r
+
+    \    //   \"by_date\": \"2026-03-25\",\r
+
+    \    //   \"note\": \"High priority\",\r
+
+    \    //   \"responsibitlity_from\": 902,\r
+
+    \    //   \"responsibitlity_to\": 916\r
+
+    \    // },\r
+
+    \    // {\r
+
+    \    //   \"project_id\": 25,\r
+
+    \    //   \"points_discussed\": \"Discussed API integration\",\r
+
+    \    //   \"by_date\": \"2026-03-25\",\r
+
+    \    //   \"note\": \"High priority\",\r
+
+    \    //   \"responsibitlity_from\": 902,\r
+
+    \    //   \"responsibitlity_to\": 916\r
+
+    \    // }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0j7e}}"
+order: 1000

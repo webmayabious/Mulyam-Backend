@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://localhost:3000/api/crm/download-by-telecaller/4
+method: GET
+headers:
+  access-token: "{{json_web_token_0r29}}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ojs}}"
+order: 6000

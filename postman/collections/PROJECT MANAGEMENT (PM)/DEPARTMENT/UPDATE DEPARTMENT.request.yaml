@@ -1,0 +1,21 @@
+$kind: http-request
+url: localhost:3000/api/pm/createDepartment
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \   \"dep_code\":\"3D\",\r
+
+    \   \"dep_name\":\"ANIMATION\",\r
+
+    \   \"dep_desc\":\"3D DEVELOPMENT\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1c7q}}"
+order: 2000

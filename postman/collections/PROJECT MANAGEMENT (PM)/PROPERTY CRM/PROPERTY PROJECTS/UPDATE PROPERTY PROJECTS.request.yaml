@@ -1,0 +1,27 @@
+$kind: http-request
+url: localhost:3000/api/pm/updatePropertyProjects/86
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"project_name\":\"Updates\",\r
+
+    \    \"com_id\":585,\r
+
+    \    \"location\":1,\r
+
+    \    \"source\":\"Facebook Update\",\r
+
+    \    // \"project_form_name\":\"Meta form 1\",\r
+
+    \    // \"meta_lead_id\":\"3425267937\",\r
+
+    \    \"user_ids\":[902,1063,914,916,802,643]\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_14ut}}"
+order: 6000

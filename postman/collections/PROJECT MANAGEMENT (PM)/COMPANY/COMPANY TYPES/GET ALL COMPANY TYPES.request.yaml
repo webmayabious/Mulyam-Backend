@@ -1,0 +1,14 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllCompanyTypes
+method: GET
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0zhn}}"
+settings: {}
+order: 4000

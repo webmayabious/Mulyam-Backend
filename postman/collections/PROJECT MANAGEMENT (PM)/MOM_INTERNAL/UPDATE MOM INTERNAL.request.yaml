@@ -1,0 +1,155 @@
+$kind: http-request
+url: localhost:3000/api/pm/update-mom-internal/39
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"date\": \"2026-03-22\",\r
+
+    \  \"start_time\":\"10:00:00\",\r
+
+    \  \"com_ids\": [343],\r
+
+    \r
+
+    \  \"venue_id\": 3,\r
+
+    //   \"venue_name\": \"Updated Conference Room\",\r
+
+    \r
+
+    \  \"purpose_of_meeting\": \"Updated time Planning Update\",\r
+
+    \r
+
+    //   \"projects\": [\r
+
+    //     {\r
+
+    //       \"id\": 8,\r
+
+    //       \"project_id\": 2193\r
+
+    //     },\r
+
+    //     {\r
+
+    //       \"project_id\": 25\r
+
+    //     },\r
+
+    //     {\r
+
+    //       \"others_project_name\": \"New Custom Project\"\r
+
+    //     }\r
+
+    //   ]\r
+
+    \r
+
+    //   \"members\": [\r
+
+    //     {\r
+
+    //       \"id\": 10,\r
+
+    //       \"members_id\": 902,\r
+
+    //       \"representing\": \"MAVIE\"\r
+
+    //     },\r
+
+    //     {\r
+
+    //       \"id\": 11,\r
+
+    //       \"members_name\": \"Updated Consultant\",\r
+
+    //       \"representing\": \"MAYABIOUS\"\r
+
+    //     },\r
+
+    //     {\r
+
+    //       \"members_id\": 916,\r
+
+    //       \"representing\": \"MAYABIOUS\"\r
+
+    //     }\r
+
+    //   ],\r
+
+    \r
+
+    \  \"discussions\": [\r
+
+    \    {\r
+
+    \      \"id\": 48,\r
+
+    \      \"project_id\": 5,\r
+
+    \      \"points_discussed\": \"Updated API discussion\",\r
+
+    \      \"by_date\": \"2026-03-26\",\r
+
+    \      \"note\": \"Updated note\",\r
+
+    \      \"responsibitlity_from\": 902,\r
+
+    \      \"responsibitlity_to\": 916\r
+
+    \    }\r
+
+    \    // {\r
+
+    \    //   \"id\": 21,\r
+
+    \    //   \"others_project_name\": \"Updated Custom Project\",\r
+
+    \    //   \"points_discussed\": \"Updated custom discussion\",\r
+
+    \    //   \"by_date\": \"2026-03-29\",\r
+
+    \    //   \"note\": \"Updated note\"\r
+
+    \    // },\r
+
+    \    // {\r
+
+    \    //   \"project_id\": 2,\r
+
+    \    //   \"points_discussed\": \"New discussion for project 2\",\r
+
+    \    //   \"by_date\": \"2026-03-30\",\r
+
+    \    //   \"note\": \"New entry\",\r
+
+    \    //   \"responsibitlity_from\": 916,\r
+
+    \    //   \"responsibitlity_to\": 902\r
+
+    \    // },\r
+
+    \    // {\r
+
+    \    //   \"others_project_name\": \"New Custom Project\",\r
+
+    \    //   \"points_discussed\": \"New custom discussion\",\r
+
+    \    //   \"by_date\": \"2026-04-01\",\r
+
+    \    //   \"note\": \"New custom entry\"\r
+
+    \    // }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_151h}}"
+order: 2000

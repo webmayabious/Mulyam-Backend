@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/Omreports
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"company\":1,\r
+
+    \    \"year\":2025,\r
+
+    \    \"month\":12\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0tg7}}"
+order: 1000

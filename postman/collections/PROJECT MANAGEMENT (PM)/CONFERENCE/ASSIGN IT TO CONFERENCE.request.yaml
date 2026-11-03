@@ -1,0 +1,15 @@
+$kind: http-request
+url: localhost:3000/api/pm/assignItToConference/3252
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \   \"it_person_assigned\":null\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_03z2}}"
+order: 6000

@@ -1,0 +1,23 @@
+$kind: http-request
+url: localhost:3000/api/pm/inboxChangeTrashStatus
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \    \"id\":[259,225],\r
+
+    \    \"trash_status\":\"0\"\r
+
+    \r
+
+    \    //1 = not trash 0=trash\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0p9c}}"
+order: 9000

@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/deleteTask/81
+method: PUT
+body:
+  type: json
+  content: "// task id\r
+
+    \r
+
+    {\r
+
+    \    \"active\":\"0\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0h1o}}"
+order: 9000

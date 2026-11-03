@@ -1,0 +1,12 @@
+$kind: http-request
+url: https://api.mokhsh.info/api/pm/getAllProspectList?limit=all
+method: GET
+headers:
+  access-token: "{{json_web_token_0zyr}}"
+queryParams:
+  limit: all
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0z89}}"
+order: 2000

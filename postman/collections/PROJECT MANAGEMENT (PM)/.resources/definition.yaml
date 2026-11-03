@@ -1,0 +1,543 @@
+$kind: collection
+description: |-
+  PM BACKEND APIS ---SK
+
+  CREATED BY : TANMOY & SOURAV
+
+  aditya , papia
+variables:
+  - key: BASE_URL_LOCAL
+    value: ""
+    disabled: false
+    secret: false
+  - key: json_web_token_00ty
+    value: ""
+    disabled: false
+    secret: false
+  - key: supabase_service_role_api_key_0byp
+    value: ""
+    disabled: false
+    secret: false
+  - key: json_web_token_0lwf
+    value: ""
+    disabled: false
+    secret: false
+  - key: json_web_token_1c7q
+    secret: true
+    disabled: false
+  - key: json_web_token_0zhn
+    secret: true
+    disabled: false
+  - key: json_web_token_0z0l
+    secret: true
+    disabled: false
+  - key: json_web_token_0pwu
+    secret: true
+    disabled: false
+  - key: json_web_token_15tl
+    secret: true
+    disabled: false
+  - key: json_web_token_0w2m
+    secret: true
+    disabled: false
+  - key: json_web_token_0ief
+    secret: true
+    disabled: false
+  - key: json_web_token_08il
+    secret: true
+    disabled: false
+  - key: json_web_token_0t5z
+    secret: true
+    disabled: false
+  - key: json_web_token_0ng1
+    secret: true
+    disabled: false
+  - key: json_web_token_0ugx
+    secret: true
+    disabled: false
+  - key: json_web_token_03vm
+    secret: true
+    disabled: false
+  - key: json_web_token_0hiz
+    secret: true
+    disabled: false
+  - key: json_web_token_110c
+    secret: true
+    disabled: false
+  - key: json_web_token_0c95
+    secret: true
+    disabled: false
+  - key: json_web_token_0819
+    secret: true
+    disabled: false
+  - key: json_web_token_07ln
+    secret: true
+    disabled: false
+  - key: json_web_token_0qla
+    secret: true
+    disabled: false
+  - key: json_web_token_1cpi
+    secret: true
+    disabled: false
+  - key: json_web_token_0ne6
+    secret: true
+    disabled: false
+  - key: json_web_token_116v
+    secret: true
+    disabled: false
+  - key: json_web_token_0v2j
+    secret: true
+    disabled: false
+  - key: json_web_token_0spv
+    secret: true
+    disabled: false
+  - key: json_web_token_1c62
+    secret: true
+    disabled: false
+  - key: json_web_token_057d
+    secret: true
+    disabled: false
+  - key: json_web_token_154p
+    secret: true
+    disabled: false
+  - key: json_web_token_1bz2
+    secret: true
+    disabled: false
+  - key: json_web_token_18qi
+    secret: true
+    disabled: false
+  - key: json_web_token_01x9
+    secret: true
+    disabled: false
+  - key: json_web_token_07dq
+    secret: true
+    disabled: false
+  - key: json_web_token_0dlr
+    secret: true
+    disabled: false
+  - key: json_web_token_018k
+    secret: true
+    disabled: false
+  - key: json_web_token_0zpi
+    secret: true
+    disabled: false
+  - key: json_web_token_0hbk
+    secret: true
+    disabled: false
+  - key: json_web_token_0xzj
+    secret: true
+    disabled: false
+  - key: json_web_token_0cun
+    secret: true
+    disabled: false
+  - key: json_web_token_0khh
+    secret: true
+    disabled: false
+  - key: json_web_token_0gc6
+    secret: true
+    disabled: false
+  - key: json_web_token_0ke1
+    secret: true
+    disabled: false
+  - key: json_web_token_0wy0
+    secret: true
+    disabled: false
+  - key: json_web_token_1dwd
+    secret: true
+    disabled: false
+  - key: json_web_token_0tg7
+    secret: true
+    disabled: false
+  - key: json_web_token_0kxg
+    secret: true
+    disabled: false
+  - key: json_web_token_0ijk
+    secret: true
+    disabled: false
+  - key: json_web_token_0s8o
+    secret: true
+    disabled: false
+  - key: json_web_token_0s6i
+    secret: true
+    disabled: false
+  - key: json_web_token_0ov5
+    secret: true
+    disabled: false
+  - key: json_web_token_081f
+    secret: true
+    disabled: false
+  - key: json_web_token_12ir
+    secret: true
+    disabled: false
+  - key: json_web_token_0deb
+    secret: true
+    disabled: false
+  - key: json_web_token_0koc
+    secret: true
+    disabled: false
+  - key: json_web_token_0g7v
+    secret: true
+    disabled: false
+  - key: json_web_token_0k2h
+    secret: true
+    disabled: false
+  - key: json_web_token_0qte
+    secret: true
+    disabled: false
+  - key: json_web_token_031v
+    secret: true
+    disabled: false
+  - key: json_web_token_0h2i
+    secret: true
+    disabled: false
+  - key: json_web_token_0imz
+    secret: true
+    disabled: false
+  - key: json_web_token_0l66
+    secret: true
+    disabled: false
+  - key: json_web_token_1cmo
+    secret: true
+    disabled: false
+  - key: json_web_token_0ulk
+    secret: true
+    disabled: false
+  - key: json_web_token_0dzt
+    secret: true
+    disabled: false
+  - key: json_web_token_17ku
+    secret: true
+    disabled: false
+  - key: json_web_token_148i
+    secret: true
+    disabled: false
+  - key: json_web_token_12ku
+    secret: true
+    disabled: false
+  - key: json_web_token_0ild
+    secret: true
+    disabled: false
+  - key: json_web_token_17hd
+    secret: true
+    disabled: false
+  - key: json_web_token_0d13
+    secret: true
+    disabled: false
+  - key: json_web_token_12uy
+    secret: true
+    disabled: false
+  - key: json_web_token_0cq7
+    secret: true
+    disabled: false
+  - key: json_web_token_100x
+    secret: true
+    disabled: false
+  - key: json_web_token_15mm
+    secret: true
+    disabled: false
+  - key: json_web_token_0e2c
+    secret: true
+    disabled: false
+  - key: json_web_token_12uq
+    secret: true
+    disabled: false
+  - key: json_web_token_0h9i
+    secret: true
+    disabled: false
+  - key: json_web_token_0yvy
+    secret: true
+    disabled: false
+  - key: json_web_token_16g1
+    secret: true
+    disabled: false
+  - key: json_web_token_0l76
+    secret: true
+    disabled: false
+  - key: json_web_token_0o43
+    secret: true
+    disabled: false
+  - key: json_web_token_059b
+    secret: true
+    disabled: false
+  - key: json_web_token_0h4v
+    secret: true
+    disabled: false
+  - key: json_web_token_15zb
+    secret: true
+    disabled: false
+  - key: json_web_token_03r6
+    secret: true
+    disabled: false
+  - key: json_web_token_0cp2
+    secret: true
+    disabled: false
+  - key: json_web_token_0lri
+    secret: true
+    disabled: false
+  - key: json_web_token_043b
+    secret: true
+    disabled: false
+  - key: json_web_token_03z2
+    secret: true
+    disabled: false
+  - key: json_web_token_0am6
+    secret: true
+    disabled: false
+  - key: json_web_token_0w41
+    secret: true
+    disabled: false
+  - key: json_web_token_05ti
+    secret: true
+    disabled: false
+  - key: json_web_token_0682
+    secret: true
+    disabled: false
+  - key: json_web_token_0hwp
+    secret: true
+    disabled: false
+  - key: json_web_token_0zyr
+    secret: true
+    disabled: false
+  - key: json_web_token_0wxc
+    secret: true
+    disabled: false
+  - key: json_web_token_0rxd
+    secret: true
+    disabled: false
+  - key: json_web_token_0ojs
+    secret: true
+    disabled: false
+  - key: json_web_token_0r29
+    secret: true
+    disabled: false
+  - key: json_web_token_178p
+    secret: true
+    disabled: false
+  - key: json_web_token_1bs7
+    secret: true
+    disabled: false
+  - key: json_web_token_035p
+    secret: true
+    disabled: false
+  - key: json_web_token_0stm
+    secret: true
+    disabled: false
+  - key: json_web_token_1aps
+    secret: true
+    disabled: false
+  - key: json_web_token_15d7
+    secret: true
+    disabled: false
+  - key: json_web_token_0ovt
+    secret: true
+    disabled: false
+  - key: json_web_token_0ork
+    secret: true
+    disabled: false
+  - key: json_web_token_08p4
+    secret: true
+    disabled: false
+  - key: json_web_token_05z6
+    secret: true
+    disabled: false
+  - key: json_web_token_04h4
+    secret: true
+    disabled: false
+  - key: json_web_token_0onx
+    secret: true
+    disabled: false
+  - key: json_web_token_0z89
+    secret: true
+    disabled: false
+  - key: json_web_token_0dh6
+    secret: true
+    disabled: false
+  - key: json_web_token_0mdc
+    secret: true
+    disabled: false
+  - key: json_web_token_125o
+    secret: true
+    disabled: false
+  - key: json_web_token_0bbz
+    secret: true
+    disabled: false
+  - key: json_web_token_1aiq
+    secret: true
+    disabled: false
+  - key: json_web_token_061x
+    secret: true
+    disabled: false
+  - key: json_web_token_10kb
+    secret: true
+    disabled: false
+  - key: json_web_token_15nq
+    secret: true
+    disabled: false
+  - key: json_web_token_12qu
+    secret: true
+    disabled: false
+  - key: json_web_token_0fwo
+    secret: true
+    disabled: false
+  - key: json_web_token_18fk
+    secret: true
+    disabled: false
+  - key: json_web_token_0qa8
+    secret: true
+    disabled: false
+  - key: json_web_token_058t
+    secret: true
+    disabled: false
+  - key: json_web_token_08hm
+    secret: true
+    disabled: false
+  - key: json_web_token_1blo
+    secret: true
+    disabled: false
+  - key: json_web_token_19v3
+    secret: true
+    disabled: false
+  - key: json_web_token_083y
+    secret: true
+    disabled: false
+  - key: json_web_token_0q5w
+    secret: true
+    disabled: false
+  - key: json_web_token_14ut
+    secret: true
+    disabled: false
+  - key: json_web_token_02ud
+    secret: true
+    disabled: false
+  - key: json_web_token_151h
+    secret: true
+    disabled: false
+  - key: json_web_token_0t7f
+    secret: true
+    disabled: false
+  - key: json_web_token_0j18
+    secret: true
+    disabled: false
+  - key: json_web_token_1386
+    secret: true
+    disabled: false
+  - key: json_web_token_0h58
+    secret: true
+    disabled: false
+  - key: json_web_token_04a6
+    secret: true
+    disabled: false
+  - key: json_web_token_17z0
+    secret: true
+    disabled: false
+  - key: json_web_token_07pn
+    secret: true
+    disabled: false
+  - key: json_web_token_10w5
+    secret: true
+    disabled: false
+  - key: json_web_token_19qo
+    secret: true
+    disabled: false
+  - key: json_web_token_0osx
+    secret: true
+    disabled: false
+  - key: json_web_token_0q08
+    secret: true
+    disabled: false
+  - key: json_web_token_0oiv
+    secret: true
+    disabled: false
+  - key: json_web_token_06ay
+    secret: true
+    disabled: false
+  - key: json_web_token_0utx
+    secret: true
+    disabled: false
+  - key: json_web_token_12db
+    secret: true
+    disabled: false
+  - key: json_web_token_0p9c
+    secret: true
+    disabled: false
+  - key: json_web_token_015v
+    secret: true
+    disabled: false
+  - key: json_web_token_0edt
+    secret: true
+    disabled: false
+  - key: json_web_token_19ug
+    secret: true
+    disabled: false
+  - key: json_web_token_1c3u
+    secret: true
+    disabled: false
+  - key: json_web_token_0poo
+    secret: true
+    disabled: false
+  - key: json_web_token_15ll
+    secret: true
+    disabled: false
+  - key: json_web_token_0im5
+    secret: true
+    disabled: false
+  - key: json_web_token_164f
+    secret: true
+    disabled: false
+  - key: json_web_token_190w
+    secret: true
+    disabled: false
+  - key: json_web_token_0tam
+    secret: true
+    disabled: false
+  - key: json_web_token_10qh
+    secret: true
+    disabled: false
+  - key: json_web_token_144l
+    secret: true
+    disabled: false
+  - key: json_web_token_1b6p
+    secret: true
+    disabled: false
+  - key: json_web_token_06ql
+    secret: true
+    disabled: false
+  - key: json_web_token_0kms
+    secret: true
+    disabled: false
+  - key: json_web_token_0j7e
+    secret: true
+    disabled: false
+  - key: json_web_token_09np
+    secret: true
+    disabled: false
+  - key: json_web_token_08g5
+    secret: true
+    disabled: false
+  - key: json_web_token_01t5
+    secret: true
+    disabled: false
+  - key: json_web_token_0mfa
+    secret: true
+    disabled: false
+  - key: json_web_token_120v
+    secret: true
+    disabled: false
+  - key: json_web_token_0h1o
+    secret: true
+    disabled: false
+  - key: json_web_token_0j01
+    secret: true
+    disabled: false
+  - key: json_web_token_0utt
+    secret: true
+    disabled: false
+  - key: json_web_token_0yjp
+    secret: true
+    disabled: false
+  - key: json_web_token_0yye
+    secret: true
+    disabled: false
+  - key: auth_secret_0vd0
+    secret: true
+    disabled: false

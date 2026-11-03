@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateProjectPhase/2
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"pro_details_id\":\"5\",\r
+
+    \    \"remark\":\"Project Phase 2 update\",\r
+
+    \    \"enddate\":\"2025-11-30\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1cmo}}"
+order: 4000

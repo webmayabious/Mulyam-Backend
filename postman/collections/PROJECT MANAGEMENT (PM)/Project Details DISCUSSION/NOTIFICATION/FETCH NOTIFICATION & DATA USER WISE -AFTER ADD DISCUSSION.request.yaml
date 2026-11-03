@@ -1,0 +1,12 @@
+$kind: http-request
+url: localhost:3000/api/pm/checkUnraedAndNotification/747/3
+method: GET
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_15zb}}"
+settings: {}
+order: 6000

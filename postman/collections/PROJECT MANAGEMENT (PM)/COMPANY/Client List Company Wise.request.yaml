@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:3000/api/pm/getClistListCompanyWise/1
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_15tl}}"
+order: 9000

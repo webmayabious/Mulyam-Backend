@@ -1,0 +1,13 @@
+workspace:
+  id: 77ef0f49-022e-47c2-8e7b-b3ca80a33d80
+cloudResources:
+  collections:
+    ../postman/collections/PROJECT MANAGEMENT (PM): a1ef69a6-487d-4202-9632-bc1aa4c6bd41
+localResources:
+  specs:
+    - ../postman/specs/Mulyam/Mulyam.json
+    - ../postman/specs/test/test.yaml
+resourceNameMappings:
+  specs:
+    - ../postman/specs/Mulyam/Mulyam.json: Mulyam
+    - ../postman/specs/test/test.yaml: test

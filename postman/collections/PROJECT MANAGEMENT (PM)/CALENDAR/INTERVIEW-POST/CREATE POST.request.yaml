@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/interview-post
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"post\":\"DEVELOPER\",\r
+
+    \    \"post_details\":\"\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_19ug}}"
+order: 1000

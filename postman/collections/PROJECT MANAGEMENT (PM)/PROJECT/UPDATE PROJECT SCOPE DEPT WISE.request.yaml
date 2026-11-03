@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateProjectWiseDeptScope
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"pro_id\" : 5,\r
+
+    \    \"pro_details_id\" : 6, \r
+
+    \    \"scope\" : \"NEW SCOPE\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0k2h}}"
+order: 12000

@@ -1,0 +1,28 @@
+$kind: http-request
+url: localhost:3000/api/pm/leadreportCityWise
+method: POST
+headers:
+  Authorization: "{{json_web_token_057d}}"
+queryParams:
+  - key: fromDate
+    value: 2026-04-01
+    disabled: true
+  - key: toDate
+    value: 2026-04-07
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"type\": \"weekly\",\r
+
+    \    \"fromDate\": \"\",\r
+
+    \    \"toDate\": \"\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_12db}}"
+order: 5000

@@ -1,0 +1,59 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/updateTask/180
+method: PUT
+body:
+  type: json
+  content: "//task id \r
+
+    // /api/pm/updateTask/1\r
+
+    {\r
+
+    \    \"project_id\": 2207,\r
+
+    \    \"module_id\": 120,\r
+
+    \    \"title\": \" Update Disable Owner Check\",\r
+
+    \    \"description\": \"Owner Disable test\",\r
+
+    \    //   \"priority\":\"2\",\r
+
+    \    //   \"start_date\":\"2026-05-25\",\r
+
+    \    //   \"target_date\":\"2026-05-29\",\r
+
+    \    //   \"estimated_hours\":25\r
+
+    \    //   \"skillset_required\":\"Skill4,Skill9,Skill 11\",\r
+
+    \    \"primary_owner_id\": 902,\r
+
+    \    \"assigned_users\": [\r
+
+    \        916,\r
+
+    \        1063,\r
+
+    \        1089\r
+
+    \    ]\r
+
+    \    //   \"tl_review_status\":\"0\"\r
+
+    \    // \"preceder_task_id\":173,\r
+
+    \    // \"successor_task_id\":159\r
+
+    \    // \"blocking_task_id\":2,\r
+
+    \    // \"preceder\":45,\r
+
+    \    // \"successor\":[64,59,44]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_08g5}}"
+order: 8000

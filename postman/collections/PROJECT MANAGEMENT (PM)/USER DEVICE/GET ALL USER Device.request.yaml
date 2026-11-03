@@ -1,0 +1,14 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllUserDevice
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: limit
+    value: all
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{supabase_service_role_api_key_0byp}}"
+order: 2000

@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:3000/api/pm/getClientListOnly
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_18qi}}"
+order: 29000

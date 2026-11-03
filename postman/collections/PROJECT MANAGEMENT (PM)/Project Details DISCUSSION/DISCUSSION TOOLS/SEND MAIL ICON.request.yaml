@@ -1,0 +1,13 @@
+$kind: http-request
+url: localhost:3000/api/pm/sendmaildiscussion
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r\n    \"dis_id\": 5\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0e2c}}"
+order: 1000

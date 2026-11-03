@@ -1,0 +1,21 @@
+$kind: http-request
+url: localhost:3000/api/pm/uploadProspectLoanAndTelecaller
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src:
+        - /C:/Users/game-01/Downloads/3000 SALARIED Data for SUCHARITA (12002-15001).xlsx
+    - type: text
+      key: loan_type
+      value: "2"
+    - type: text
+      key: telecallerId
+      value: "2"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0bbz}}"
+order: 8000

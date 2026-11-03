@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateReference/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"mrf_name\":\"Reference 0\",\r
+
+    \    \"active\":\"1\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_04h4}}"
+order: 4000

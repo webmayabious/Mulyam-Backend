@@ -1,0 +1,11 @@
+$kind: http-request
+url: localhost:3000/api/pm/deleteProjectDependency/2
+method: PUT
+body:
+  type: json
+  content: "{\r\n    \"active\":1\r\n}\r\n\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_154p}}"
+order: 5000

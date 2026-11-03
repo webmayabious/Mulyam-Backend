@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:3000/api/chat/getChatAttachments/2
+method: GET
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r\n    \"id\":1\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_031v}}"
+settings: {}
+order: 21000

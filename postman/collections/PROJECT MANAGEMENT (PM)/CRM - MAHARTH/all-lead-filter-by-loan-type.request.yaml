@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:3000/api/crm/alllead-filter-by-loan-type/Business%20Loan?page=1&limit=50
+method: GET
+headers:
+  access-token: "{{json_web_token_178p}}"
+queryParams:
+  page: "1"
+  limit: "50"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ojs}}"
+order: 7000

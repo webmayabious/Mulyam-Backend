@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:5005/api/admin/construction-status/9
+method: PUT
+order: 4000

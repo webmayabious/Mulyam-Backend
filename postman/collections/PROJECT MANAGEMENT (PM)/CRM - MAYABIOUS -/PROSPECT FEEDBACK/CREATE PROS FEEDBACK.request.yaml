@@ -1,0 +1,23 @@
+$kind: http-request
+url: localhost:3000/api/pm/createProsFeedback
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \     \"upproj_id\":1,                             //prospect id\r
+
+    \      \"reminddate\":\"2026-06-23\",\r
+
+    \      \"remindtime\":\"07:01:00\",\r
+
+    \      \"ft_id\":3,\r
+
+    \      \"comment\":\"This is test 3\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_061x}}"
+order: 2000

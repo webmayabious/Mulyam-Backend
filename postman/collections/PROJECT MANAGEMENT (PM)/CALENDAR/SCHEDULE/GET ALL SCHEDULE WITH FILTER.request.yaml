@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/calendar/schedule?year=2027&month=7
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  year: "2027"
+  month: "7"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_031v}}"
+order: 2000

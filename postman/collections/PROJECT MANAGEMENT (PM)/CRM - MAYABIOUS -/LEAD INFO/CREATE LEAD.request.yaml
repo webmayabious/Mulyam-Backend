@@ -1,0 +1,79 @@
+$kind: http-request
+url: localhost:3000/api/pm/createLeadInfo
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"pri_date\": \"2025-01-01\",\r
+
+    \    \"pri_code\": \"PRJ0021\",\r
+
+    \    \"pri_clientname\": \"Demo Client 3\",\r
+
+    \    \"pri_clienttype\": \"Corporate\",\r
+
+    \    \"pri_name\": \"Demo Project\",\r
+
+    \    \"dep_id\": 3,\r
+
+    \    \"pri_desc\": \"This is a demo project description.\",\r
+
+    \    \"pri_sdate\": \"2025-01-05\",\r
+
+    \    \"pri_fcdate\": \"2025-02-01\",\r
+
+    \    \"pri_ddate\": \"2025-02-15\",\r
+
+    \    \"pri_contact1\": \"John Doe\",\r
+
+    \    \"pri_contactno1\": \"1234567890\",\r
+
+    \    \"pri_email1\": \"john.doe@example.com\",\r
+
+    \    \"pri_contact2\": \"Jane Smith\",\r
+
+    \    \"pri_contactno2\": \"0987654321\",\r
+
+    \    \"pri_email2\": \"jane.smith@example.com\",\r
+
+    \    \"pri_contact3\": \"Mike Johnson\",\r
+
+    \    \"pri_contactno3\": \"1122334455\",\r
+
+    \    \"pri_email3\": \"mike.johnson@example.com\",\r
+
+    \    \"pri_bilname\": \"Demo Billing Name\",\r
+
+    \    \"pri_biladdress\": \"123 Demo Street, City, Country\",\r
+
+    \    \"pri_phno\": \"1234567890\",\r
+
+    \    \"pri_totalcost\": 10000.50,\r
+
+    \    \"pri_costdetails\": \"Breakdown of costs: labor, materials, etc.\",\r
+
+    \    \"pri_bmanager\": \"Manager Name\",\r
+
+    \    \"pri_quoten\": \"QTN-001\",\r
+
+    \    \"pri_workno\": \"WRK-001\",\r
+
+    \    \"pri_que\": \"Special Requirement\",\r
+
+    \    \"pri_que_desc\": \"Description of special requirement\",\r
+
+    \    \"prc_id\": \"PRC001\",\r
+
+    \    \"pri_quotation\": \"1\",\r
+
+    \    \"active\": 1,\r
+
+    \    \"company_id\": 1\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0qa8}}"
+order: 1000

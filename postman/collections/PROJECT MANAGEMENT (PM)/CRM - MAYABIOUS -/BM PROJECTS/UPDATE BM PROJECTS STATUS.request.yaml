@@ -1,0 +1,18 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateBmProjectStatus/3
+method: PUT
+queryParams:
+  - key: user_id
+    value: "2"
+    disabled: true
+  - key: page
+    value: "2"
+    disabled: true
+body:
+  type: json
+  content: "{\r\n    \"status\":\"3\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_10kb}}"
+order: 5000

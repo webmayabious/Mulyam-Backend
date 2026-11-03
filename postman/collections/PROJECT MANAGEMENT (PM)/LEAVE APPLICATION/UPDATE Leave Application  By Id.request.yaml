@@ -1,0 +1,25 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateLeaveApplication/3
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \     \"typ_id\":\"1\",  \r
+
+    \     \"fromdate\":\"2025-09-19\", \r
+
+    \     \"todate\":\"2025-09-21\", \r
+
+    \     \"days\":\"1\", \r
+
+    \     \"description\":\"HIII\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0xzj}}"
+order: 6000

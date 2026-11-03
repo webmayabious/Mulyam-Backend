@@ -1,0 +1,43 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllMeetings
+method: GET
+queryParams:
+  - key: page
+    value: "2"
+    disabled: true
+  - key: limit
+    value: all
+    disabled: true
+  - key: date
+    value: 2026-04-10
+    disabled: true
+  - key: from_date
+    value: 2026-04-06
+    disabled: true
+  - key: to_date
+    value: 2026-04-08
+    disabled: true
+  - key: conference
+    value: "1"
+    disabled: true
+  - key: meeting_organiser
+    value: "1063"
+    disabled: true
+  - key: status
+    value: "1"
+    disabled: true
+  - key: active
+    value: "1"
+    disabled: true
+  - key: guest
+    value: guest 4
+    disabled: true
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_06ql}}"
+settings: {}
+order: 3000

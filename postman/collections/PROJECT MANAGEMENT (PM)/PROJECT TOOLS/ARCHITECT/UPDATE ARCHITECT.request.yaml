@@ -1,0 +1,15 @@
+$kind: http-request
+url: localhost:3000/api/pm/addArchitect/1/2
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"architect\":\"Architect Update\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1cmo}}"
+order: 1000

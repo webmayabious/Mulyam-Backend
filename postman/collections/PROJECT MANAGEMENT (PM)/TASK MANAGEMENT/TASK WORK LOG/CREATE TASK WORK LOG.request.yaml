@@ -1,0 +1,27 @@
+$kind: http-request
+url: localhost:3000/api/pm/createTaskWorkLog
+method: POST
+body:
+  type: json
+  content: "{ \r
+
+    \    \"task_id\":145,\r
+
+    \    \"user_id\":1063,\r
+
+    \    \"module_id\":116,\r
+
+    \    \"work_date\":\"2026-07-06\",\r
+
+    \    \"hours\":8,\r
+
+    \    \"minutes\":0,\r
+
+    \    \"comments\":\"Extended TAsk Updates\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0utt}}"
+order: 1000

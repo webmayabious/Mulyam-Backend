@@ -1,0 +1,14 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllUser
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: limit
+    value: all
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0lwf}}"
+order: 3000

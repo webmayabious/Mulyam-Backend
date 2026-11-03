@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/createPropertyCallStatus
+method: POST
+headers:
+  Authorization: "{{json_web_token_057d}}"
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\":\"WhatsApp Sent\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0t5z}}"
+order: 1000

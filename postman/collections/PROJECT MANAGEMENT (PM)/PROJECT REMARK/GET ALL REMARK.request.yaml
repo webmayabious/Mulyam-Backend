@@ -1,0 +1,21 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllRemark
+method: GET
+queryParams:
+  - key: project
+    value: "747"
+    disabled: true
+  - key: posted_by
+    value: "2"
+    disabled: true
+  - key: fromDate
+    value: 2026-02-11
+    disabled: true
+  - key: toDate
+    value: 2026-02-10
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0p9c}}"
+order: 2000

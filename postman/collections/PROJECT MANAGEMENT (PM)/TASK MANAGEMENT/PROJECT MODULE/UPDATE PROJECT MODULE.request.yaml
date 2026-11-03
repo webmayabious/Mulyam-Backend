@@ -1,0 +1,33 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateProjectModule/113
+method: PUT
+body:
+  type: json
+  content: "// /api/pm/updateProjectModule/:pro_id/:mod_id\r
+
+    {\r
+
+    \    \"project_id\": 2179,\r
+
+    \    \"pro_details_id\": 2148,\r
+
+    \    \"milestone_id\": 156,\r
+
+    \    \"name\": \"Team Lead update test\",\r
+
+    \    // \"module_type\": \"New Module Type 1\",\r
+
+    \    // \"est_start_date\": \"2026-06-24\",\r
+
+    \    // \"est_end_date\": \"2026-06-29\",\r
+
+    \    \"priority\": \"2\",\r
+
+    \    \"team_leader_id\":355\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_154p}}"
+order: 6000

@@ -1,0 +1,23 @@
+$kind: http-request
+url: http://localhost:3000/api/chat/send-group-with-file
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: formdata
+  content:
+    - type: text
+      key: group_id
+      value: "15"
+    - type: text
+      key: message
+      value: 4 Test notification
+    - type: file
+      key: attachments
+      src: []
+      disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_19ug}}"
+order: 3000

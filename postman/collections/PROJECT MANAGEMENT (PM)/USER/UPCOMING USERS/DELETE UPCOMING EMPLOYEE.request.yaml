@@ -1,0 +1,31 @@
+$kind: http-request
+url: localhost:3000/api/pm/deleteUpcomingEmployee/1158
+method: DELETE
+body:
+  type: text
+  content: "{\r
+
+    \    \"usr_fname\":\"Upcoming Update\",\r
+
+    \    \"usr_lname\":\"test\",\r
+
+    \    // \"usr_emailid\":\"upcomingtest@gmail.com\",\r
+
+    \    \"usr_mob\":\"7894561232\",\r
+
+    \    // \"usr_joindate\":\"2026-02-01\",\r
+
+    \    \"com_id\":\"343\",\r
+
+    \    \"dept_id\":\"1,5\",\r
+
+    \    \"selected_by\":1063,\r
+
+    \    \"user_role\":[1,3,5]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ief}}"
+order: 5000

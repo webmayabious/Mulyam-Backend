@@ -1,0 +1,82 @@
+$kind: http-request
+url: https://api.mokhsh.com/api/pm/get-mom-internal-by-id/21
+method: GET
+body:
+  type: text
+  content: "{\r
+
+    \  \"date\": \"2026-03-18\",\r
+
+    \  \"venue\": \"Conference Room B\",\r
+
+    \  \"project_name\": \"Project Alpha Updated\",\r
+
+    \  \"purpose_of_meeting\": \"Sprint Review\",\r
+
+    \r
+
+    \  \"members\": [\r
+
+    \    {\r
+
+    \      \"id\": 1,\r
+
+    \      \"members_id\": 1057,\r
+
+    \      \"representing\": 343\r
+
+    \    }\r
+
+    \  ],\r
+
+    \r
+
+    \  \"discussions\": [\r
+
+    \    {\r
+
+    \      \"id\": 1,\r
+
+    \      \"points_discussed\": \"Architecture finalized update\",\r
+
+    \      \"by_date\": \"2026-03-22\",\r
+
+    \      \"note\": \"Approved\",\r
+
+    \      \"responsibitlity_from\": 2,\r
+
+    \      \"responsibitlity_to\": 3\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"id\": 2,\r
+
+    \      \"note\": \"Deadline extended update\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"points_discussed\": \"New API integration\",\r
+
+    \      \"by_date\": \"2026-03-28\",\r
+
+    \      \"note\": \"Pending\",\r
+
+    \      \"responsibitlity_from\": 1063,\r
+
+    \      \"responsibitlity_to\": 902\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_151h}}"
+settings: {}
+order: 4000

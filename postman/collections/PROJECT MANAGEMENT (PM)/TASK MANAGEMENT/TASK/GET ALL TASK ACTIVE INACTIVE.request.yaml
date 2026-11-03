@@ -1,0 +1,34 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/getAllTaskActiveInactive/5
+method: GET
+queryParams:
+  - key: page
+    value: "2"
+    disabled: true
+    description: api/pm/getAllTask/:module_id
+  - key: limit
+    value: "1"
+    disabled: true
+  - key: startDateFrom
+    value: 2026-05-03
+    disabled: true
+  - key: startDateTo
+    value: null
+    disabled: true
+  - key: targetDateFrom
+    value: 2026-05-29
+    disabled: true
+  - key: targetDateTo
+    value: null
+    disabled: true
+  - key: assignee
+    value: "1063"
+    disabled: true
+  - key: status
+    value: "6"
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_08g5}}"
+order: 6000

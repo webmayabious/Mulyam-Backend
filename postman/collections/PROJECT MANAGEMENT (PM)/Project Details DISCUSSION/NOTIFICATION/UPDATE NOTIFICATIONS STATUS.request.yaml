@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/changeStatusOfNotification
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \  \"chanstat\": \"18895\",\r
+
+    \  \"val\": 2\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0l76}}"
+order: 2000

@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:5005/api/admin/construction-status
+method: GET
+order: 2000

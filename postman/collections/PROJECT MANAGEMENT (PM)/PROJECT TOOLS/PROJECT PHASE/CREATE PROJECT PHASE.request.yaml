@@ -1,0 +1,25 @@
+$kind: http-request
+url: localhost:3000/api/pm/createProjectPhase
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"pro_id\":\"2\",\r
+
+    \    \"pro_details_id\":\"5\",\r
+
+    \    \"phs_id\":\"1\",\r
+
+    \    \"remark\":\"Project Phase 3\",\r
+
+    \    \"date\":\"2025-10-16\",\r
+
+    \    \"enddate\":\"2025-10-30\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ulk}}"
+order: 1000

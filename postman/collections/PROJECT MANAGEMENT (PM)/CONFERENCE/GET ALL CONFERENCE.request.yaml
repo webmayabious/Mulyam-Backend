@@ -1,0 +1,12 @@
+$kind: http-request
+url: localhost:3000/api/pm/getConferences
+method: GET
+queryParams:
+  - key: page
+    value: "65"
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_17hd}}"
+order: 1000

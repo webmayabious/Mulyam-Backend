@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/addPriorities/1/1
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"remark\":\"Priority 1\",\r
+
+    \    \"rank\":\"3\",\r
+
+    \    \"mod_id\":\"858\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0dzt}}"
+order: 2000

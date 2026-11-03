@@ -1,0 +1,26 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllRole
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: limit
+    value: all
+    disabled: true
+body:
+  type: text
+  content: "{\r
+
+    \    \"role_name\":\"SoftWare Director\",\r
+
+    \    \"parent_id\":\"1\",\r
+
+    \    \"description\":\"Creative & Technical Director\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0lwf}}"
+settings: {}
+order: 1000

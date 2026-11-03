@@ -1,0 +1,14 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllPropertyLocation
+method: GET
+headers:
+  Authorization: "{{json_web_token_057d}}"
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_151h}}"
+settings: {}
+order: 2000

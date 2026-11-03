@@ -1,0 +1,58 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllPropertyLeads?lead_status=4&siteVisitFromDate=2026-05-30
+method: GET
+headers:
+  Authorization: "{{json_web_token_057d}}"
+queryParams:
+  - key: page
+    value: "3"
+    disabled: true
+  - key: limit
+    value: "100"
+    disabled: true
+  - key: company_id
+    value: "1"
+    disabled: true
+  - key: rm_id
+    value: "916"
+    disabled: true
+  - key: reference
+    value: ""
+    disabled: true
+  - key: fromDate
+    value: ""
+    disabled: true
+  - key: toDate
+    value: ""
+    disabled: true
+  - key: search
+    value: ""
+    disabled: true
+  - key: project
+    value: "2"
+    disabled: true
+  - key: lead_status
+    value: "4"
+  - key: lead_sub_status
+    value: "7"
+    disabled: true
+  - key: lead_qualification
+    value: "1"
+    disabled: true
+  - key: call_status
+    value: "2"
+    disabled: true
+  - key: siteVisitFromDate
+    value: 2026-05-30
+  - key: siteVisitToDate
+    value: 2026-05-17
+    disabled: true
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_154p}}"
+settings: {}
+order: 3000

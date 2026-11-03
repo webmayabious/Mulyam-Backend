@@ -1,0 +1,11 @@
+$kind: http-request
+url: localhost:3000/api/pm/delete-momdiscussions-internal/7/13
+method: DELETE
+body:
+  type: json
+  content: //meeting id /discussion id
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_151h}}"
+order: 8000

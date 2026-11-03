@@ -1,0 +1,22 @@
+$kind: http-request
+url: localhost:3000/api/pm/userAttendanceHistory/1
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"user_id\" : 1,\r
+
+    \    \"date\" : \"2025-09-25\",\r
+
+    \    \"in_time\" : \"09:55:20\",\r
+
+    \    \"out_time\" : \"20:02:10\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0wy0}}"
+settings: {}
+order: 8000

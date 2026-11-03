@@ -1,0 +1,27 @@
+$kind: http-request
+url: localhost:3000/api/pm/fetchOpenProjects
+method: GET
+queryParams:
+  - key: type
+    value: ""
+    disabled: true
+  - key: fromDate
+    value: null
+    disabled: true
+  - key: toDate
+    value: null
+    disabled: true
+  - key: search
+    value: null
+    disabled: true
+  - key: company
+    value: null
+    disabled: true
+  - key: dep_id
+    value: null
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0l66}}"
+order: 8000

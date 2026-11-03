@@ -1,0 +1,45 @@
+$kind: http-request
+url: localhost:3000/api/pm/getLeadAssignedToday
+method: GET
+headers:
+  Authorization: "{{json_web_token_057d}}"
+queryParams:
+  - key: "search "
+    value: ""
+    disabled: true
+  - key: page
+    value: ""
+    disabled: true
+  - key: limit
+    value: ""
+    disabled: true
+  - key: company_id
+    value: "585"
+    disabled: true
+  - key: rm_id
+    value: ""
+    disabled: true
+  - key: fromDate
+    value: ""
+    disabled: true
+  - key: toDate
+    value: ""
+    disabled: true
+  - key: project
+    value: ""
+    disabled: true
+  - key: status
+    value: ""
+    disabled: true
+  - key: location
+    value: ""
+    disabled: true
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_17z0}}"
+settings: {}
+order: 16000

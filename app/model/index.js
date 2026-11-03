@@ -31,6 +31,17 @@ popertydetails_reraapproved,
 
 }= require("../model/poperty.model")
 
+// contactUS
+const { contactUS,getInTouch}=require("../model/contactus.model")
+
+// contactUs+getInTouch
+contactUS.hasMany(getInTouch,{
+    foreignKey:"contactus_id"
+})
+getInTouch.belongsTo(contactUS,{
+    foreignKey:"contactus_id"
+})
+
 // Property + Property Images
 popertyDetails.hasMany(popertyImage, {
     foreignKey: "popertydetails_id"

@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/approveRejectLeaveReviewer
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \   \"id\":\"4\",\r
+
+    \   \"revw_appr_stat\":1,\r
+
+    \   \"revw_reject_remarks\":\"approved ok\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0hbk}}"
+order: 15000

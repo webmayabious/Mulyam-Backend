@@ -1,0 +1,18 @@
+$kind: http-request
+url: localhost:3000/api/pm/getProjectUser/10/7
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"pro_id\": 2,\r
+
+    \    \"prodetail_id\": 2\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_17ku}}"
+settings: {}
+order: 3000

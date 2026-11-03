@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/updateMenuById/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"menu_name\":\"Update Menu\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0onx}}"
+order: 4000

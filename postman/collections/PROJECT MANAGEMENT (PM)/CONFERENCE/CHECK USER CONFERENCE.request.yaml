@@ -1,0 +1,26 @@
+$kind: http-request
+url: localhost:3000/api/pm/checkUserConference
+method: GET
+queryParams:
+  - key: page
+    value: "65"
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"date\": \"2026-10-06\",\r
+
+    \    \"start_time\": \"21:06:00\",\r
+
+    \    \"end_time\": \"21:50:00\",\r
+
+    \    \"user_id\": 830\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_17hd}}"
+settings: {}
+order: 2000

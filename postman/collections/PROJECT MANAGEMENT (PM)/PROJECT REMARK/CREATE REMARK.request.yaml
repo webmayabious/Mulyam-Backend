@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/createRemark
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"pro_id\":\"747\",\r
+
+    \    \"remark\":\"Test Remark\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0p9c}}"
+order: 1000

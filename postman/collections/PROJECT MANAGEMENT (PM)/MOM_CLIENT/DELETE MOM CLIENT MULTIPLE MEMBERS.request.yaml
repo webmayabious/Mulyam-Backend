@@ -1,0 +1,11 @@
+$kind: http-request
+url: localhost:3000/api/pm/delete-mommembers-client/12/27
+method: DELETE
+body:
+  type: json
+  content: //meetingid/member row id
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_151h}}"
+order: 5000

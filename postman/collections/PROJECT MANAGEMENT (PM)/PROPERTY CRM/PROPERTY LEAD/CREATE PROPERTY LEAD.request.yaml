@@ -1,0 +1,57 @@
+$kind: http-request
+url: localhost:3000/api/pm/createPropertyLead
+method: POST
+headers:
+  Authorization: "{{json_web_token_057d}}"
+body:
+  type: json
+  content: "{\r
+
+    \     \"name\":\"RM Test\",\r
+
+    \      \"phone\":\"789455985459\",\r
+
+    \      \"email\":\"user38@gmail.com\",\r
+
+    \      \"address\":\"Kolkata\",\r
+
+    \      \"date_of_birth\":\"2000-07-12\",\r
+
+    \      \"gender\":\"2\",\r
+
+    \      \"marital_status\":\"Married\",\r
+
+    \      \"office_location\":\"Sealdah\",\r
+
+    \      \"industry\":\"Real Estate\",\r
+
+    \      \"occupation\":\"Private Company Worker\",\r
+
+    \      \"location_of_property\":1,\r
+
+    \      \"project_id\":1,\r
+
+    \      \"budget\":\"5000000\",\r
+
+    \      \"flat_type\":\"2 BHK\",\r
+
+    \      \"loan_requirement\":\"2000000\",\r
+
+    \      \"preferred_bank\":\"ICICI\",\r
+
+    \      \"reference\":42,\r
+
+    \      \"purpose_type\":\"Office\",\r
+
+    \      \"com_id\":1              ,      //company id requird if admin  , no need if employee\r
+
+    \      \"planning_to_buy_date\":\"2026-01-31\",\r
+
+    \      \"interested_in_site_visit\":\"yes\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_151h}}"
+order: 1000

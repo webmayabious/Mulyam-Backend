@@ -1,0 +1,16 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllTeamLead
+method: GET
+headers:
+  - key: department
+    value: "3"
+    disabled: true
+queryParams:
+  - key: department
+    value: "3"
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_01x9}}"
+order: 31000

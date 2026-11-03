@@ -1,0 +1,22 @@
+$kind: http-request
+url: localhost:3000/api/pm/createBmProject
+method: POST
+queryParams:
+  - key: user_id
+    value: "2"
+    disabled: true
+  - key: page
+    value: "2"
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"client\":\"Test 4\", \"project\":\"Project 4\", \"price\":\"25000\",\"status\":0\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_15nq}}"
+order: 1000

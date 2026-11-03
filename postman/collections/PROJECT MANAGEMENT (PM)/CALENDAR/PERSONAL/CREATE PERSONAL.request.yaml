@@ -1,0 +1,21 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/calendar/personal
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \    \"date\" :\"2026-06-22\",\r
+
+    \    \"time\": \"07:52:00\",\r
+
+    \    \"reason\":\"Testing Papia\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_144l}}"
+order: 1000

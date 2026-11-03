@@ -1,0 +1,141 @@
+$kind: http-request
+url: localhost:3000/api/pm/update-mom-client/28
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"date\": \"2026-03-21\",\r
+
+    \  \"venue_name\": \"Client Meeting Update\",\r
+
+    \  \"start_time\":\"10:00:00\",\r
+
+    //   \"venue_id\": 3,\r
+
+    \  \"com_ids\": [26,27]\r
+
+    //   \"clients\": [\r
+
+    //     {\r
+
+    //       \"id\": 24,\r
+
+    //       \"client_id\": 30\r
+
+    //     },\r
+
+    //     {\r
+
+    //       \"id\": 25,\r
+
+    //       \"others_client_name\": \"Updated Custom Client\"\r
+
+    //     },\r
+
+    //     {\r
+
+    //       \"client_id\": 27\r
+
+    //     },\r
+
+    //     {\r
+
+    //       \"others_client_name\": \"New External Client\"\r
+
+    //     }\r
+
+    //   ],\r
+
+    \r
+
+    //   \"members\": [\r
+
+    //     {\r
+
+    //       \"id\": 20,\r
+
+    //       \"members_id\": 916,\r
+
+    //       \"representing\": \"Engineering Updates\"\r
+
+    //     },\r
+
+    //     {\r
+
+    //       \"id\": 21,\r
+
+    //       \"members_name\": \"Updated Consultant\",\r
+
+    //       \"representing\": \"Client\"\r
+
+    //     },\r
+
+    //     {\r
+
+    //       \"members_id\": 902,\r
+
+    //       \"representing\": \"MAVIE\"\r
+
+    //     },\r
+
+    //     {\r
+
+    //       \"members_name\": \"New External Member\",\r
+
+    //       \"representing\": \"Vendor\"\r
+
+    //     }\r
+
+    //   ],\r
+
+    \r
+
+    //   \"discussions\": [\r
+
+    //     {\r
+
+    //       \"id\": 3,\r
+
+    //       \"points_discussed\": \"Updated Requirement Discussion\",\r
+
+    //       \"by_date\": \"2026-03-22\"\r
+
+    //     },\r
+
+    //     {\r
+
+    //       \"id\": 4,\r
+
+    //       \"action_to_be_taken_by_id\": 916\r
+
+    //     },\r
+
+    //     {\r
+
+    //       \"points_discussed\": \"New Discussion Point 4\",\r
+
+    //       \"action_to_be_taken_by_id\":902 ,\r
+
+    //       \"by_date\": \"2026-03-25\"\r
+
+    //     },\r
+
+    //     {\r
+
+    //       \"points_discussed\": \"New Discussion Point 2\",\r
+
+    //       \"action_to_be_taken_by\":\"New client\",\r
+
+    //       \"by_date\": \"2026-03-25\"\r
+
+    //     }\r
+
+    //   ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_151h}}"
+order: 2000

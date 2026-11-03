@@ -1,0 +1,34 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllProjectsDeptWiseForTask?sts_ids=Paused
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: startDate
+    value: ""
+    disabled: true
+  - key: endDate
+    value: ""
+    disabled: true
+  - key: dep_ids
+    value: 3,4
+    disabled: true
+  - key: com_ids
+    value: 1,2,3
+    disabled: true
+  - key: status
+    value: 1,2,5
+    disabled: true
+  - key: search
+    value: test
+    disabled: true
+  - key: limit
+    value: "50"
+    disabled: true
+  - key: sts_ids
+    value: Paused
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_154p}}"
+order: 8000

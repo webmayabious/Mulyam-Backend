@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:3000/api/crm/search-by-telecaller/4?search=papiya&page=1&limit=50
+method: GET
+headers:
+  access-token: "{{json_web_token_0r29}}"
+queryParams:
+  search: papiya
+  page: "1"
+  limit: "50"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ojs}}"
+order: 5000

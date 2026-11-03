@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateUserSkill/2
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \    \"name\":\"JAVA SCRIPT\",\r
+
+    \    \"type_id\":\"36\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1c7q}}"
+order: 2000

@@ -1,0 +1,47 @@
+$kind: http-request
+url: localhost:3000/api/pm/outputStatus/1
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \      \"tot_ext_shots\":50,\r
+
+    \      \"tot_int_shots\":60,\r
+
+    \      \"ext_render\":10,\r
+
+    \      \"ext_assigned\": 11,\r
+
+    \      \"ext_animation\": null,\r
+
+    \      \"ext_matte\": null,\r
+
+    \      \"int_render\": null,\r
+
+    \      \"int_assigned\": null,\r
+
+    \      \"int_animation\":null,\r
+
+    \      \"int_matte\":null,\r
+
+    \      \"ext_fx\":null,\r
+
+    \      \"ext_fx_comp\":null,\r
+
+    \      \"int_fx\":null,\r
+
+    \      \"int_fx_comp\":null,\r
+
+    \      \"info_status\":0,\r
+
+    \      \"sky_bg_status\":0,\r
+
+    \      \"final_touch_up_status\":0\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0qte}}"
+order: 1000

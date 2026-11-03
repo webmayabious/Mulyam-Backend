@@ -1,0 +1,57 @@
+$kind: http-request
+url: localhost:3000/api/pm/updatePropertyLead/122
+method: PUT
+headers:
+  Authorization: "{{json_web_token_057d}}"
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"User3 Update\",\r
+
+    \    \"phone\": \"4562542132\",\r
+
+    \    \"email\": \"user3@gmail.com\",\r
+
+    \    \"address\": \"Kolkata\",\r
+
+    \    \"date_of_birth\": \"2000-07-12\",\r
+
+    \    \"gender\": \"2\",\r
+
+    \    \"marital_status\": \"Married\",\r
+
+    \    \"office_location\": \"Sealdah\",\r
+
+    \    \"industry\": \"Real Estate\",\r
+
+    \    \"occupation\": \"Private Company Worker\",\r
+
+    \    \"location_of_property\": 2,\r
+
+    \    \"project_id\": \"2\",\r
+
+    \    \"budget\": \"5000000\",\r
+
+    \    \"flat_type\": \"2 BHK\",\r
+
+    \    \"loan_requirement\": \"2000000\",\r
+
+    \    \"preferred_bank\": \"ICICI\",\r
+
+    \    \"reference\": 1,\r
+
+    \    \"purpose_type\": \"Office\",\r
+
+    \    \"planning_to_buy_date\": \"2026-01-31\",\r
+
+    \    \"interested_in_site_visit\": \"no\",\r
+
+    \    \"active\":2\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1386}}"
+order: 9000

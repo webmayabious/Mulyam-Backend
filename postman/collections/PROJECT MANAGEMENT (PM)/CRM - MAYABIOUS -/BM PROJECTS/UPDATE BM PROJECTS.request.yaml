@@ -1,0 +1,26 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateBmProject/1
+method: PUT
+queryParams:
+  - key: user_id
+    value: "2"
+    disabled: true
+  - key: page
+    value: "2"
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"client\":\"Test Update\",\r
+
+    \    \"project\":\"Project Update\",\r
+
+    \    \"price\":\"10000\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_10kb}}"
+order: 4000

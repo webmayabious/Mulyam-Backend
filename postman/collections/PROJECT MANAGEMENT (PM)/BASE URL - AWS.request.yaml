@@ -1,0 +1,8 @@
+$kind: http-request
+url: https://api.mokhsh.com/api/
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ijk}}"
+order: 46000

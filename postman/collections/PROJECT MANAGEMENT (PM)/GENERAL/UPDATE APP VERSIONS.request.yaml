@@ -1,0 +1,31 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateAppVersion/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \r
+
+    \  \"ios_Bundle_ID\": \"com.mycompany.myapp.ios update\",\r
+
+    \  \"ios_Bundle_Name\": \"MyApp iOS\",\r
+
+    \  \"ios_Bundle_Version\": \"2.1.0(v2)\",\r
+
+    \  \"ios_ForceUpdate\": \"true\",\r
+
+    \  \"android_Bundle_ID\": \"com.mycompany.myapp.android\",\r
+
+    \  \"android_Bundle_Name\": \"MyApp Android Update\",\r
+
+    \  \"android_Bundle_Version\": \"2.1.1.0\",\r
+
+    \  \"android_ForceUpdate\": \"false\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ugx}}"
+order: 13000

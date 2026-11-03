@@ -1,0 +1,10 @@
+$kind: http-request
+url: https://newpm.mahaarth.com/api/pm/getIncrementById/1
+method: GET
+headers:
+  Content-Type: application/json
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0s8o}}"
+order: 4000

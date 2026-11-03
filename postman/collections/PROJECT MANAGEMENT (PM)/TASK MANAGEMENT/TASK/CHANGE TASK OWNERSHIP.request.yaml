@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/changeTaskownerShip/35
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"primary_owner_id\":1063\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_08g5}}"
+order: 12000

@@ -1,0 +1,12 @@
+$kind: http-request
+url: localhost:3000/api/pm/getDependencyById/2
+method: GET
+body:
+  type: text
+  content: "\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_154p}}"
+settings: {}
+order: 3000

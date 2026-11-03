@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/auth/logout
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"fcm_token\": \"c8VhlNJSQQG4-q00hUUnk5:APA91bHn2ikTvCf-pqi_0z5VwXeGRkQ6ZTKxAIhNT6vkCL0GUOAdin9K87DhUB02_lIyOwm1Dt3WNfLdN6g6z8Bt-LkToXxKesXf1lNnQAaKd_526ZZbcsk\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_07dq}}"
+order: 5000

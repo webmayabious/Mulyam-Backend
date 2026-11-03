@@ -1,0 +1,3299 @@
+{
+  "info": {
+    "_postman_id": "a2fa70e3-2f6a-4456-8da3-11664d1b677a",
+    "name": "MULYAM",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "59407178",
+    "_collection_link": "https://go.postman.co/collection/59407178-a2fa70e3-2f6a-4456-8da3-11664d1b677a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "PROJECT",
+      "item": [
+        {
+          "name": "TYPE OF POPERTY",
+          "item": [
+            {
+              "name": "CREATE TYPE OF POPERTY",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"title\": [\"Apartment\", \"Villa\", \"Commercial\"]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/create_type_of_poperty",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "create_type_of_poperty"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET ALL",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/property-type",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "property-type"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET SINGLE",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/property-type/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "property-type",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "UPDATE",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"title\": [\"Apartment\", \"Villa\", \"Commercial\"]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/property-type/9",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "property-type",
+                    "9"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"title\": [\"Apartment\", \"Villa\", \"Commercial\"]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/property-type/7",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "property-type",
+                    "7"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "NO OF BEDROOMS",
+          "item": [
+            {
+              "name": "CREATE BED ROOMS",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"title\": [\"1 RK/1 BHK\", \"2 BHK\", \"3 BHK\"]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/bedrooms",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "bedrooms"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET ALL",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/bedrooms",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "bedrooms"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET SINGLE",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/bedrooms/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "bedrooms",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "UPDATE",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/bedrooms/9",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "bedrooms",
+                    "9"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/bedrooms/9",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "bedrooms",
+                    "9"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "CONSTRUCTION STATUS",
+          "item": [
+            {
+              "name": "CREATE CONSTRUCTION STATUS",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"title\": [\"New Launch\", \"Under  Construction\", \"Ready to Move\"]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/construction-status",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "construction-status"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET ALL",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/construction-status",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "construction-status"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET SINGLE",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/construction-status/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "construction-status",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "UPDATE",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/construction-status/9",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "construction-status",
+                    "9"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/construction-status/6",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "construction-status",
+                    "6"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "PROSSESSION STATUS",
+          "item": [
+            {
+              "name": "CREATE POSSESSION STATUS",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"title\": [\"Ready To Move\", \"Under Construction\"]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/possession-status",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "possession-status"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET ALL",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/possession-status",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "possession-status"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET SINGLE",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/possession-status/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "possession-status",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "UPDATE",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/possession-status/2",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "possession-status",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/possession-status/9",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "possession-status",
+                    "9"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "PURCHASE TYPE",
+          "item": [
+            {
+              "name": "CREATE PURCHASE TYPE",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"title\": [\"Resale\", \"New Booking\"]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/purchase-type",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "purchase-type"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET ALL",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/purchase-type",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "purchase-type"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET SINGLE",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/purchase-type/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "purchase-type",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "UPDATE",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/purchase-type/9",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "purchase-type",
+                    "9"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/purchase-type/5",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "purchase-type",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "AMENITIES",
+          "item": [
+            {
+              "name": "CREATE AMENITIES",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"title\": [\"Lift\", \"Parking\", \"Vaastu Complaint\",\"Power Backup\",\"Park\"]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/amenities",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "amenities"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET ALL",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/amenities",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "amenities"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET SINGLE",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/amenities/5",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "amenities",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "UPDATE",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/amenities/9",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "amenities",
+                    "9"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/amenities/9",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "amenities",
+                    "9"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "FURNISHING STATUS",
+          "item": [
+            {
+              "name": "CREATE FURNISHING STATUS",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"title\": [\"Furnished\", \"Unfurnished\", \"Semifurnished\"]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/furnishing-status",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "furnishing-status"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET ALL",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/furnishing-status",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "furnishing-status"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET SINGLE",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/furnishing-status/5",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "furnishing-status",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "UPDATE",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/furnishing-status/8",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "furnishing-status",
+                    "8"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/furnishing-status/5",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "furnishing-status",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "RERA APPROVED",
+          "item": [
+            {
+              "name": "CREATE RERA APPROVED",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"title\": [\"RERA approved poperties\", \"RERA registered dealers\"]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/rera-approved",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "rera-approved"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET ALL",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/rera-approved",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "rera-approved"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET SINGLE",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/rera-approved/8",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "rera-approved",
+                    "8"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "UPDATE",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"title\": [\"Apartment\", \"Villa\", \"Commercial\"]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/rera-approved/5",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "rera-approved",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/rera-approved/8",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "rera-approved",
+                    "8"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "POPERTY",
+      "item": [
+        {
+          "name": "CREATE POPERTY",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "PURTI TATSAM",
+                  "type": "text"
+                },
+                {
+                  "key": "author",
+                  "value": "Purti Reality",
+                  "type": "text"
+                },
+                {
+                  "key": "location",
+                  "value": "kolkata(Rajarhat)",
+                  "type": "text"
+                },
+                {
+                  "key": "address",
+                  "value": "On SIx Lane-Rajarhat Newtown",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "1.12 cr",
+                  "type": "text"
+                },
+                {
+                  "key": "general_info_date",
+                  "value": "Dec 2030",
+                  "type": "text"
+                },
+                {
+                  "key": "seleable_area",
+                  "value": "1,278 - 1788 sq ft Saleable Area",
+                  "type": "text"
+                },
+                {
+                  "key": "bhk",
+                  "value": "3,4BHK",
+                  "type": "text"
+                },
+                {
+                  "key": "land_area",
+                  "value": "100 Katha",
+                  "type": "text"
+                },
+                {
+                  "key": "total_flats",
+                  "value": "189 Flats",
+                  "type": "text"
+                },
+                {
+                  "key": "towers",
+                  "value": "3 Towers",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "chvouoiheqiuwifubdfihoiasdhiaboiugoihihiq",
+                  "type": "text"
+                },
+                {
+                  "key": "verified",
+                  "value": "",
+                  "type": "text"
+                },
+                {
+                  "key": "status",
+                  "value": "",
+                  "type": "text"
+                },
+                {
+                  "key": "poperty_image",
+                  "type": "file",
+                  "src": [
+                    "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-46-16-71_9cadf0c1485d43345523d40eca370a2e.jpg",
+                    "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-44-85_9cadf0c1485d43345523d40eca370a2e.jpg",
+                    "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-59-77_9cadf0c1485d43345523d40eca370a2e.jpg",
+                    "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-41-87_9cadf0c1485d43345523d40eca370a2e.jpg"
+                  ]
+                },
+                {
+                  "key": "poperty_position",
+                  "value": "1234",
+                  "type": "text"
+                },
+                {
+                  "key": "bhk_title",
+                  "value": "[\n  \"3BHK(2T)\",\n  \"3BHK(2T)\",\n  \"3BHK(2T)\"\n]",
+                  "type": "text"
+                },
+                {
+                  "key": "bhk_price",
+                  "value": "[\n  \"1.2 Cr\",\n  \"1.3 Cr\",\n  \"1.4 Cr\"\n]",
+                  "type": "text"
+                },
+                {
+                  "key": "bhk_size",
+                  "value": "[\n  \"1278-1428 sq ft\",\n  \"1278-1428 sq ft\",\n  \"1278-1428 sq ft\"\n]",
+                  "type": "text"
+                },
+                {
+                  "key": "bhk_position",
+                  "value": "",
+                  "type": "text"
+                },
+                {
+                  "key": "floor_image",
+                  "type": "file",
+                  "src": [
+                    "/C:/Users/Web-04/Downloads/IMG-20261014-WA0017.jpg",
+                    "/C:/Users/Web-04/Downloads/IMG-20261014-WA0019.jpg",
+                    "/C:/Users/Web-04/Downloads/IMG-20261014-WA0018.jpg"
+                  ]
+                },
+                {
+                  "key": "floor_position",
+                  "value": "",
+                  "type": "text"
+                },
+                {
+                  "key": "master_image",
+                  "type": "file",
+                  "src": [
+                    "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-59-77_9cadf0c1485d43345523d40eca370a2e.jpg",
+                    "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-41-87_9cadf0c1485d43345523d40eca370a2e.jpg",
+                    "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-47-81_9cadf0c1485d43345523d40eca370a2e.jpg"
+                  ]
+                },
+                {
+                  "key": "master_position",
+                  "value": "",
+                  "type": "text"
+                },
+                {
+                  "key": "brochure_file",
+                  "type": "file",
+                  "src": "/C:/Users/Web-04/Downloads/DocScanner 24-Aug-2026 9-16 am.pdf"
+                },
+                {
+                  "key": "typeofpoperty_id",
+                  "value": "1,2",
+                  "type": "text"
+                },
+                {
+                  "key": "noofbedrooms_id",
+                  "value": "1,2",
+                  "type": "text"
+                },
+                {
+                  "key": "construction_status_id",
+                  "value": "1,2",
+                  "type": "text"
+                },
+                {
+                  "key": "possessionstatus_id",
+                  "value": "1,2",
+                  "type": "text"
+                },
+                {
+                  "key": "purchasetype_id",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "amenities_id",
+                  "value": "1,2",
+                  "type": "text"
+                },
+                {
+                  "key": "furnishingstatus_id",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "reraapproved_id",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "project_rera",
+                  "value": "WBRERA/P/NOR/2025/003198",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:5005/api/admin/add-property",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "admin",
+                "add-property"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET ALL POPERTY",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5005/api/admin/getAllPopertyDetails",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "admin",
+                "getAllPopertyDetails"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET SINGLE",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5005/api/admin/getSinglePopertyDetails/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "admin",
+                "getSinglePopertyDetails",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UPDATE POPERTY",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "towers",
+                  "value": "6 Towers",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:5005/api/admin/updatePopertyDetails/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "admin",
+                "updatePopertyDetails",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "FRONTEND",
+      "item": [
+        {
+          "name": "POPERTY SEARCH",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5005/api/admin/search?propertyType=1&bedrooms=1&constructionStatus=1&possessionStatus=1&purchaseType=1&amenities=1,2&furnishingStatus=1&reraApproved=1&verified=1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "admin",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "propertyType",
+                  "value": "1"
+                },
+                {
+                  "key": "bedrooms",
+                  "value": "1"
+                },
+                {
+                  "key": "constructionStatus",
+                  "value": "1"
+                },
+                {
+                  "key": "possessionStatus",
+                  "value": "1"
+                },
+                {
+                  "key": "purchaseType",
+                  "value": "1"
+                },
+                {
+                  "key": "amenities",
+                  "value": "1,2"
+                },
+                {
+                  "key": "furnishingStatus",
+                  "value": "1"
+                },
+                {
+                  "key": "reraApproved",
+                  "value": "1"
+                },
+                {
+                  "key": "verified",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Mulyam Home Page Admin Test",
+      "item": [
+        {
+          "name": "Client Names",
+          "item": [
+            {
+              "name": "Bulk Create Clients",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "clientsData",
+                      "value": "[\n  {\n    \"heading\": \"Ajay Begraj Group\",\n    \"description\": \"A leading real estate developer in Siliguri, known for crafting distinguished residences & commercial landmarks across Eastern India.\",\n    \"isActive\": true\n  },\n  {\n    \"heading\": \"Ambuja Neotia Group\",\n    \"description\": \"A diversified business group with a strong presence across real estate, hospitality, healthcare, and education.\",\n    \"isActive\": true\n  },\n  {\n    \"heading\": \"Bhawani Group\",\n    \"description\": \"From blueprint to reality, Bhawani Group creates spaces that go beyond structures to shape experiences that endure.\",\n    \"isActive\": true\n  },\n  {\n    \"heading\": \"DTC Group\",\n    \"description\": \"From its roots in mining four decades ago, DTC Group has evolved into a diversified enterprise with a growing presence across real estate and infrastructure.\",\n    \"isActive\": true\n  },\n  {\n    \"heading\": \"Emami Realty\",\n    \"description\": \"Built on quality, transparency, customer focus, and a commitment to delivery, Emami Realty strives to create lasting value and trusted relationships.\",\n    \"isActive\": true\n  }\n]",
+                      "type": "text"
+                    },
+                    {
+                      "key": "images",
+                      "type": "file",
+                      "src": [
+                        "/C:/Users/Game-03/Downloads/AjayBegraj.png",
+                        "/C:/Users/Game-03/Downloads/AmbujaNeotia.png",
+                        "/C:/Users/Game-03/Downloads/BhawaniGroup.png",
+                        "/C:/Users/Game-03/Downloads/DTCGroup.png",
+                        "/C:/Users/Game-03/Downloads/EmamiRealty.png"
+                      ]
+                    },
+                    {
+                      "key": "",
+                      "type": "file",
+                      "value": null,
+                      "disabled": true
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/home/clients",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "home",
+                    "clients"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get All Clients",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/v1/admin/home/clients",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "home",
+                    "clients"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get Client by ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/home/clients/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "home",
+                    "clients",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Client by ID",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "heading",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "description",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "isActive",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "image",
+                      "type": "file",
+                      "value": null
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/home/clients/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "home",
+                    "clients",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "FAQs",
+          "item": [
+            {
+              "name": "Get All FAQs",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/home/faqs",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "home",
+                    "faqs"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get FAQs by ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/v1/admin/home/faqs/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "home",
+                    "faqs",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Bulk Create FAQs",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\r\n  {\r\n    \"question\": \"What is zero brokerage on Mulyam?\",\r\n    \"answer\": \"Mulyam charges 0% commission to prospective property buyers across all partner listings.\"\r\n  },\r\n  {\r\n    \"question\": \"How do I schedule a site visit?\",\r\n    \"answer\": \"Click on 'Schedule Visit' on any property page to select your preferred date and time.\"\r\n  },\r\n  {\r\n    \"question\": \"Are all listed projects RERA registered?\",\r\n    \"answer\": \"Yes, every residential and commercial project featured on Mulyam is 100% RERA compliant.\"\r\n  }\r\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/home/faqs",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "home",
+                    "faqs"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update FAQs by ID",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"answer\": \"Updated answer: Mulyam charges zero brokerage fees to all verified buyers.\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/home/faqs/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "home",
+                    "faqs",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete FAQs by ID",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/home/faqs/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "home",
+                    "faqs",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mulyam Our Services Admin Test",
+      "item": [
+        {
+          "name": "Main Services",
+          "item": [
+            {
+              "name": "Bulk Create Main Services",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{json_web_token_0nwr}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "servicesData",
+                      "value": "[\n  {\n    \"heading\": \"OUR SERVICES\",\n    \"description\": \"<p>From identifying the right opportunities to understanding market potential and investment considerations, we offer guidance at every step. With a client-first approach and strong industry knowledge, our team makes the real estate journey more informed, transparent, and seamless.</p>\",\n    \"isActive\": true\n  },\n  {\n    \"heading\": \"FOR BUYERS\",\n    \"description\": \"<p>At Mulyam, our focus is to make every step seamless, transparent, and rewarding for our buyers by doing the following:</p><ul><li>Free, end-to-end assistance for a seamless home-buying journey</li><li>Curated property search based on budget, location, and preferences</li><li>Site visit coordination with guided project walkthroughs</li><li>Expert advice backed by market insights and pricing trends</li><li>Negotiation support to secure the best deals and offers</li><li>Assistance with documentation, legal processes, and home loans</li><li>Post-sales support including coordination and possession assistance</li><li>Access to exclusive deals through strong developer relationships</li></ul><p>We act as trusted advisors, ensuring a transparent, efficient, and rewarding home-buying experience from search to possession.</p>\",\n    \"isActive\": true\n  },\n  {\n    \"heading\": \"FOR INVESTORS\",\n    \"description\": \"<p>Our approach is focused on simplifying acquisition while maximizing long-term value and returns. We help investors by providing:</p><ul><li>Market insights and advisory to identify high-growth, investment-worthy opportunities</li><li>Property selection with curated options and site visit coordination</li><li>Expert evaluation of layouts, amenities, and return potential</li><li>Negotiation support to secure optimal pricing and flexible terms</li><li>Due diligence including legal checks, RERA compliance, and risk assessment</li><li>Financial guidance covering loan processes, payment structures, and ROI planning</li><li>End-to-end support through documentation, closing, and post-purchase coordination</li></ul><p>We act as trusted investment advisors, ensuring a transparent, efficient, and value-driven investment experience.</p>\",\n    \"isActive\": true\n  },\n  {\n    \"heading\": \"FOR DEVELOPERS\",\n    \"description\": \"<p>At Mulyam, we act as an extended sales and marketing partner, enabling developers to accelerate sales and expand market reach. We help developers in the following ways:</p><ul><li>Strategic marketing and promotion through targeted campaigns and qualified lead generation</li><li>Sales acceleration with end-to-end management, from inquiries to site visits and deal closure</li><li>Market intelligence and feedback on buyer preferences and emerging trends</li><li>CRM-driven management of the entire buyer journey, from lead to booking and documentation</li><li>Expanded reach across wider audiences, including NRIs and institutional investors</li><li>Inventory support and underwriting to enhance liquidity when required</li></ul><p>We operate as specialized sales teams, driving faster closures and improving overall sales efficiency.</p>\",\n    \"isActive\": true\n  }\n]",
+                      "type": "text"
+                    },
+                    {
+                      "key": "images",
+                      "type": "file",
+                      "src": [
+                        "/C:/Users/Web-04/Downloads/IMG-20261014-WA0017.jpg",
+                        "/C:/Users/Web-04/Downloads/IMG-20261014-WA0019.jpg",
+                        "/C:/Users/Web-04/Downloads/IMG-20261014-WA0018.jpg",
+                        "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-46-16-71_9cadf0c1485d43345523d40eca370a2e.jpg"
+                      ]
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/v1/admin/services/main",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "services",
+                    "main"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get All Main Services",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/v1/admin/services/main",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "services",
+                    "main"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get Main Service by ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/services/main/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "services",
+                    "main",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Main Service by ID",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/services/main/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "services",
+                    "main",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Main Service by ID",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/services/main/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "services",
+                    "main",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Secondary Services",
+          "item": [
+            {
+              "name": "Bulk Create Secondary Services",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{json_web_token_0nwr}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\r\n  {\r\n    \"heading\": \"Open Market Sales\",\r\n    \"subHeading\": \"Connecting Buyers with Premium Properties\",\r\n    \"description\": \"<ul><li>Facilitating residential sales for leading Grade A+ developers across the city</li><li>Generating qualified leads through targeted digital marketing initiatives</li><li>Conducting client presentations, property walkthroughs, and guided site visits</li><li>Providing complete advisory and assistance throughout the purchase journey</li><li>Keeping clients informed about new launches and market opportunities</li><li>Managing resale opportunities and market insights while building long-term client relationships</li></ul>\",\r\n    \"isActive\": true\r\n  },\r\n  {\r\n    \"heading\": \"Mandate Sales\",\r\n    \"subHeading\": \"End-to-End Project Sales Management\",\r\n    \"description\": \"<ul><li>Market research, pricing strategy, and project planning advisory</li><li>Development and execution of integrated marketing and digital campaigns</li><li>Vendor identification, marketing collateral development, and event coordination</li><li>Deployment of dedicated pre-sales and sales teams to manage enquiries and conversions</li><li>Keeping clients informed about new launches and market opportunities</li><li>Channel partner management and sales tracking systems for transparency and efficiency</li><li>Post-sales CRM, documentation, bank tie-ups, collections, registrations, and handover coordination</li></ul>\",\r\n    \"isActive\": true\r\n  },\r\n  {\r\n    \"heading\": \"Strategic Partnership\",\r\n    \"subHeading\": \"Driving Long-Term Project Growth\",\r\n    \"description\": \"<ul><li>Market intelligence, pricing strategy, and project design advisory</li><li>Implementation of integrated marketing strategies and digital demand generation</li><li>Vendor management, branding, and project collateral development of pre-sales teams and experienced sales professionals</li><li>Channel partner engagement and sales ecosystem management</li><li>Sales tracking systems and event activations to sustain market visibility and momentum</li></ul>\",\r\n    \"isActive\": true\r\n  }\r\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/v1/admin/services/secondary",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "services",
+                    "secondary"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get All Secondary Services",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/v1/admin/services/secondary",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "services",
+                    "secondary"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get Secondary Service by ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/services/secondary/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "services",
+                    "secondary",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Secondary Service by ID",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/services/secondary/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "services",
+                    "secondary",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Secondary Service by ID",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/services/secondary/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "services",
+                    "secondary",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mulyam Blog Admin Page Test",
+      "item": [
+        {
+          "name": "Create Blog",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{json_web_token_0nwr}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": [
+                    "/C:/Users/Web-04/Downloads/VIRTUAL-REALITY-right-vr.jpg"
+                  ]
+                },
+                {
+                  "key": "title",
+                  "value": "Best Locations for NRIs Investing in Siliguri",
+                  "type": "text"
+                },
+                {
+                  "key": "postDate",
+                  "value": "2026-08-29",
+                  "type": "text"
+                },
+                {
+                  "key": "author",
+                  "value": "Sunita Das",
+                  "type": "text"
+                },
+                {
+                  "key": "readingTime",
+                  "value": "5 min",
+                  "type": "text"
+                },
+                {
+                  "key": "heading",
+                  "value": "BEST LOCATIONS FOR NRIS INVESTING IN SILIGURI",
+                  "type": "text"
+                },
+                {
+                  "key": "subHeading",
+                  "value": "Siliguri Property Prices: A Location-Wise Snapshot",
+                  "type": "text"
+                },
+                {
+                  "key": "blogType",
+                  "value": "Article",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "<p>Siliguri is opening a new chapter in real estate investment. Positioned as the gateway to North Bengal, the Northeast and the Himalayan region, the city combines strong connectivity, expanding infrastructure, premium residential developments and diverse investment opportunities.</p><p>For NRIs, Siliguri offers something particularly valuable: the ability to invest in a growing city while staying connected to major transport hubs, commercial centres and lifestyle destinations.</p>",
+                  "type": "text"
+                },
+                {
+                  "key": "isActive",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "isPopularPost",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "displayOnHomePage",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "category",
+                  "value": "",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:5005/api/v1/admin/blogs",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "v1",
+                "admin",
+                "blogs"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Blogs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5005/api/v1/admin/blogs",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "v1",
+                "admin",
+                "blogs"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Blog by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/v1/admin/blogs/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "v1",
+                "admin",
+                "blogs",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Blog by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/v1/admin/blogs/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "v1",
+                "admin",
+                "blogs",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Blog by ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/v1/admin/blogs/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "v1",
+                "admin",
+                "blogs",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Mulyam About Us Admin Page Test",
+      "item": [
+        {
+          "name": "About Us Main",
+          "item": [
+            {
+              "name": "About Us Main",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{json_web_token_0nwr}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "aboutData",
+                      "value": "[\n  {\n    \"heading\": \"ABOUT US\",\n    \"description\": \"<p>We at Mulyam, combine deep real estate expertise with advanced PropTech solutions to help developers sell smarter and faster. Backed by over 20 years of industry knowledge, our leadership brings strong market intelligence and strategic insight to every project. We offer end-to-end services spanning market research, branding, marketing strategy, sales, and CRM management under one integrated platform.</p><p>We go beyond traditional marketing, offering a complete ecosystem that includes targeted lead generation, CRM-driven sales management, and immersive 3D experiences. From positioning a project to closing sales, we create seamless pathways that connect the right buyers to the right properties.</p>\",\n    \"isActive\": true\n  },\n  {\n    \"heading\": \"A UNIFIED REAL ESTATE ECOSYSTEM\",\n    \"description\": \"<p>From market research and branding to sales, conversion, and CRM, we bring every real estate function under one roof, ensuring alignment, transparency, and faster execution at every stage.</p>\",\n    \"isActive\": true\n  },\n  {\n    \"heading\": \"DELIVERING OUTCOMES DRIVEN BY INSIGHTS\",\n    \"description\": \"<p>By integrating data, digital tools, and deep insight, we eliminate complexity, reduce delays, and enable smarter decisions, transforming real estate from a transaction into a seamless, meaningful experience.</p><p>Finding the right property shouldn't mean navigating the entire real estate market alone. Mulyam helps homebuyers and investors discover, compare and evaluate property opportunities based on what matters to them, from budget, location and configuration to amenities, connectivity, possession timelines and long-term objectives.</p><p>Instead of exploring projects one by one, Mulyam brings relevant properties together, helping customers:</p><ul><li>Shortlist suitable options</li><li>Compare projects</li><li>Understand the overall cost</li></ul><p>Its technology-enabled approach records preferences, tracks interactions and helps deliver more personalized property recommendations.</p><p>From new launches and emerging locations to established projects, Mulyam helps customers stay informed about opportunities that match their requirements. It can also support the journey through site-visit coordination, project information, commercial discussions and purchase-stage coordination.</p>\",\n    \"isActive\": true\n  }\n]",
+                      "type": "text"
+                    },
+                    {
+                      "key": "images",
+                      "type": "file",
+                      "src": [
+                        "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-44-85_9cadf0c1485d43345523d40eca370a2e.jpg",
+                        "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-59-77_9cadf0c1485d43345523d40eca370a2e.jpg",
+                        "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-41-87_9cadf0c1485d43345523d40eca370a2e.jpg"
+                      ]
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/v1/admin/about/main",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "main"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get All About Us",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/main",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "main"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get About Us by ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/main/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "main",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update About Us by ID",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "heading",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "isActive",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "image",
+                      "type": "file",
+                      "value": null
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/main/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "main",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete About Us by ID",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/main/3",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "main",
+                    "3"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Mission & Vision",
+          "item": [
+            {
+              "name": "Get All Mission & Vision",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/mission-vision",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "mission-vision"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get Mission & Vision by ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/mission-vision/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "mission-vision",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Mission & Vision by ID",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "heading",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "description",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "image",
+                      "type": "file",
+                      "value": null
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/mission-vision/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "mission-vision",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Team Intro",
+          "item": [
+            {
+              "name": "Get Team Intro",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/team-intro",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "team-intro"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get Team Intro by ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/team-intro/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "team-intro",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Team Intro by ID",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"heading\": \"TEAM MULYAM\",\r\n  \"description\": \"<p>At Mulyam, our team brings together knowledgeable professionals with a deep understanding of real estate, local markets, and evolving investment trends. We combine market intelligence with expertise in property evaluation, pricing, documentation, and transaction processes to help clients make informed decisions.</p><p>From identifying the right opportunities to understanding market potential and investment considerations, we offer guidance at every step. With a client-first approach and strong industry knowledge, our team makes the real estate journey more informed, transparent, and seamless.</p>\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/team-intro/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "team-intro",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Team Members",
+          "item": [
+            {
+              "name": "Bulk Create Team Members",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{json_web_token_0nwr}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "teamData",
+                      "value": "[\n  {\n    \"name\": \"Rahul Dey\",\n    \"designation\": \"Vivamus Efficitur\",\n    \"description\": \"Maecenas et erat ac tellus malesuada convallis. Praesent tincidunt et enim ac fringilla. Suspendisse potenti. Integer volutpat tempor mauris vel tristique. Aenean non sagittis tellus. Integer sit amet eros...\",\n    \"isActive\": true\n  },\n  {\n    \"name\": \"Sudipta Roy\",\n    \"designation\": \"Vivamus Efficitur\",\n    \"description\": \"In rutrum dui libero, ac tempor massa ornare non. In nec iaculis augue. Donec volutpat dui ipsum, sed faucibus arcu aliquam consequat. Duis et molestie lorem, eu cursus tellus. Curabitur mollis...\",\n    \"isActive\": true\n  },\n  {\n    \"name\": \"Gargi Bose\",\n    \"designation\": \"Vivamus Efficitur\",\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis mauris vitae consectetur laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam non...\",\n    \"isActive\": true\n  },\n  {\n    \"name\": \"Koyel Deyashi\",\n    \"designation\": \"Vivamus Efficitur\",\n    \"description\": \"Quisque hendrerit placerat molestie. Duis et tortor molestie, pulvinar nisl dapibus, tincidunt arcu. Nullam bibendum pulvinar orci at volutpat. Suspendisse porttitor imperdiet eros, in sollicitudin erat faucibus in...\",\n    \"isActive\": true\n  },\n  {\n    \"name\": \"Sounak Paul\",\n    \"designation\": \"Vivamus Efficitur\",\n    \"description\": \"Nullam sodales purus eu consectetur porttitor. Nam arcu ligula, consectetur a molestie at, placerat eu erat. Curabitur rhoncus libero ut sapien lobortis finibus sed eu sed ex. Donec accumsan elit vitae...\",\n    \"isActive\": true\n  },\n  {\n    \"name\": \"Anindita Hazra\",\n    \"designation\": \"Vivamus Efficitur\",\n    \"description\": \"Sed maximus ligula at ante pharetra, a finibus felis eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac consequat lacus, quis fringilla ipsum. Phasellus pharetra alique...\",\n    \"isActive\": true\n  }\n]",
+                      "type": "text"
+                    },
+                    {
+                      "key": "images",
+                      "type": "file",
+                      "src": [
+                        "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-59-77_9cadf0c1485d43345523d40eca370a2e.jpg",
+                        "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-41-87_9cadf0c1485d43345523d40eca370a2e.jpg",
+                        "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-47-81_9cadf0c1485d43345523d40eca370a2e.jpg",
+                        "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-38-01_9cadf0c1485d43345523d40eca370a2e.jpg",
+                        "/C:/Users/Web-04/Downloads/nathan-anderson-iYO-EGosrCo-unsplash.jpg",
+                        "/C:/Users/Web-04/Downloads/DIGITAL-MARKETING-right.jpg"
+                      ]
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/v1/admin/about/team",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "team"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get All Team Members",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/team",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "team"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get Team Member by ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/team/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "team",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Team Member by ID",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "name",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "designation",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "isActive",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "image",
+                      "type": "file",
+                      "value": null
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/team/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "team",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Our Ventures",
+          "item": [
+            {
+              "name": "Bulk Create Ventures",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{json_web_token_0nwr}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "venturesData",
+                      "value": "[\n  {\n    \"heading\": \"Mayabious Group\",\n    \"description\": \"A multidisciplinary MarTech and AdTech design studio bringing ideas to life across diverse mediums. We blend strategy, design, technology and storytelling to create impactful brand experiences. From the first stroke of an identity to the final frame of a visualisation, every detail carries our signature. Different mediums, one unwavering standard of craftsmanship.\",\n    \"isActive\": true\n  },\n  {\n    \"heading\": \"Matratech\",\n    \"description\": \"A future-focused MarTech company creating immersive experiences through emerging technologies. From AR, VR, MR and holography to IoT and advanced simulations, we make technology more experiential. Driven by R&D and innovation, we build intelligent solutions that connect brands with their audiences. We transform emerging technology into meaningful experiences.\",\n    \"isActive\": true\n  },\n  {\n    \"heading\": \"Madhya Design\",\n    \"description\": \"An architectural design studio exploring a harmonious relationship between built spaces and nature. Our approach seeks to balance human needs with the ecological context around them. Through thoughtful architecture and landscape-led design, we bridge modernity with greenery to design spaces where people and nature coexist.\",\n    \"isActive\": true\n  },\n  {\n    \"heading\": \"Mokhsh\",\n    \"description\": \"A smart CRM and business management platform built to bring teams, workflows and customer relationships together. From lead management and project coordination to HR, operations and team communication, Mokhsh connects it all in one place. Designed to reduce repetitive work and information overload, it helps businesses stay organised, responsive and efficient.\",\n    \"isActive\": true\n  }\n]",
+                      "type": "text"
+                    },
+                    {
+                      "key": "images",
+                      "type": "file",
+                      "src": [
+                        "/C:/Users/Web-04/Downloads/LLOYDS 2026-10-05 192034.jpg",
+                        "/C:/Users/Web-04/Downloads/DESIGN CELL-2026-10-05 192005.jpg",
+                        "/C:/Users/Web-04/Downloads/shapoorji 2026-10-05 191741.jpg",
+                        "/C:/Users/Web-04/Downloads/jusco 2026-10-05 191722.jpg"
+                      ]
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/v1/admin/about/ventures",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "ventures"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get All Ventures",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/ventures",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "ventures"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get Venture by ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/ventures/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "ventures",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Venture by ID",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "heading",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "description",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "isActive",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "image",
+                      "value": "",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:5000/api/v1/admin/about/ventures/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "admin",
+                    "about",
+                    "ventures",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ADMIN",
+      "item": [
+        {
+          "name": "CREATE ADMIN",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\":\"Pol\",\r\n    \"username\":\"Pol\",\r\n    \"password\":\"pol123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5005/api/admin/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "admin",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "LOG IN",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\":\"Pol\",\r\n    \"password\":\"pol123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5005/api/admin/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "admin",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "LOG OUT",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5005/api/admin/logout",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "admin",
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "CONTACT US",
+      "item": [
+        {
+          "name": "GET IN TOUCH",
+          "item": [
+            {
+              "name": "CREATE",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "contactus_id",
+                      "value": "3",
+                      "type": "text"
+                    },
+                    {
+                      "key": "city",
+                      "value": "Kolkata",
+                      "type": "text"
+                    },
+                    {
+                      "key": "city",
+                      "value": "Mumbai",
+                      "type": "text"
+                    },
+                    {
+                      "key": "city",
+                      "value": "Delhi",
+                      "type": "text"
+                    },
+                    {
+                      "key": "address",
+                      "value": "Park Street",
+                      "type": "text"
+                    },
+                    {
+                      "key": "address",
+                      "value": "Andheri",
+                      "type": "text"
+                    },
+                    {
+                      "key": "address",
+                      "value": "Connaught Place",
+                      "type": "text"
+                    },
+                    {
+                      "key": "contact",
+                      "value": "9876543210",
+                      "type": "text"
+                    },
+                    {
+                      "key": "contact",
+                      "value": "9876543211",
+                      "type": "text"
+                    },
+                    {
+                      "key": "contact",
+                      "value": "987644444",
+                      "type": "text"
+                    },
+                    {
+                      "key": "email",
+                      "value": "kolkata@gmail.com",
+                      "type": "text"
+                    },
+                    {
+                      "key": "email",
+                      "value": "mumbai@gmail.com",
+                      "type": "text"
+                    },
+                    {
+                      "key": "email",
+                      "value": "delhi@gmail.com",
+                      "type": "text"
+                    },
+                    {
+                      "key": "image",
+                      "type": "file",
+                      "src": [
+                        "/C:/Users/Web-04/Downloads/IMG-20261014-WA0018.jpg"
+                      ]
+                    },
+                    {
+                      "key": "image",
+                      "type": "file",
+                      "src": [
+                        "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-59-77_9cadf0c1485d43345523d40eca370a2e.jpg"
+                      ]
+                    },
+                    {
+                      "key": "image",
+                      "type": "file",
+                      "src": [
+                        "/C:/Users/Web-04/Downloads/Screenshot_2026-10-14-13-40-47-81_9cadf0c1485d43345523d40eca370a2e.jpg"
+                      ]
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/getintouch",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "getintouch"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET ALL",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/getintouch",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "getintouch"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GET SINGLE",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/getintouch/4",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "getintouch",
+                    "4"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "UPDATE",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/getintouch/3",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "getintouch",
+                    "3"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DELETE",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5005/api/admin/getintouch/2",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "5005",
+                  "path": [
+                    "api",
+                    "admin",
+                    "getintouch",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "CREATE",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "lets find your next address",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "wheather you are looking for your nwxt home expoliring a commercial space or seeking guidance on a poperty",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": [
+                    "/C:/Users/Web-04/Downloads/VIRTUAL-REALITY-right-vr.jpg"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:5005/api/admin/contactus",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "admin",
+                "contactus"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET ALL",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5005/api/admin/contactus",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "admin",
+                "contactus"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET SINGLE",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5005/api/admin/contactus/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "admin",
+                "contactus",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UPDATE",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": [
+                    "/C:/Users/Web-04/Downloads/IMG-20261014-WA0018.jpg"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:5005/api/admin/contactus/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "admin",
+                "contactus",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5005/api/admin/contactus/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5005",
+              "path": [
+                "api",
+                "admin",
+                "contactus",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "HEALTH CHECK",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5005/api/admin",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5005",
+          "path": [
+            "api",
+            "admin"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "json_web_token_0nwr",
+      "secret": true
+    }
+  ]
+}

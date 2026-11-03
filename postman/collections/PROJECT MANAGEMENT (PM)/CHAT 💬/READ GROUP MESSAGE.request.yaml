@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:3000/api/chat/group/read
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r\n    \"group_id\": 2\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_15ll}}"
+order: 9000

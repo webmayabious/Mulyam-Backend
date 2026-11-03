@@ -1,0 +1,16 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllSalaryIncrement?limit=all
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  limit: all
+body:
+  type: json
+  content: "{\r\n    \"user_id\":1\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0lwf}}"
+settings: {}
+order: 5000

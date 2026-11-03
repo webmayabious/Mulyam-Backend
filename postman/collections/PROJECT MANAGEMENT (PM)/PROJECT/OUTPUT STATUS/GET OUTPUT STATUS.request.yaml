@@ -1,0 +1,16 @@
+$kind: http-request
+url: localhost:3000/api/pm/outputStatus/1
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"status_content\":\"this is latest project status 2\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0qte}}"
+settings: {}
+order: 2000

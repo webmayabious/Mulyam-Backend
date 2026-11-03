@@ -1,0 +1,18 @@
+$kind: http-request
+url: localhost:3000/api/pm/addUserDocument/5
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: document_name
+      value: Appointment letter
+    - type: file
+      key: documents
+      src:
+        - /C:/Users/WEB-07/Downloads/brochure (8).pdf
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0s6i}}"
+order: 3000

@@ -1,0 +1,11 @@
+$kind: http-request
+url: localhost:3000/api/pm/auth/refreshToken
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+order: 2000

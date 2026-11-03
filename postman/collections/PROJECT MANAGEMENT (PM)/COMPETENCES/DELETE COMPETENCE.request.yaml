@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost:3000/api/pm/deleteCompetences/4
+method: DELETE
+body:
+  type: text
+  content: "{\r
+
+    \    \"typ_id\":2,\r
+
+    \    \"active\":\"0\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0ijk}}"
+order: 5000

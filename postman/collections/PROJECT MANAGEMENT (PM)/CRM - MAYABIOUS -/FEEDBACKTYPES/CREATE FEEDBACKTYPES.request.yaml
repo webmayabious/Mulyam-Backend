@@ -1,0 +1,15 @@
+$kind: http-request
+url: localhost:3000/api/pm/createFeedBackTypes
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\":\"FeedBack Type 5\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_04h4}}"
+order: 3000

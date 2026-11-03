@@ -1,0 +1,23 @@
+$kind: http-request
+url: http://localhost:3000/api/chat/send-group
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"group_id\":2,\r
+
+    \    \"message\":\"HELLO FROM GROUP\",\r
+
+    \    \"previous_msg_id\": 4,\r
+
+    \    \"tagging_user_id\": [902, 914, 916]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_031v}}"
+order: 4000

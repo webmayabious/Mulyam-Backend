@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:3000/api/pm/deleteConference/3299
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0w41}}"
+order: 8000

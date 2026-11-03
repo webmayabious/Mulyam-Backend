@@ -1,0 +1,21 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateOtStatusByReviewer
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\":2,\r
+
+    \    \"user_id\":1063,\r
+
+    \    \"ot_duration\":3,\r
+
+    \    \"ot_status\":\"A\"    // A= approve , P = pending  , R = rejected\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0kxg}}"
+order: 18000

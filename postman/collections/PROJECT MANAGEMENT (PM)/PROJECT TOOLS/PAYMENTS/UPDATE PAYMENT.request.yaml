@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/updatePayments/5
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"pro_id\":\"1\",\r
+
+    \    \"pro_details_id\":\"3\",\r
+
+    \    \"remark\":\"Payment Update\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1cmo}}"
+order: 4000

@@ -1,0 +1,20 @@
+$kind: http-request
+url: localhost:3000/api/pm/getLavelsByDepartment/1/4
+method: GET
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \    \"userid\":\"admin\",\r
+
+    \    \"password\":\"12345678\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0cp2}}"
+settings: {}
+order: 1000

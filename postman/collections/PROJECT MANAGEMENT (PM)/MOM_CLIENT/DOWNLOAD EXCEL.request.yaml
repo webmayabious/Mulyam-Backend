@@ -1,0 +1,9 @@
+$kind: http-request
+url: localhost:3000/api/pm/mom-client/27/download
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0utx}}"
+examples: ./.resources/DOWNLOAD EXCEL.resources/examples
+order: 9000

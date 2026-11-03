@@ -1,0 +1,111 @@
+$kind: http-request
+url: https://api.mokhsh.com/api/pm/followUpAndMeetingsData
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: search
+    value: Shampa
+    disabled: true
+  - key: page
+    value: "4"
+    disabled: true
+body:
+  type: formdata
+  content:
+    - type: text
+      key: com_name
+      value: souravk ltd 26898
+    - type: text
+      key: com_desc
+      value: Tech company 22
+      disabled: true
+    - type: text
+      key: com_address
+      value: kolkata howrah
+      disabled: true
+    - type: text
+      key: com_address1
+      value: ""
+      disabled: true
+    - type: text
+      key: city_id
+      value: howrah
+      disabled: true
+    - type: text
+      key: state_id
+      value: "1"
+      disabled: true
+    - type: text
+      key: country_id
+      value: "1"
+      disabled: true
+    - type: text
+      key: com_pin
+      value: "700091"
+      disabled: true
+    - type: text
+      key: com_website
+      value: ""
+      disabled: true
+    - type: text
+      key: com_phno
+      value: "123456789"
+      disabled: true
+    - type: text
+      key: com_cperson
+      value: sk
+      disabled: true
+    - type: text
+      key: com_cemail
+      value: sk@gmail.com
+      disabled: true
+    - type: text
+      key: com_cno
+      value: "9876543210"
+      disabled: true
+    - type: text
+      key: com_cperson1
+      value: ""
+      disabled: true
+    - type: text
+      key: com_cemail1
+      value: ""
+      disabled: true
+    - type: text
+      key: com_cno1
+      value: ""
+      disabled: true
+    - type: text
+      key: com_cperson2
+      value: ""
+      disabled: true
+    - type: text
+      key: com_cemail2
+      value: ""
+      disabled: true
+    - type: text
+      key: com_cno2
+      value: ""
+      disabled: true
+    - type: text
+      key: com_type
+      value: "1"
+      disabled: true
+    - type: text
+      key: type_id
+      value: "3"
+      disabled: true
+    - type: file
+      key: com_logo
+      src:
+        - /C:/Users/game-01/Pictures/2d12c0da978d4c5c8a3db90ed7113add_t.jpeg
+    - type: text
+      key: active
+      value: "0"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0q08}}"
+settings: {}
+order: 3000

@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:3000/api/pm/getProjectLead
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0koc}}"
+order: 1000

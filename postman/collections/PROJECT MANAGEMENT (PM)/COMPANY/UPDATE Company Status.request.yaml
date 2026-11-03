@@ -1,0 +1,13 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateCompanyStatus/266
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r\n    \"status\":\"0\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0pwu}}"
+order: 6000

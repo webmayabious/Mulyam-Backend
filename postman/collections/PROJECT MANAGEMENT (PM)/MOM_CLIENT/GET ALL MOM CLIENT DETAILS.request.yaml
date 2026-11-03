@@ -1,0 +1,33 @@
+$kind: http-request
+url: localhost:3000/api/pm/get-all-mom-client
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+    disabled: true
+  - key: from_date
+    value: 2026-03-20
+    disabled: true
+  - key: to_date
+    value: 2026-03-21
+    disabled: true
+  - key: client
+    value: "23"
+    disabled: true
+    description: client id or name
+  - key: member
+    value: "1063"
+    disabled: true
+    description: id /name
+  - key: search
+    value: 2026-04-01
+    disabled: true
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_151h}}"
+settings: {}
+order: 3000

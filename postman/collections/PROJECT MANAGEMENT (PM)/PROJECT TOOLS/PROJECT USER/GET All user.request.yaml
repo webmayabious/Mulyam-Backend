@@ -1,0 +1,12 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllProUser/3
+method: GET
+body:
+  type: json
+  content: "{\r\n    \"dept_id\": 3\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_17ku}}"
+settings: {}
+order: 4000

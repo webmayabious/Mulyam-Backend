@@ -1,0 +1,41 @@
+$kind: http-request
+url: http://api.mokhsh.com/api/pm/getAllProjectList?page=1&department=1&posted_category=2
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: page
+    value: "1"
+  - key: limit
+    value: "50"
+    disabled: true
+  - key: department
+    value: "1"
+  - key: company
+    value: "343"
+    disabled: true
+  - key: status
+    value: "4"
+    disabled: true
+    description: see from getAllProjectStatus
+  - key: coordinator
+    value: "1063"
+    disabled: true
+  - key: posted_category
+    value: "2"
+    description: "last_posted_on date within 1 : <5 days ,2 : 5-10 days,3: >10days and 4 = no discussion posted date or date is null"
+body:
+  type: text
+  content: "{\r
+
+    \    \"receiver_id\":902,\r
+
+    \    \"message\":\"HELLO\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_031v}}"
+settings: {}
+order: 1000

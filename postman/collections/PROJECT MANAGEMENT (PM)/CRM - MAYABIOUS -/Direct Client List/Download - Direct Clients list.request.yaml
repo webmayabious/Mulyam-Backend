@@ -1,0 +1,13 @@
+$kind: http-request
+name: "Download : Direct Clients list"
+url: localhost:3000/api/pm/directClientExcel
+method: GET
+queryParams:
+  - key: page
+    value: "2"
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_10kb}}"
+order: 2000

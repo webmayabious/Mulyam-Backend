@@ -1,0 +1,23 @@
+$kind: http-request
+url: localhost:3000/api/pm/addBdmTarget
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"f_date\":\"2026-01-12\", \r
+
+    \    \"t_date\":\"2026-03-12\", \r
+
+    \    \"duration\":\"1\",\r
+
+    \    \"userId\" : 1063,\r
+
+    \    \"target\" : 50000\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_10kb}}"
+order: 1000

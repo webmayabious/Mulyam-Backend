@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/forthLevelCancel
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \    \"dis_id\": 5,\r
+
+    \    \"pro_id\": 2\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0yvy}}"
+order: 8000

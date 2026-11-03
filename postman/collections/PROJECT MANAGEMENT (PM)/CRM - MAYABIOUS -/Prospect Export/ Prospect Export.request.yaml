@@ -1,0 +1,43 @@
+$kind: http-request
+url: localhost:3000/api/pm/exportProspectReport
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \  \"businessDevelopmentManager\": 2,\r
+
+    \  \"reference\": 1,\r
+
+    \    \"exportFields\": {\r
+
+    \    \"contactPerson\": true,\r
+
+    \    \"contactNo\": false,\r
+
+    \    \"contactEmail\": false,\r
+
+    \    \"designation\": false,\r
+
+    \    \"address\": false,\r
+
+    \    \"date\": false,\r
+
+    \    \"otherContact1\": false,\r
+
+    \    \"otherContact2\": false,\r
+
+    \    \"feedbackType\": false,\r
+
+    \    \"feedback\": false\r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_10kb}}"
+order: 1000

@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/addSpecialText
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \    \"special_text\":\"hi this is special text\",\r
+
+    \    \"project_id\":3\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0e2c}}"
+order: 7000

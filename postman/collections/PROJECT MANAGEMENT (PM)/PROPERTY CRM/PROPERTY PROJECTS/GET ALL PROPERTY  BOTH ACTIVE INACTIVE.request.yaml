@@ -1,0 +1,10 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllPropertyProjectsActiveInactive?page=2
+method: GET
+queryParams:
+  page: "2"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_14ut}}"
+order: 4000

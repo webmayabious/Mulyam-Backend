@@ -1,0 +1,33 @@
+$kind: http-request
+url: localhost:3000/api/pm/createPropertyProjects
+method: POST
+headers:
+  Authorization: "{{json_web_token_057d}}"
+body:
+  type: json
+  content: "{\r
+
+    \    \"project_name\":\"Order Test\",\r
+
+    \    \"com_id\":585,\r
+
+    \    \"location\":1,\r
+
+    \    \"user_ids\":[1063,812,916,914],\r
+
+    \    \"source\":\"FaceBook\"\r
+
+    }\r
+
+    \r
+
+    \r
+
+    \    // \"project_form_name\":\"Meta form 1\",\r
+
+    \    // \"meta_lead_id\":\"3425267937\","
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0q5w}}"
+order: 1000

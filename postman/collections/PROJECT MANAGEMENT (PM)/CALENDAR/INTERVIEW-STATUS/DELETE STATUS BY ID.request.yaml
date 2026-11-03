@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/interview-status/2
+method: DELETE
+body:
+  type: json
+  content: "{\r
+
+    \    \"status_name\" : \"2nd round\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_031v}}"
+order: 5000

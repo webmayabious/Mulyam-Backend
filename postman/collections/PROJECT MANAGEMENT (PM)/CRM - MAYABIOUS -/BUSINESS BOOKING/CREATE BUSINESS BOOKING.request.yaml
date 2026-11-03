@@ -1,0 +1,19 @@
+$kind: http-request
+url: localhost:3000/api/pm/createBusinessBooking
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"date\":\"2026-06-30\",\r
+
+    \    \"pro_id\":\"1\",\r
+
+    \    \"target_id\":\"1\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_12qu}}"
+order: 1000

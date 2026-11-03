@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/getAllTaskStatus?module_id=4
+method: GET
+queryParams:
+  module_id: "4"
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_08g5}}"
+settings: {}
+order: 2000

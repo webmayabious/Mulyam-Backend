@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:5005/api/admin/property-type/9
+method: PUT
+order: 5000

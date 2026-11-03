@@ -1,0 +1,15 @@
+$kind: http-request
+url: https://api.mokhsh.com/api/pm/getAllProjectMileStoneAndModule/2197/2176
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: ""
+    value: null
+    disabled: true
+    description: //:pro_id/:pro_details_id
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_154p}}"
+order: 10000

@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/getAllTaskWorkLogById/76
+method: GET
+queryParams:
+  - key: null
+    value: null
+    disabled: true
+    description: /api/pm/getAllTaskById/:id   id = task id
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0yjp}}"
+order: 4000

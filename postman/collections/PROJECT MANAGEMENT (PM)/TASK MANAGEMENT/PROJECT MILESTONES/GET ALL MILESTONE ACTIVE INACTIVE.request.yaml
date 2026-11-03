@@ -1,0 +1,35 @@
+$kind: http-request
+url: localhost:3000/api/pm/getMilestoneByProIdActiveInactive/747/743
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: page
+    value: "1"
+    disabled: true
+  - key: limit
+    value: "10"
+    disabled: true
+    description: //limit all is also given
+  - key: type
+    value: "2"
+    disabled: true
+    description: 1=aedate 2=eedate
+  - key: fromDate
+    value: 2026-05-25
+    disabled: true
+  - key: toDate
+    value: 2026-05-30
+    disabled: true
+  - key: status
+    value: "4"
+    disabled: true
+  - key: search
+    value: nae
+    disabled: true
+    description: //localhost:3000/api/pm/getAllMilestones/pro_id/pro_details_id
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_154p}}"
+order: 4000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: localhost:3000/api/pm/getAllDeptSkills?dept_id=3
+method: GET
+queryParams:
+  dept_id: "3"
+body:
+  type: json
+  content: "{\r\n    \"dept_id\":\"5\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_081f}}"
+settings: {}
+order: 1000

@@ -1,0 +1,23 @@
+$kind: http-request
+url: http://localhost:3000/api/pm/calendar/event
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \    \"occasion\":\"Test\",\r
+
+    \    \"date\" :\"2026-06-22\",\r
+
+    \    \"time\": \"10:32:00\"\r
+
+    \    // \"notification_time\": \"12:30:01\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_18qi}}"
+order: 1000

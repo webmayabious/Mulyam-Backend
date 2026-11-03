@@ -1,0 +1,41 @@
+$kind: http-request
+url: localhost:3000/api/pm/changeOwners
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"owner_details\": [\r
+
+    \        {\r
+
+    \            \"task_id\": 180,\r
+
+    \            \"user_id_old\": 1063,\r
+
+    \            \"user_id_new\": 902,\r
+
+    \            \"user_type\": 1\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"task_id\": 181,\r
+
+    \            \"user_id_old\": 1063,\r
+
+    \            \"user_id_new\": 902,\r
+
+    \            \"user_type\": 2\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0j01}}"
+order: 17000

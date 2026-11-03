@@ -1,0 +1,55 @@
+$kind: http-request
+url: localhost:3000/api/pm/inboxMails
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: fromDate
+    value: 2026-02-01
+    disabled: true
+  - key: toDate
+    value: 2026-02-01
+    disabled: true
+  - key: status
+    value: "2"
+    disabled: true
+    description: 1-unread 2-read
+  - key: page
+    value: "2"
+    disabled: true
+  - key: limit
+    value: all
+    disabled: true
+body:
+  type: text
+  content: "{\r
+
+    \    \"ml_sub\":\"Test 5\",\r
+
+    \    \"ml_body\":\"This is test 5\",\r
+
+    \    \"mtype\":3, //\"1=Selected,2=Leads,3=Department\"\r
+
+    \    \"gtype\":2, //\"1= all,2=individual/leads\"\r
+
+    \    \"dept_id\":3,\r
+
+    \    \"user\":[1063,812]\r
+
+    }\r
+
+    \r
+
+    // 1 = mail read \r
+
+    //0 =unread\r
+
+    //1= is not in trash\r
+
+    //0 = is in trash"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0p9c}}"
+settings: {}
+order: 6000

@@ -1,0 +1,13 @@
+$kind: http-request
+url: localhost:3000/api/pm/createPropertyLocation
+method: POST
+headers:
+  Authorization: "{{json_web_token_057d}}"
+body:
+  type: json
+  content: "{\r\n    \"name\":\"Salt Lake\"\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_151h}}"
+order: 1000

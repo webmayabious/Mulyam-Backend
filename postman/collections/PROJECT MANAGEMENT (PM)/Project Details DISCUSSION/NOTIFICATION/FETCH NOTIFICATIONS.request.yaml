@@ -1,0 +1,25 @@
+$kind: http-request
+url: localhost:3000/api/pm/fetchNotification?fromDate=2026-05-15&toDate=2026-05-15
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: type
+    value: ASG
+    disabled: true
+    description: MSG,....
+  - key: user
+    value: "902"
+    disabled: true
+  - key: status
+    value: "2"
+    disabled: true
+  - key: fromDate
+    value: 2026-05-15
+  - key: toDate
+    value: 2026-05-15
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_16g1}}"
+order: 1000

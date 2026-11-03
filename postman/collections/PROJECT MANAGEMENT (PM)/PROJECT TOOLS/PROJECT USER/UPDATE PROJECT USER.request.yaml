@@ -1,0 +1,15 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateProjectUser/7
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"primary_coordinator\": \"0\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_17ku}}"
+order: 2000

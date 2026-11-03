@@ -1,0 +1,75 @@
+$kind: http-request
+url: localhost:3000/api/pm/updateConference/3329
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"date\": \"2026-07-14\",\r
+
+    \    \"in_time\": \"14:20:00\",\r
+
+    \    \"out_time\": \"14:25:00\",\r
+
+    \    \"subject\": \"test 1 \",\r
+
+    \    \"conference\": 2,\r
+
+    \    \"meeting_organiser\": 866,\r
+
+    \    \"guests\": [\r
+
+    \        {\r
+
+    \            \"guest_id\": 866\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"guest_id\": 50\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"guest_name\": \"g1\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"guest_name\": \"g2\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"guest_name\": \"g3\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"clients\":[\r
+
+    \        {\r
+
+    \            \"guest_id\":1024\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"guest_id\":1063\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_18qi}}"
+order: 5000

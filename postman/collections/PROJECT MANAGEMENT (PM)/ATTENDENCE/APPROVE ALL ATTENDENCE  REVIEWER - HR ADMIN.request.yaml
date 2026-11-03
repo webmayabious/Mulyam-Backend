@@ -1,0 +1,9 @@
+$kind: http-request
+name: APPROVE ALL ATTENDENCE  REVIEWER -- HR ADMIN
+url: localhost:3000/api/pm/approveAllAttendanceByReviewer
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0tg7}}"
+order: 17000

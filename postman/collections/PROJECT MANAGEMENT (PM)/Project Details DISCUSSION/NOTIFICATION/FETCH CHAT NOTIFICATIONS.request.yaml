@@ -1,0 +1,27 @@
+$kind: http-request
+url: localhost:3000/api/pm/fetchUnreadChatCount
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: type
+    value: ASG
+    disabled: true
+    description: MSG,....
+  - key: user
+    value: "902"
+    disabled: true
+  - key: status
+    value: "2"
+    disabled: true
+  - key: fromDate
+    value: null
+    disabled: true
+  - key: toDate
+    value: null
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_16g1}}"
+order: 8000

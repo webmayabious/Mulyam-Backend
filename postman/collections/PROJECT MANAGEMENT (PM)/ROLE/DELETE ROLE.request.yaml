@@ -1,0 +1,21 @@
+$kind: http-request
+url: localhost:3000/api/pm/deleteRole/16
+method: DELETE
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: "{\r
+
+    \    \"role_name\":\"SoftWare Director\",\r
+
+    \    \"parent_id\":\"1\",\r
+
+    \    \"description\":\"Creative & Technical Director\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1c7q}}"
+order: 4000

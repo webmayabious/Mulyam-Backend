@@ -1,0 +1,5 @@
+$kind: http-request
+name: DELETE\
+url: http://localhost:5005/api/admin/bedrooms/7
+method: DELETE
+order: 5000

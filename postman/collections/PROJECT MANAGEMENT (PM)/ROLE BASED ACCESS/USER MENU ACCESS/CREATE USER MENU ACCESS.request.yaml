@@ -1,0 +1,13 @@
+$kind: http-request
+url: localhost:3000/api/pm/createUserMenuAccess
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"user_id\":912,\r
+
+    \    \"menu_id\":3\r
+
+    }"
+order: 1000

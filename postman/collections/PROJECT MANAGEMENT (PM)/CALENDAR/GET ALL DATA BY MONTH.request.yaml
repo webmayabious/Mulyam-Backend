@@ -1,0 +1,11 @@
+$kind: http-request
+url: localhost:3000/api/pm/calendarbymonth?month=06&year=2026
+method: GET
+queryParams:
+  month: "06"
+  year: "2026"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0kms}}"
+order: 11000

@@ -1,0 +1,24 @@
+$kind: http-request
+url: localhost:3000/api/pm/fetchDiscussionByProject/747/3?type=1&limit=all
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: type
+    value: "1"
+    description: 1= mail , 2 = team , 3=client
+  - key: page
+    value: "1"
+    disabled: true
+  - key: limit
+    value: all
+    description: "if limit all no pagination "
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_100x}}"
+settings: {}
+order: 4000

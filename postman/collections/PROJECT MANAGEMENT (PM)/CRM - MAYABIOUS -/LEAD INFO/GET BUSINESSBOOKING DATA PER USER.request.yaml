@@ -1,0 +1,8 @@
+$kind: http-request
+url: localhost:3000/api/pm/getPreviousBusinessBookingperUser/1063
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0qa8}}"
+order: 9000

@@ -1,0 +1,21 @@
+$kind: http-request
+url: localhost:3000/api/pm/getMainProjectCoordinator
+method: GET
+body:
+  type: formdata
+  content:
+    - type: text
+      key: req
+      value: DELETE_PHOTO_CATEGORY
+    - type: text
+      key: token
+      value: SzAyK2VyS21yV1NZTWtxeEh5Y0srOFEyN2dGTkMxWTJlamVTWm9qZWJLWT0=
+    - type: text
+      key: id
+      value: "2"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0p9c}}"
+settings: {}
+order: 1000

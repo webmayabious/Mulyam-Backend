@@ -1,0 +1,23 @@
+$kind: http-request
+url: localhost:3000/api/pm/trashMails?status=2
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: status
+    value: "2"
+  - key: fromDate
+    value: 2026-02-01
+    disabled: true
+  - key: toDate
+    value: null
+    disabled: true
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0p9c}}"
+settings: {}
+order: 7000

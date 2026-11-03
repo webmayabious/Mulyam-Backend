@@ -1,0 +1,29 @@
+$kind: http-request
+url: localhost:3000/api/pm/createComment
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"pro_id\":\"747\",\r
+
+    \    \"dis_id\":\"439644\",\r
+
+    \    \"comment\":\"Project Comment Test 2\"\r
+
+    }\r
+
+    \r
+
+    \t\r
+
+    \r
+
+    \r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0poo}}"
+order: 1000

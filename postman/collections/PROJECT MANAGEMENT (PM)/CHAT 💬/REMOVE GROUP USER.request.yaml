@@ -1,0 +1,15 @@
+$kind: http-request
+url: localhost:3000/api/chat/removeGroupUsers/9
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"userIds\":[1063,916,812,914]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0poo}}"
+order: 15000
