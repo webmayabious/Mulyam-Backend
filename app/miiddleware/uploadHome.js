@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 // Dedicated target directory for Home uploads
-const uploadDir = path.join(__dirname, '../uploads/home');
+const uploadDir = path.join(__dirname, '../../uploads');
 
 // Create the directory if it does not exist
 if (!fs.existsSync(uploadDir)) {

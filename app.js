@@ -7,7 +7,7 @@ const path = require('path');
 const fs = require('fs');
 
 app.use(express.json());
-app.use("/api/uploads", express.static("uploads"));
+app.use("/uploads", express.static("uploads"));
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
@@ -45,45 +45,6 @@ const adminServicesRoutes = require('./app/router/adminServicesRoutes');
 const adminAboutUsRoutes = require('./app/router/adminAboutUsRoutes');
 const adminBlogRoutes = require('./app/router/adminBlogRoutes');
 
-// // =============================================================================
-// // GLOBAL MIDDLEWARE
-// // =============================================================================
-
-// // Cross-Origin Resource Sharing
-// app.use(cors());
-
-// // Body parsers
-// app.use(express.json({ limit: '10mb' }));
-// app.use(express.urlencoded({ extended: true, limit: '10mb' }));
-
-// // =============================================================================
-// // STATIC ASSETS CONFIGURATION
-// // =============================================================================
-
-// // Ensure physical upload directories exist on disk
-const uploadsDir = path.join(__dirname, 'uploads');
-const homeUploadsDir = path.join(__dirname, 'uploads/home');
-const servicesUploadsDir = path.join(__dirname, 'uploads/services');
-const aboutUploadsDir = path.join(__dirname, 'uploads/about');
-const blogsUploadsDir = path.join(__dirname, 'uploads/blogs');
-
-if (!fs.existsSync(uploadsDir)) {
-  fs.mkdirSync(uploadsDir, { recursive: true });
-}
-if (!fs.existsSync(homeUploadsDir)) {
-  fs.mkdirSync(homeUploadsDir, { recursive: true });
-}
-if (!fs.existsSync(servicesUploadsDir)) {
-  fs.mkdirSync(servicesUploadsDir, { recursive: true });
-}
-if (!fs.existsSync(aboutUploadsDir)) {
-  fs.mkdirSync(aboutUploadsDir, { recursive: true });
-}
-if (!fs.existsSync(blogsUploadsDir)) {
-  fs.mkdirSync(blogsUploadsDir, { recursive: true });
-}
-
-app.use('/uploads', express.static(uploadsDir));
 
 // // =============================================================================
 // // API ROUTE MOUNTING

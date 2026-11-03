@@ -77,7 +77,7 @@ exports.createClientsBulk = async (req, res) => {
       }
 
       recordsToInsert.push({
-        imageUrl: `/uploads/${files[index].filename}`,
+        imageUrl: `../../uploads/${files[index].filename}`,
         heading: record.heading,
         description: record.description,
         isActive: record.isActive !== undefined ? Boolean(record.isActive) : true,
@@ -179,7 +179,7 @@ exports.updateClient = async (req, res) => {
     const { heading, description, isActive } = req.body;
 
     // Use newly uploaded file path if present, otherwise preserve existing asset path
-    const imageUrl = req.file ? `/uploads/${req.file.filename}` : client.imageUrl;
+    const imageUrl = req.file ? `../../uploads/${req.file.filename}` : client.imageUrl;
 
     await client.update({
       imageUrl,

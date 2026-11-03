@@ -53,7 +53,7 @@ exports.createMainItemsBulk = async (req, res) => {
 
       let resolvedImageUrl = null;
       if (files[fileIndex]) {
-        resolvedImageUrl = `/uploads/services/${files[fileIndex].filename}`;
+        resolvedImageUrl = `../../uploads/${files[fileIndex].filename}`;
         fileIndex++;
       } else if (item.imageUrl) {
         resolvedImageUrl = item.imageUrl;
@@ -155,7 +155,7 @@ exports.updateMainItem = async (req, res) => {
     }
 
     const { heading, description, isActive } = req.body;
-    const imageUrl = req.file ? `/uploads/services/${req.file.filename}` : item.imageUrl;
+    const imageUrl = req.file ? `../../uploads/${req.file.filename}` : item.imageUrl;
 
     await item.update({
       imageUrl,

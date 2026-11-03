@@ -1,4 +1,5 @@
 const sequelize = require('../config/db');
+// const upload = require("../../uploads")
 const {
   AboutUs,
   AboutMissionVision,
@@ -27,7 +28,7 @@ exports.createAboutUsBulk = async (req, res) => {
 
     for (let i = 0; i < parsedData.length; i++) {
       const item = parsedData[i];
-      let resolvedImageUrl = files[fileIdx] ? `/uploads/about/${files[fileIdx].filename}` : item.imageUrl;
+      let resolvedImageUrl = files[fileIdx] ? `../../uploads/${files[fileIdx].filename}` : item.imageUrl;
       if (files[fileIdx]) fileIdx++;
 
       if (!resolvedImageUrl) {
@@ -70,11 +71,12 @@ exports.getAboutUsById = async (req, res) => {
 
 exports.updateAboutUs = async (req, res) => {
   try {
+    
     const item = await AboutUs.findByPk(req.params.id);
     if (!item) return res.status(404).json({ success: false, message: 'Record not found' });
 
     const { heading, description, isActive } = req.body;
-    const imageUrl = req.file ? `/uploads/about/${req.file.filename}` : item.imageUrl;
+    const imageUrl = req.file ? `../../uploads/${req.file.filename}` : item.imageUrl;
 
     await item.update({
       heading: heading ?? item.heading,
@@ -203,7 +205,7 @@ exports.createTeamBulk = async (req, res) => {
 
     for (let i = 0; i < parsedData.length; i++) {
       const item = parsedData[i];
-      let resolvedImageUrl = files[fileIdx] ? `/uploads/about/${files[fileIdx].filename}` : item.imageUrl;
+      let resolvedImageUrl = files[fileIdx] ? `../../uploads/${files[fileIdx].filename}` : item.imageUrl;
       if (files[fileIdx]) fileIdx++;
 
       if (!resolvedImageUrl) {
@@ -251,7 +253,7 @@ exports.updateTeamMember = async (req, res) => {
     if (!item) return res.status(404).json({ success: false, message: 'Team member not found' });
 
     const { name, designation, description, isActive } = req.body;
-    const imageUrl = req.file ? `/uploads/about/${req.file.filename}` : item.imageUrl;
+    const imageUrl = req.file ? `../../uploads/${req.file.filename}` : item.imageUrl;
 
     await item.update({
       name: name ?? item.name,
@@ -287,7 +289,7 @@ exports.createVenturesBulk = async (req, res) => {
 
     for (let i = 0; i < parsedData.length; i++) {
       const item = parsedData[i];
-      let resolvedImageUrl = files[fileIdx] ? `/uploads/about/${files[fileIdx].filename}` : item.imageUrl;
+      let resolvedImageUrl = files[fileIdx] ? `../../uploads/${files[fileIdx].filename}` : item.imageUrl;
       if (files[fileIdx]) fileIdx++;
 
       if (!resolvedImageUrl) {
@@ -334,7 +336,7 @@ exports.updateVenture = async (req, res) => {
     if (!item) return res.status(404).json({ success: false, message: 'Venture not found' });
 
     const { heading, description, isActive } = req.body;
-    const imageUrl = req.file ? `/uploads/about/${req.file.filename}` : item.imageUrl;
+    const imageUrl = req.file ? `../../uploads/${req.file.filename}` : item.imageUrl;
 
     await item.update({
       heading: heading ?? item.heading,

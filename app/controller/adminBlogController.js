@@ -26,7 +26,7 @@ exports.createBlog = async (req, res) => {
       });
     }
 
-    const imagePath = req.file ? `/uploads/blogs/${req.file.filename}` : null;
+    const imagePath = req.file ? `../../uploads/${req.file.filename}` : null;
 
     const newBlog = await Blog.create({
       image: imagePath,
@@ -111,7 +111,7 @@ exports.updateBlog = async (req, res) => {
       category,
     } = req.body;
 
-    const imagePath = req.file ? `/uploads/blogs/${req.file.filename}` : blog.image;
+    const imagePath = req.file ? `../../uploads/${req.file.filename}` : blog.image;
 
     await blog.update({
       image: imagePath,

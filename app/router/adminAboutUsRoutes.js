@@ -33,4 +33,11 @@ router.get('/ventures', controller.getAllVentures);
 router.get('/ventures/:id',adminCheck, controller.getVentureById);
 router.put('/ventures/:id', uploadAbout.single('image'),adminCheck, controller.updateVenture);
 
+// router.get("/abouttest",(req,res)=>{
+//     res.status(200).json({
+//         message:"Hello Update"
+//     })
+// })
+
+
 module.exports = router;
